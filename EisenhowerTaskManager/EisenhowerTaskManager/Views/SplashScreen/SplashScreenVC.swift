@@ -19,7 +19,7 @@ extension SplashScreenVC {
     private func setupFirstView() {
         let when = DispatchTime.now() + 2
         DispatchQueue.main.asyncAfter(deadline: when) {
-            let vc = UIViewController()
+            let vc = UINavigationController(rootViewController: SignInVC())
             UIApplication.shared.delegate?.window??.rootViewController = vc
         }
     }

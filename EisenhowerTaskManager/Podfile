@@ -3,9 +3,16 @@ platform :ios, '11.0'
 use_frameworks!
 
 def pods
+    # Network
     pod 'Alamofire'
     pod 'SwiftyJSON'
+
+    # SDK
     pod 'Firebase/Core'
+    pod 'Firebase/Auth'
+
+    # UI
+    pod "TTGSnackbar"
 end
 
 target 'EisenhowerTaskManager-development' do

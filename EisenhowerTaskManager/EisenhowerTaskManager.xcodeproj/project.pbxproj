@@ -17,6 +17,24 @@
 		6940FF14204DDD620063101D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6940FF12204DDD610063101D /* GoogleService-Info.plist */; };
 		6940FF15204DDD620063101D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6940FF12204DDD610063101D /* GoogleService-Info.plist */; };
 		6940FF1A204DDE940063101D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6940FF12204DDD610063101D /* GoogleService-Info.plist */; };
+		6940FF1E204DE1BE0063101D /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6940FF1C204DE1BE0063101D /* SignInVC.swift */; };
+		6940FF1F204DE1BE0063101D /* SignInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6940FF1D204DE1BE0063101D /* SignInVC.xib */; };
+		6940FF22204DE7DB0063101D /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6940FF21204DE7DB0063101D /* UIViewControllerExtension.swift */; };
+		6940FF25204DE83C0063101D /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6940FF23204DE83C0063101D /* SignUpVC.swift */; };
+		6940FF26204DE83C0063101D /* SignUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6940FF24204DE83C0063101D /* SignUpVC.xib */; };
+		6940FF29204DEC520063101D /* SnackBarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6940FF28204DEC520063101D /* SnackBarHelper.swift */; };
+		6940FF2A204DF7240063101D /* SnackBarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6940FF28204DEC520063101D /* SnackBarHelper.swift */; };
+		6940FF2B204DF7250063101D /* SnackBarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6940FF28204DEC520063101D /* SnackBarHelper.swift */; };
+		6940FF2C204DF7270063101D /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6940FF21204DE7DB0063101D /* UIViewControllerExtension.swift */; };
+		6940FF2D204DF7280063101D /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6940FF21204DE7DB0063101D /* UIViewControllerExtension.swift */; };
+		6940FF2E204DF7320063101D /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6940FF1C204DE1BE0063101D /* SignInVC.swift */; };
+		6940FF2F204DF7320063101D /* SignInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6940FF1D204DE1BE0063101D /* SignInVC.xib */; };
+		6940FF30204DF7320063101D /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6940FF23204DE83C0063101D /* SignUpVC.swift */; };
+		6940FF31204DF7320063101D /* SignUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6940FF24204DE83C0063101D /* SignUpVC.xib */; };
+		6940FF32204DF7320063101D /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6940FF1C204DE1BE0063101D /* SignInVC.swift */; };
+		6940FF33204DF7320063101D /* SignInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6940FF1D204DE1BE0063101D /* SignInVC.xib */; };
+		6940FF34204DF7320063101D /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6940FF23204DE83C0063101D /* SignUpVC.swift */; };
+		6940FF35204DF7320063101D /* SignUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6940FF24204DE83C0063101D /* SignUpVC.xib */; };
 		695ED5B82044AFC500BB12DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E0B96A2044AE050083ED7D /* AppDelegate.swift */; };
 		695ED5BB2044AFC500BB12DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69E0B9732044AE050083ED7D /* LaunchScreen.storyboard */; };
 		695ED5BC2044AFC500BB12DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69E0B9712044AE050083ED7D /* Assets.xcassets */; };
@@ -48,6 +66,12 @@
 		690B79802044B828006A6C97 /* SplashScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
 		690B79812044B828006A6C97 /* SplashScreenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreenVC.xib; sourceTree = "<group>"; };
 		6940FF12204DDD610063101D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6940FF1C204DE1BE0063101D /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		6940FF1D204DE1BE0063101D /* SignInVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInVC.xib; sourceTree = "<group>"; };
+		6940FF21204DE7DB0063101D /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		6940FF23204DE83C0063101D /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		6940FF24204DE83C0063101D /* SignUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpVC.xib; sourceTree = "<group>"; };
+		6940FF28204DEC520063101D /* SnackBarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackBarHelper.swift; sourceTree = "<group>"; };
 		695ED5C12044AFC500BB12DF /* EisenhowerTaskManager-adhoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EisenhowerTaskManager-adhoc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		695ED5C22044AFC600BB12DF /* EisenhowerTaskManager-adhoc.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "EisenhowerTaskManager-adhoc.plist"; path = "/Users/ogorbatchev/Work/EisenhowerTaskManager/EisenhowerTaskManager/EisenhowerTaskManager/EisenhowerTaskManager-adhoc.plist"; sourceTree = "<absolute>"; };
 		695ED5CF2044AFC800BB12DF /* EisenhowerTaskManager-appstore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EisenhowerTaskManager-appstore.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +139,7 @@
 		690B797B2044B7BD006A6C97 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				6940FF21204DE7DB0063101D /* UIViewControllerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -137,6 +162,8 @@
 			isa = PBXGroup;
 			children = (
 				690B797F2044B7EF006A6C97 /* SplashScreen */,
+				6940FF1B204DE19B0063101D /* SignIn */,
+				6940FF20204DE6850063101D /* SignUp */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -148,6 +175,32 @@
 				690B79812044B828006A6C97 /* SplashScreenVC.xib */,
 			);
 			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		6940FF1B204DE19B0063101D /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				6940FF1C204DE1BE0063101D /* SignInVC.swift */,
+				6940FF1D204DE1BE0063101D /* SignInVC.xib */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		6940FF20204DE6850063101D /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				6940FF23204DE83C0063101D /* SignUpVC.swift */,
+				6940FF24204DE83C0063101D /* SignUpVC.xib */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		6940FF27204DEC360063101D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6940FF28204DEC520063101D /* SnackBarHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		69E0B95E2044AE050083ED7D = {
@@ -179,6 +232,7 @@
 				690B797D2044B7DF006A6C97 /* Network */,
 				690B797C2044B7DA006A6C97 /* Models */,
 				690B797B2044B7BD006A6C97 /* Extensions */,
+				6940FF27204DEC360063101D /* Helpers */,
 				69E0B96A2044AE050083ED7D /* AppDelegate.swift */,
 				69E0B9712044AE050083ED7D /* Assets.xcassets */,
 				69E0B9732044AE050083ED7D /* LaunchScreen.storyboard */,
@@ -258,8 +312,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 69E0B9842044AE050083ED7D /* Build configuration list for PBXNativeTarget "EisenhowerTaskManager-development" */;
 			buildPhases = (
-				6940FF16204DDE1E0063101D /* SwiftLint */,
 				969D1E06EBD35B852FD33D42 /* [CP] Check Pods Manifest.lock */,
+				6940FF16204DDE1E0063101D /* SwiftLint */,
 				69E0B9632044AE050083ED7D /* Sources */,
 				69E0B9642044AE050083ED7D /* Frameworks */,
 				69E0B9652044AE050083ED7D /* Resources */,
@@ -346,6 +400,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6940FF31204DF7320063101D /* SignUpVC.xib in Resources */,
+				6940FF2F204DF7320063101D /* SignInVC.xib in Resources */,
 				695ED5BB2044AFC500BB12DF /* LaunchScreen.storyboard in Resources */,
 				695ED5BC2044AFC500BB12DF /* Assets.xcassets in Resources */,
 				6940FF14204DDD620063101D /* GoogleService-Info.plist in Resources */,
@@ -357,6 +413,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6940FF35204DF7320063101D /* SignUpVC.xib in Resources */,
+				6940FF33204DF7320063101D /* SignInVC.xib in Resources */,
 				695ED5C92044AFC800BB12DF /* LaunchScreen.storyboard in Resources */,
 				6940FF15204DDD620063101D /* GoogleService-Info.plist in Resources */,
 				695ED5CA2044AFC800BB12DF /* Assets.xcassets in Resources */,
@@ -368,6 +426,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6940FF26204DE83C0063101D /* SignUpVC.xib in Resources */,
+				6940FF1F204DE1BE0063101D /* SignInVC.xib in Resources */,
 				6940FF1A204DDE940063101D /* GoogleService-Info.plist in Resources */,
 				69E0B9752044AE050083ED7D /* LaunchScreen.storyboard in Resources */,
 				69E0B9722044AE050083ED7D /* Assets.xcassets in Resources */,
@@ -476,15 +536,19 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-EisenhowerTaskManager-adhoc/Pods-EisenhowerTaskManager-adhoc-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TTGSnackbar/TTGSnackbar.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTGSnackbar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,15 +564,19 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-EisenhowerTaskManager-appstore/Pods-EisenhowerTaskManager-appstore-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TTGSnackbar/TTGSnackbar.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTGSnackbar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -554,15 +622,19 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-EisenhowerTaskManager-development/Pods-EisenhowerTaskManager-development-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TTGSnackbar/TTGSnackbar.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTGSnackbar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -577,8 +649,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6940FF2C204DF7270063101D /* UIViewControllerExtension.swift in Sources */,
 				695ED5B82044AFC500BB12DF /* AppDelegate.swift in Sources */,
+				6940FF2A204DF7240063101D /* SnackBarHelper.swift in Sources */,
 				690B79882044B833006A6C97 /* SplashScreenVC.swift in Sources */,
+				6940FF30204DF7320063101D /* SignUpVC.swift in Sources */,
+				6940FF2E204DF7320063101D /* SignInVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,8 +662,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6940FF2D204DF7280063101D /* UIViewControllerExtension.swift in Sources */,
 				695ED5C62044AFC800BB12DF /* AppDelegate.swift in Sources */,
+				6940FF2B204DF7250063101D /* SnackBarHelper.swift in Sources */,
 				690B79842044B828006A6C97 /* SplashScreenVC.swift in Sources */,
+				6940FF34204DF7320063101D /* SignUpVC.swift in Sources */,
+				6940FF32204DF7320063101D /* SignInVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,8 +675,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6940FF22204DE7DB0063101D /* UIViewControllerExtension.swift in Sources */,
 				69E0B96B2044AE050083ED7D /* AppDelegate.swift in Sources */,
 				690B79822044B828006A6C97 /* SplashScreenVC.swift in Sources */,
+				6940FF25204DE83C0063101D /* SignUpVC.swift in Sources */,
+				6940FF29204DEC520063101D /* SnackBarHelper.swift in Sources */,
+				6940FF1E204DE1BE0063101D /* SignInVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,6 @@
 # Special Configuration
 *.app.dSYM.zip
+GoogleService-Info.plist
 
 # Xcode
 #
