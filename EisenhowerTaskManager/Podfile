@@ -1,0 +1,22 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '11.0'
+use_frameworks!
+
+def pods
+    pod 'Alamofire'
+    pod 'SwiftyJSON'
+    pod 'Firebase/Core'
+end
+
+target 'EisenhowerTaskManager-development' do
+    pods
+    pod 'SwiftLint'
+end
+
+target 'EisenhowerTaskManager-adhoc' do
+    pods
+end
+
+target 'EisenhowerTaskManager-appstore' do
+    pods
+end
