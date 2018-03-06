@@ -14,9 +14,6 @@
 		690B79862044B828006A6C97 /* SplashScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 690B79812044B828006A6C97 /* SplashScreenVC.xib */; };
 		690B79872044B828006A6C97 /* SplashScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 690B79812044B828006A6C97 /* SplashScreenVC.xib */; };
 		690B79882044B833006A6C97 /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690B79802044B828006A6C97 /* SplashScreenVC.swift */; };
-		6940FF14204DDD620063101D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6940FF12204DDD610063101D /* GoogleService-Info.plist */; };
-		6940FF15204DDD620063101D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6940FF12204DDD610063101D /* GoogleService-Info.plist */; };
-		6940FF1A204DDE940063101D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6940FF12204DDD610063101D /* GoogleService-Info.plist */; };
 		6940FF1E204DE1BE0063101D /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6940FF1C204DE1BE0063101D /* SignInVC.swift */; };
 		6940FF1F204DE1BE0063101D /* SignInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6940FF1D204DE1BE0063101D /* SignInVC.xib */; };
 		6940FF22204DE7DB0063101D /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6940FF21204DE7DB0063101D /* UIViewControllerExtension.swift */; };
@@ -41,6 +38,9 @@
 		695ED5C62044AFC800BB12DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E0B96A2044AE050083ED7D /* AppDelegate.swift */; };
 		695ED5C92044AFC800BB12DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69E0B9732044AE050083ED7D /* LaunchScreen.storyboard */; };
 		695ED5CA2044AFC800BB12DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69E0B9712044AE050083ED7D /* Assets.xcassets */; };
+		69798AF2204F2E100046132A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69798AF1204F2E100046132A /* GoogleService-Info.plist */; };
+		69798AF3204F2E100046132A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69798AF1204F2E100046132A /* GoogleService-Info.plist */; };
+		69798AF4204F2E100046132A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69798AF1204F2E100046132A /* GoogleService-Info.plist */; };
 		69E0B96B2044AE050083ED7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E0B96A2044AE050083ED7D /* AppDelegate.swift */; };
 		69E0B9722044AE050083ED7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69E0B9712044AE050083ED7D /* Assets.xcassets */; };
 		69E0B9752044AE050083ED7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69E0B9732044AE050083ED7D /* LaunchScreen.storyboard */; };
@@ -65,7 +65,6 @@
 		61620DF00FF109F85F958864 /* Pods-EisenhowerTaskManager-appstore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EisenhowerTaskManager-appstore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EisenhowerTaskManager-appstore/Pods-EisenhowerTaskManager-appstore.debug.xcconfig"; sourceTree = "<group>"; };
 		690B79802044B828006A6C97 /* SplashScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
 		690B79812044B828006A6C97 /* SplashScreenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreenVC.xib; sourceTree = "<group>"; };
-		6940FF12204DDD610063101D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6940FF1C204DE1BE0063101D /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		6940FF1D204DE1BE0063101D /* SignInVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInVC.xib; sourceTree = "<group>"; };
 		6940FF21204DE7DB0063101D /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
@@ -76,6 +75,7 @@
 		695ED5C22044AFC600BB12DF /* EisenhowerTaskManager-adhoc.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "EisenhowerTaskManager-adhoc.plist"; path = "/Users/ogorbatchev/Work/EisenhowerTaskManager/EisenhowerTaskManager/EisenhowerTaskManager/EisenhowerTaskManager-adhoc.plist"; sourceTree = "<absolute>"; };
 		695ED5CF2044AFC800BB12DF /* EisenhowerTaskManager-appstore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EisenhowerTaskManager-appstore.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		695ED5D02044AFC800BB12DF /* EisenhowerTaskManager-appstore.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "EisenhowerTaskManager-appstore.plist"; path = "/Users/ogorbatchev/Work/EisenhowerTaskManager/EisenhowerTaskManager/EisenhowerTaskManager/EisenhowerTaskManager-appstore.plist"; sourceTree = "<absolute>"; };
+		69798AF1204F2E100046132A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		69E0B9672044AE050083ED7D /* EisenhowerTaskManager-development.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EisenhowerTaskManager-development.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E0B96A2044AE050083ED7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69E0B9712044AE050083ED7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -239,7 +239,7 @@
 				69E0B9812044AE050083ED7D /* EisenhowerTaskManager-development.plist */,
 				695ED5C22044AFC600BB12DF /* EisenhowerTaskManager-adhoc.plist */,
 				695ED5D02044AFC800BB12DF /* EisenhowerTaskManager-appstore.plist */,
-				6940FF12204DDD610063101D /* GoogleService-Info.plist */,
+				69798AF1204F2E100046132A /* GoogleService-Info.plist */,
 			);
 			path = EisenhowerTaskManager;
 			sourceTree = "<group>";
@@ -404,8 +404,8 @@
 				6940FF2F204DF7320063101D /* SignInVC.xib in Resources */,
 				695ED5BB2044AFC500BB12DF /* LaunchScreen.storyboard in Resources */,
 				695ED5BC2044AFC500BB12DF /* Assets.xcassets in Resources */,
-				6940FF14204DDD620063101D /* GoogleService-Info.plist in Resources */,
 				690B79862044B828006A6C97 /* SplashScreenVC.xib in Resources */,
+				69798AF3204F2E100046132A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,9 +416,9 @@
 				6940FF35204DF7320063101D /* SignUpVC.xib in Resources */,
 				6940FF33204DF7320063101D /* SignInVC.xib in Resources */,
 				695ED5C92044AFC800BB12DF /* LaunchScreen.storyboard in Resources */,
-				6940FF15204DDD620063101D /* GoogleService-Info.plist in Resources */,
 				695ED5CA2044AFC800BB12DF /* Assets.xcassets in Resources */,
 				690B79872044B828006A6C97 /* SplashScreenVC.xib in Resources */,
+				69798AF4204F2E100046132A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,10 +428,10 @@
 			files = (
 				6940FF26204DE83C0063101D /* SignUpVC.xib in Resources */,
 				6940FF1F204DE1BE0063101D /* SignInVC.xib in Resources */,
-				6940FF1A204DDE940063101D /* GoogleService-Info.plist in Resources */,
 				69E0B9752044AE050083ED7D /* LaunchScreen.storyboard in Resources */,
 				69E0B9722044AE050083ED7D /* Assets.xcassets in Resources */,
 				690B79852044B828006A6C97 /* SplashScreenVC.xib in Resources */,
+				69798AF2204F2E100046132A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
