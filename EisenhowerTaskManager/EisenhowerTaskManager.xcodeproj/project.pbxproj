@@ -41,6 +41,9 @@
 		69798AF2204F2E100046132A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69798AF1204F2E100046132A /* GoogleService-Info.plist */; };
 		69798AF3204F2E100046132A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69798AF1204F2E100046132A /* GoogleService-Info.plist */; };
 		69798AF4204F2E100046132A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69798AF1204F2E100046132A /* GoogleService-Info.plist */; };
+		69798AF7204F438D0046132A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69798AF6204F438D0046132A /* Task.swift */; };
+		69798AF8204F438D0046132A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69798AF6204F438D0046132A /* Task.swift */; };
+		69798AF9204F438D0046132A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69798AF6204F438D0046132A /* Task.swift */; };
 		69E0B96B2044AE050083ED7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E0B96A2044AE050083ED7D /* AppDelegate.swift */; };
 		69E0B9722044AE050083ED7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69E0B9712044AE050083ED7D /* Assets.xcassets */; };
 		69E0B9752044AE050083ED7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69E0B9732044AE050083ED7D /* LaunchScreen.storyboard */; };
@@ -76,6 +79,7 @@
 		695ED5CF2044AFC800BB12DF /* EisenhowerTaskManager-appstore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EisenhowerTaskManager-appstore.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		695ED5D02044AFC800BB12DF /* EisenhowerTaskManager-appstore.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "EisenhowerTaskManager-appstore.plist"; path = "/Users/ogorbatchev/Work/EisenhowerTaskManager/EisenhowerTaskManager/EisenhowerTaskManager/EisenhowerTaskManager-appstore.plist"; sourceTree = "<absolute>"; };
 		69798AF1204F2E100046132A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		69798AF6204F438D0046132A /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		69E0B9672044AE050083ED7D /* EisenhowerTaskManager-development.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EisenhowerTaskManager-development.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E0B96A2044AE050083ED7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69E0B9712044AE050083ED7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -147,6 +151,7 @@
 		690B797C2044B7DA006A6C97 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				69798AF6204F438D0046132A /* Task.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -654,6 +659,7 @@
 				6940FF2A204DF7240063101D /* SnackBarHelper.swift in Sources */,
 				690B79882044B833006A6C97 /* SplashScreenVC.swift in Sources */,
 				6940FF30204DF7320063101D /* SignUpVC.swift in Sources */,
+				69798AF8204F438D0046132A /* Task.swift in Sources */,
 				6940FF2E204DF7320063101D /* SignInVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -667,6 +673,7 @@
 				6940FF2B204DF7250063101D /* SnackBarHelper.swift in Sources */,
 				690B79842044B828006A6C97 /* SplashScreenVC.swift in Sources */,
 				6940FF34204DF7320063101D /* SignUpVC.swift in Sources */,
+				69798AF9204F438D0046132A /* Task.swift in Sources */,
 				6940FF32204DF7320063101D /* SignInVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -680,6 +687,7 @@
 				690B79822044B828006A6C97 /* SplashScreenVC.swift in Sources */,
 				6940FF25204DE83C0063101D /* SignUpVC.swift in Sources */,
 				6940FF29204DEC520063101D /* SnackBarHelper.swift in Sources */,
+				69798AF7204F438D0046132A /* Task.swift in Sources */,
 				6940FF1E204DE1BE0063101D /* SignInVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
