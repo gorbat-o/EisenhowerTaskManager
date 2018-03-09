@@ -14,6 +14,7 @@
 		690B79862044B828006A6C97 /* SplashScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 690B79812044B828006A6C97 /* SplashScreenVC.xib */; };
 		690B79872044B828006A6C97 /* SplashScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 690B79812044B828006A6C97 /* SplashScreenVC.xib */; };
 		690B79882044B833006A6C97 /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690B79802044B828006A6C97 /* SplashScreenVC.swift */; };
+		692E4C8D205195BA007E1CFA /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 692E4C8C205195BA007E1CFA /* Settings.bundle */; };
 		6940FF1E204DE1BE0063101D /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6940FF1C204DE1BE0063101D /* SignInVC.swift */; };
 		6940FF1F204DE1BE0063101D /* SignInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6940FF1D204DE1BE0063101D /* SignInVC.xib */; };
 		6940FF22204DE7DB0063101D /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6940FF21204DE7DB0063101D /* UIViewControllerExtension.swift */; };
@@ -68,6 +69,7 @@
 		61620DF00FF109F85F958864 /* Pods-EisenhowerTaskManager-appstore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EisenhowerTaskManager-appstore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EisenhowerTaskManager-appstore/Pods-EisenhowerTaskManager-appstore.debug.xcconfig"; sourceTree = "<group>"; };
 		690B79802044B828006A6C97 /* SplashScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
 		690B79812044B828006A6C97 /* SplashScreenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreenVC.xib; sourceTree = "<group>"; };
+		692E4C8C205195BA007E1CFA /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		6940FF1C204DE1BE0063101D /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		6940FF1D204DE1BE0063101D /* SignInVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInVC.xib; sourceTree = "<group>"; };
 		6940FF21204DE7DB0063101D /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
@@ -208,6 +210,14 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		699EFAE2205192D500D69518 /* Bundles */ = {
+			isa = PBXGroup;
+			children = (
+				692E4C8C205195BA007E1CFA /* Settings.bundle */,
+			);
+			path = Bundles;
+			sourceTree = "<group>";
+		};
 		69E0B95E2044AE050083ED7D = {
 			isa = PBXGroup;
 			children = (
@@ -238,6 +248,7 @@
 				690B797C2044B7DA006A6C97 /* Models */,
 				690B797B2044B7BD006A6C97 /* Extensions */,
 				6940FF27204DEC360063101D /* Helpers */,
+				699EFAE2205192D500D69518 /* Bundles */,
 				69E0B96A2044AE050083ED7D /* AppDelegate.swift */,
 				69E0B9712044AE050083ED7D /* Assets.xcassets */,
 				69E0B9732044AE050083ED7D /* LaunchScreen.storyboard */,
@@ -319,6 +330,7 @@
 			buildPhases = (
 				969D1E06EBD35B852FD33D42 /* [CP] Check Pods Manifest.lock */,
 				6940FF16204DDE1E0063101D /* SwiftLint */,
+				699EFAE12051912F00D69518 /* LicencePlist */,
 				69E0B9632044AE050083ED7D /* Sources */,
 				69E0B9642044AE050083ED7D /* Frameworks */,
 				69E0B9652044AE050083ED7D /* Resources */,
@@ -437,6 +449,7 @@
 				69E0B9722044AE050083ED7D /* Assets.xcassets in Resources */,
 				690B79852044B828006A6C97 /* SplashScreenVC.xib in Resources */,
 				69798AF2204F2E100046132A /* GoogleService-Info.plist in Resources */,
+				692E4C8D205195BA007E1CFA /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,9 +469,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EisenhowerTaskManager-development/Pods-EisenhowerTaskManager-development-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EasyAbout/Settings.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Settings.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -496,6 +512,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+		};
+		699EFAE12051912F00D69518 /* LicencePlist */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = LicencePlist;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ $CONFIGURATION = \"Debug\" ]; then\n${PODS_ROOT}/LicensePlist/license-plist --output-path ${SRCROOT}/EisenhowerTaskManager/Bundles/Settings.bundle --github-token 361e68d2b2e54e1bd81742c6a18e55d72251c830 --suppress-opening-directory\nfi";
 		};
 		89BD321811AF84D15BB0A6F2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -595,9 +625,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EisenhowerTaskManager-adhoc/Pods-EisenhowerTaskManager-adhoc-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EasyAbout/Settings.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Settings.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -610,9 +643,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EisenhowerTaskManager-appstore/Pods-EisenhowerTaskManager-appstore-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EasyAbout/Settings.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Settings.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -915,7 +951,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oleggorbatchev.EisenhowerTaskManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5ca13519-e4fb-49c6-8bbe-ceee947fa708";
+				PROVISIONING_PROFILE = "cb18a25b-c402-4148-9807-fac1bcb7c48a";
 				PROVISIONING_PROFILE_SPECIFIER = "Eisenhower Task Manager PP Development";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;

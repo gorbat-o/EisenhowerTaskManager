@@ -17,7 +17,8 @@ end
 
 target 'EisenhowerTaskManager-development' do
     pods
-    pod 'SwiftLint'
+    pod 'SwiftLint' # Linter
+    pod 'LicensePlist' # Libraries Licenses
 end
 
 target 'EisenhowerTaskManager-adhoc' do

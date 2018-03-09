@@ -1,21 +1,21 @@
 PODS:
   - Alamofire (4.7.0)
-  - Firebase/Auth (4.9.0):
+  - Firebase/Auth (4.10.0):
     - Firebase/Core
-    - FirebaseAuth (= 4.4.3)
-  - Firebase/Core (4.9.0):
-    - FirebaseAnalytics (= 4.0.9)
-    - FirebaseCore (= 4.0.15)
-  - FirebaseAnalytics (4.0.9):
+    - FirebaseAuth (= 4.4.4)
+  - Firebase/Core (4.10.0):
+    - FirebaseAnalytics (= 4.1.0)
+    - FirebaseCore (= 4.0.16)
+  - FirebaseAnalytics (4.1.0):
     - FirebaseCore (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
     - nanopb (~> 0.3)
-  - FirebaseAuth (4.4.3):
-    - FirebaseAnalytics (~> 4.0)
+  - FirebaseAuth (4.4.4):
+    - FirebaseAnalytics (~> 4.1)
     - GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)
     - GTMSessionFetcher/Core (~> 1.1)
-  - FirebaseCore (4.0.15):
+  - FirebaseCore (4.0.16):
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
   - FirebaseInstanceID (2.0.9):
     - FirebaseCore (~> 4.0)
@@ -30,6 +30,7 @@ PODS:
     - GoogleToolboxForMac/NSString+URLArguments (= 2.1.3)
   - GoogleToolboxForMac/NSString+URLArguments (2.1.3)
   - GTMSessionFetcher/Core (1.1.14)
+  - LicensePlist (1.8.3)
   - nanopb (0.3.8):
     - nanopb/decode (= 0.3.8)
     - nanopb/encode (= 0.3.8)
@@ -37,30 +38,32 @@ PODS:
   - nanopb/encode (0.3.8)
   - SwiftLint (0.25.0)
   - SwiftyJSON (4.0.0)
-  - TTGSnackbar (1.7.1)
+  - TTGSnackbar (1.7.2)
 
 DEPENDENCIES:
   - Alamofire
   - Firebase/Auth
   - Firebase/Core
+  - LicensePlist
   - SwiftLint
   - SwiftyJSON
   - TTGSnackbar
 
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
-  Firebase: 632216af3ed7f31e3be34776947fdc7546cfb572
-  FirebaseAnalytics: 388b630c15713f5dbf364071f5f3d6077fb52f4e
-  FirebaseAuth: aaaf68d5064a6c8fec435758f83a43b8db26ccaa
-  FirebaseCore: 3bd047463058fa6b5d312c97502c52e45401cdfb
+  Firebase: c98c8b1fbcbdccd82539a36c2b17a9b1bb0ee798
+  FirebaseAnalytics: 3dfae28d4a5e06f86c4fae830efc2ad3fadb19bc
+  FirebaseAuth: d040bb7a9db6dfc29d0e7ec82d48be51352b2581
+  FirebaseCore: eb9e1a56733ff1094ecf3e28af9069c344b25239
   FirebaseInstanceID: d2058a35e9bebda1b6dd42486b84917bde552a9d
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   GTMSessionFetcher: 390ea358e5a0d0133153806f744662dad933d06b
+  LicensePlist: 3fda61ebe060afc8fc6d995df34a91401af5a244
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
-  TTGSnackbar: 26e9c1f842269d0eeae8c51f7d8cbea669d492f1
+  TTGSnackbar: e23b4f1e9e9f271b22ce75dfd39c6384edff96c9
 
-PODFILE CHECKSUM: b2f10cb8ce7b2ee7836f9f0ec623cf85305ad6bd
+PODFILE CHECKSUM: e09865e6ebfbf1bdbac308adfd4105cad7e1dfdd
 
 COCOAPODS: 1.4.0
