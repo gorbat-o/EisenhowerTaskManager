@@ -21,6 +21,7 @@ type_name:
   excluded: # excluded via string
     - iPhone
     - Session
+    - EisenhowerTaskManager_UITests
 variable_name:
   min_length: 2 # only min_length
   error: 4 # only error

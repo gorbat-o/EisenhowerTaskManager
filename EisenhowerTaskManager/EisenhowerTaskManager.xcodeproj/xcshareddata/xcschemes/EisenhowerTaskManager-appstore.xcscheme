@@ -29,6 +29,16 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "69E273F02055A18400920806"
+               BuildableName = "EisenhowerTaskManager-UITests.xctest"
+               BlueprintName = "EisenhowerTaskManager-UITests"
+               ReferencedContainer = "container:EisenhowerTaskManager.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

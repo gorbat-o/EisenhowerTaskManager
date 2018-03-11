@@ -20,6 +20,20 @@
                ReferencedContainer = "container:EisenhowerTaskManager.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "69BFBE762055A46A00D0B8A1"
+               BuildableName = "EisenhowerTaskManagerTests.xctest"
+               BlueprintName = "EisenhowerTaskManagerTests"
+               ReferencedContainer = "container:EisenhowerTaskManager.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -27,8 +41,18 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       language = ""
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "NO">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "69BFBE762055A46A00D0B8A1"
+               BuildableName = "EisenhowerTaskManagerTests.xctest"
+               BlueprintName = "EisenhowerTaskManagerTests"
+               ReferencedContainer = "container:EisenhowerTaskManager.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

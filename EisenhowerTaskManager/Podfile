@@ -28,3 +28,7 @@ end
 target 'EisenhowerTaskManager-appstore' do
     pods
 end
+
+target 'EisenhowerTaskManagerTests' do
+    pods
+end
