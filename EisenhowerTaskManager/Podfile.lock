@@ -1,5 +1,8 @@
 PODS:
   - Alamofire (4.7.0)
+  - Crashlytics (3.10.1):
+    - Fabric (~> 1.7.5)
+  - Fabric (1.7.5)
   - Firebase/Auth (4.10.1):
     - Firebase/Core
     - FirebaseAuth (= 4.4.4)
@@ -42,6 +45,8 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - Crashlytics
+  - Fabric
   - Firebase/Auth
   - Firebase/Core
   - LicensePlist
@@ -51,6 +56,8 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  Crashlytics: aee1a064cbbf99b32efa3f056a5f458d846bc8ff
+  Fabric: ae7146a5f505ea370a1e44820b4b1dc8890e2890
   Firebase: 92c6ba593e32db0defde464a9adc981d5cb49f97
   FirebaseAnalytics: 3dfae28d4a5e06f86c4fae830efc2ad3fadb19bc
   FirebaseAuth: d040bb7a9db6dfc29d0e7ec82d48be51352b2581
@@ -64,6 +71,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
   TTGSnackbar: e23b4f1e9e9f271b22ce75dfd39c6384edff96c9
 
-PODFILE CHECKSUM: 507bbbafec3d7f0fbe834a339cd33ad305418720
+PODFILE CHECKSUM: 20df7d36898baf7a772da9b0975e3a34b5adc597
 
 COCOAPODS: 1.4.0

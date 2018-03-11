@@ -7,7 +7,7 @@ def pods
     pod 'Alamofire'
     pod 'SwiftyJSON'
 
-    # SDK
+    # SDK - Backend
     pod 'Firebase/Core'
     pod 'Firebase/Auth'
 
@@ -23,10 +23,18 @@ end
 
 target 'EisenhowerTaskManager-adhoc' do
     pods
+
+    # SDK - KPI/Beta/Crashlytics
+    pod 'Fabric'
+    pod 'Crashlytics'
 end
 
 target 'EisenhowerTaskManager-appstore' do
     pods
+
+    # SDK - KPI/Beta/Crashlytics
+    pod 'Fabric'
+    pod 'Crashlytics'
 end
 
 target 'EisenhowerTaskManagerTests' do

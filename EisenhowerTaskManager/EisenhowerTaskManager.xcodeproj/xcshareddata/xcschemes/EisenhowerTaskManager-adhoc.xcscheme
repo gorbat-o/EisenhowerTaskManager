@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "69E0B9662044AE050083ED7D"
-               BuildableName = "EisenhowerTaskManager-development.app"
-               BlueprintName = "EisenhowerTaskManager-development"
+               BlueprintIdentifier = "695ED5B52044AFC500BB12DF"
+               BuildableName = "EisenhowerTaskManager-adhoc.app"
+               BlueprintName = "EisenhowerTaskManager-adhoc"
                ReferencedContainer = "container:EisenhowerTaskManager.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,16 +29,6 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "69E273F02055A18400920806"
-               BuildableName = "EisenhowerTaskManager-UITests.xctest"
-               BlueprintName = "EisenhowerTaskManager-UITests"
-               ReferencedContainer = "container:EisenhowerTaskManager.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
@@ -82,16 +72,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "69E0B9662044AE050083ED7D"
-            BuildableName = "EisenhowerTaskManager-development.app"
-            BlueprintName = "EisenhowerTaskManager-development"
+            BlueprintIdentifier = "695ED5B52044AFC500BB12DF"
+            BuildableName = "EisenhowerTaskManager-adhoc.app"
+            BlueprintName = "EisenhowerTaskManager-adhoc"
             ReferencedContainer = "container:EisenhowerTaskManager.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

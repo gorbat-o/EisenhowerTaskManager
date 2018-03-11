@@ -69,7 +69,9 @@ extension SignInVC {
                            password: self.passwordTextField?.text ?? "") { returnedUser, returnedError in
                             if let error = returnedError {
                                 SnackBarHelper.showError(withText: error.localizedDescription)
+                                return
                             }
+                            SnackBarHelper.showSuccess(withText: "Welcome " + (returnedUser?.displayName ?? ""))
         }
     }
 }

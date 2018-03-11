@@ -304,6 +304,7 @@
 				695ED5BA2044AFC500BB12DF /* Resources */,
 				9B79554B316F26EE3FFD85F7 /* [CP] Embed Pods Frameworks */,
 				A4D3ADE4C28A0FF0EBE371D7 /* [CP] Copy Pods Resources */,
+				693D97492055B06900F4EE14 /* Crashlytics */,
 			);
 			buildRules = (
 			);
@@ -324,6 +325,7 @@
 				695ED5C82044AFC800BB12DF /* Resources */,
 				A1440D166117BEF9A791F8C8 /* [CP] Embed Pods Frameworks */,
 				D84EE1D2445D4FEC29CFBC8B /* [CP] Copy Pods Resources */,
+				693D974A2055B07D00F4EE14 /* Crashlytics */,
 			);
 			buildRules = (
 			);
@@ -539,6 +541,34 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		693D97492055B06900F4EE14 /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Crashlytics;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 00536d96ece7d34be4956bf5d2996ff9c2baafeb 9ad7fc258954eb07425424905647c992ae1e75c69312a6be87038ca6488298b9";
+		};
+		693D974A2055B07D00F4EE14 /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Crashlytics;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 00536d96ece7d34be4956bf5d2996ff9c2baafeb 9ad7fc258954eb07425424905647c992ae1e75c69312a6be87038ca6488298b9";
 		};
 		6940FF16204DDE1E0063101D /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -841,6 +871,7 @@
 				DEVELOPMENT_TEAM = VGM45RH5LU;
 				INFOPLIST_FILE = "EisenhowerTaskManager/EisenhowerTaskManager-adhoc.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-D\" \"ADHOC\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oleggorbatchev.EisenhowerTaskManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "5ca13519-e4fb-49c6-8bbe-ceee947fa708";
@@ -860,6 +891,7 @@
 				DEVELOPMENT_TEAM = VGM45RH5LU;
 				INFOPLIST_FILE = "EisenhowerTaskManager/EisenhowerTaskManager-adhoc.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-D\" \"ADHOC\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oleggorbatchev.EisenhowerTaskManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "0840a7e6-71cb-4d3e-80ee-fcbe80b85cd6";
@@ -878,6 +910,7 @@
 				DEVELOPMENT_TEAM = VGM45RH5LU;
 				INFOPLIST_FILE = "EisenhowerTaskManager/EisenhowerTaskManager-appstore.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-D\" \"APPSTORE\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oleggorbatchev.EisenhowerTaskManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "5ca13519-e4fb-49c6-8bbe-ceee947fa708";
@@ -897,6 +930,7 @@
 				DEVELOPMENT_TEAM = VGM45RH5LU;
 				INFOPLIST_FILE = "EisenhowerTaskManager/EisenhowerTaskManager-appstore.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-D\" \"APPSTORE\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oleggorbatchev.EisenhowerTaskManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "0840a7e6-71cb-4d3e-80ee-fcbe80b85cd6";

@@ -8,6 +8,10 @@
 
 import UIKit
 import Firebase
+#if ADHOC || APPSTORE
+    import Fabric
+    import Crashlytics
+#endif
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         self.setupFirebase()
         self.setupMainView()
+        self.setupFabric()
+
         return true
     }
 }
@@ -33,5 +39,11 @@ extension AppDelegate {
             let options = FirebaseOptions(contentsOfFile: filePath) {
             FirebaseApp.configure(options: options)
         }
+    }
+
+    private func setupFabric() {
+        #if ADHOC || APPSTORE
+            Fabric.with([Crashlytics.self])
+        #endif
     }
 }
