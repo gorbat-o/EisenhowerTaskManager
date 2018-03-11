@@ -30,7 +30,11 @@ class SignInVC: UIViewController {
     @IBAction func signInTouchUpInside(_ sender: Any? = nil) {
         self.dismissKeyboard()
         self.checkTextFields {
-            self.signIn()
+            self.signIn {
+                if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+                    appDelegate.window?.rootViewController = MainVC()
+                }
+            }
         }
     }
 
@@ -64,14 +68,15 @@ extension SignInVC {
         success()
     }
 
-    private func signIn() {
+    private func signIn(success: @escaping () -> Void) {
         Auth.auth().signIn(withEmail: self.usernameTextField?.text ?? "",
                            password: self.passwordTextField?.text ?? "") { returnedUser, returnedError in
                             if let error = returnedError {
                                 SnackBarHelper.showError(withText: error.localizedDescription)
-                                return
+                            } else {
+                                SnackBarHelper.showSuccess(withText: "Welcome " + (returnedUser?.displayName ?? ""))
+                                success()
                             }
-                            SnackBarHelper.showSuccess(withText: "Welcome " + (returnedUser?.displayName ?? ""))
         }
     }
 }

@@ -1,13 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpVC" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpVC" customModule="EisenhowerTaskManager_adhoc" customModuleProvider="target">
             <connections>
+                <outlet property="passwordTextField" destination="rAq-2R-gMw" id="itt-ao-8JD"/>
+                <outlet property="signUpButton" destination="7MC-p0-1PA" id="MVF-0C-OFg"/>
+                <outlet property="usernameTextField" destination="u7y-BS-AZG" id="ja1-ad-vLs"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,7 +21,39 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u7y-BS-AZG">
+                    <rect key="frame" x="40" y="120" width="295" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="next" textContentType="email"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rAq-2R-gMw">
+                    <rect key="frame" x="40" y="170" width="295" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7MC-p0-1PA">
+                    <rect key="frame" x="40" y="220" width="295" height="30"/>
+                    <state key="normal" title="Sign Up"/>
+                    <connections>
+                        <action selector="signUpTouchUpInside:" destination="-1" eventType="touchUpInside" id="frb-eh-NQp"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="u7y-BS-AZG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="FYl-IV-JSw"/>
+                <constraint firstItem="u7y-BS-AZG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="Nb5-U7-olS"/>
+                <constraint firstItem="rAq-2R-gMw" firstAttribute="trailing" secondItem="u7y-BS-AZG" secondAttribute="trailing" id="Z0E-gw-6uC"/>
+                <constraint firstItem="7MC-p0-1PA" firstAttribute="trailing" secondItem="rAq-2R-gMw" secondAttribute="trailing" id="cbG-5B-NqJ"/>
+                <constraint firstItem="rAq-2R-gMw" firstAttribute="leading" secondItem="u7y-BS-AZG" secondAttribute="leading" id="fpc-KP-hCv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="u7y-BS-AZG" secondAttribute="trailing" constant="40" id="g8A-2A-czV"/>
+                <constraint firstItem="rAq-2R-gMw" firstAttribute="top" secondItem="u7y-BS-AZG" secondAttribute="bottom" constant="20" id="gA6-4J-5Ab"/>
+                <constraint firstItem="7MC-p0-1PA" firstAttribute="top" secondItem="rAq-2R-gMw" secondAttribute="bottom" constant="20" id="lHU-zd-KQL"/>
+                <constraint firstItem="7MC-p0-1PA" firstAttribute="leading" secondItem="rAq-2R-gMw" secondAttribute="leading" id="qmD-am-wge"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>
