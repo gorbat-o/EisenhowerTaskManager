@@ -31,9 +31,7 @@ class SignInVC: UIViewController {
         self.dismissKeyboard()
         self.checkTextFields {
             self.signIn {
-                if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
-                    appDelegate.window?.rootViewController = MainVC()
-                }
+                self.setupMainView()
             }
         }
     }
@@ -47,6 +45,12 @@ class SignInVC: UIViewController {
 extension SignInVC {
     private func setupNavigationBar() {
         self.title = "Sign In"
+    }
+
+    private func setupMainView() {
+        if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+            appDelegate.window?.rootViewController = MainVC()
+        }
     }
 
     private func setupTextFields() {

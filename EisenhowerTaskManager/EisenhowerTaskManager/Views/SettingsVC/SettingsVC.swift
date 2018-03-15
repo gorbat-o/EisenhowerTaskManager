@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SettingsVC: UIViewController {
     override func viewDidLoad() {

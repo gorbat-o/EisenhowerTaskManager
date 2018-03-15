@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseDatabase
 #if ADHOC || APPSTORE
     import Fabric
     import Crashlytics
@@ -16,13 +17,13 @@ import Firebase
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
+    var databaseReference: DatabaseReference?
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         self.setupFirebase()
         self.setupMainView()
         self.setupFabric()
-
         return true
     }
 }
@@ -38,6 +39,7 @@ extension AppDelegate {
         if let filePath = Bundle.main.path(forResource: "GoogleService-Info", ofType: "plist"),
             let options = FirebaseOptions(contentsOfFile: filePath) {
             FirebaseApp.configure(options: options)
+            databaseReference = Database.database().reference()
         }
     }
 

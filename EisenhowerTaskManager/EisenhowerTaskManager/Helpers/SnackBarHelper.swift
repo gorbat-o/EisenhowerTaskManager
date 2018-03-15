@@ -12,22 +12,22 @@ import TTGSnackbar
 class SnackBarHelper {
     static private let noActionSnackBar = TTGSnackbar(message: "", duration: TTGSnackbarDuration.middle)
 
-    static func showError(withText text: String) {
+    class func showError(withText text: String) {
         SnackBarHelper.noActionSnackBar.message = text
         SnackBarHelper.noActionSnackBar.show()
     }
 
-    static func showSuccess(withText text: String) {
+    class func showSuccess(withText text: String) {
         SnackBarHelper.noActionSnackBar.message = text
         SnackBarHelper.noActionSnackBar.show()
     }
 
-    static func showInformation(withText text: String) {
+    class func showInformation(withText text: String) {
         SnackBarHelper.noActionSnackBar.message = text
         SnackBarHelper.noActionSnackBar.show()
     }
 
-    static func dismiss() {
+    class func dismiss() {
         SnackBarHelper.noActionSnackBar.dismiss()
     }
 
