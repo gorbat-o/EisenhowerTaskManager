@@ -7,20 +7,49 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebasePerformance
 
 class SplashScreenVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupFirstView()
+
+        Performance.start(withKey: self.title)
+        let when = DispatchTime.now() + 2
+        DispatchQueue.main.asyncAfter(deadline: when) {
+            if self.firstTimeLaunchedApp() {
+                try? Auth.auth().signOut()
+                self.setupSignInVC()
+            } else {
+                self.setupMainVC()
+            }
+        }
+        Performance.stop()
     }
 }
 
 extension SplashScreenVC {
-    private func setupFirstView() {
-        let when = DispatchTime.now() + 2
-        DispatchQueue.main.asyncAfter(deadline: when) {
-            let vc = UINavigationController(rootViewController: SignInVC())
+    private func setupSignInVC() {
+        let vc = UINavigationController(rootViewController: SignInVC())
+        UIApplication.shared.delegate?.window??.rootViewController = vc
+    }
+
+    private func setupMainVC() {
+        if Auth.auth().currentUser == nil {
+            self.setupSignInVC()
+        } else {
+            let vc = MainVC()
             UIApplication.shared.delegate?.window??.rootViewController = vc
+        }
+    }
+
+    private func firstTimeLaunchedApp() -> Bool {
+        if UserDefaults.standard.bool(forKey: "firstTimeLaunchedApp") == false {
+            UserDefaults.standard.set(true, forKey: "firstTimeLaunchedApp")
+            UserDefaults.standard.synchronize()
+            return true
+        } else {
+            return false
         }
     }
 }

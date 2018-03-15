@@ -18,7 +18,7 @@ class MainVC: UITabBarController {
 extension MainVC {
     private func setupTabBarController() {
         let matrixTab = UINavigationController(rootViewController: MatrixVC())
-        let matrixTabBarItem = UITabBarItem(title: "Matrix",
+        let matrixTabBarItem = UITabBarItem(title: L10n.Generic.matrix,
                                             image: UIImage(named: "Matrix"),
                                             selectedImage: UIImage(named: "Matrix"))
         matrixTab.tabBarItem = matrixTabBarItem
