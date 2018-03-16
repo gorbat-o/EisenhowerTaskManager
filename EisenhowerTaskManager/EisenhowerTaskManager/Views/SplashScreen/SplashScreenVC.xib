@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,19 +20,26 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SplashScreen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEw-E8-0od">
-                    <rect key="frame" x="134.5" y="333" width="105.5" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="CMq-ib-IvA">
+                    <rect key="frame" x="62" y="218.5" width="250" height="250"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="CMq-ib-IvA" secondAttribute="height" multiplier="1:1" id="EBj-7P-guO"/>
+                        <constraint firstAttribute="height" constant="250" id="llr-6q-ttX"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="GEw-E8-0od" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="PNy-6L-NHJ"/>
-                <constraint firstItem="GEw-E8-0od" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="cqA-YV-jL8"/>
+                <constraint firstItem="CMq-ib-IvA" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Gpt-7U-hu9"/>
+                <constraint firstItem="CMq-ib-IvA" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="W0o-a9-wsi"/>
+                <constraint firstItem="CMq-ib-IvA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="XPU-pc-mcZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CMq-ib-IvA" secondAttribute="trailing" constant="40" id="Xds-pQ-C5k"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="Logo" width="525" height="525"/>
+    </resources>
 </document>
