@@ -20,6 +20,7 @@ class SignInVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         self.setupNavigationBar()
         self.setupTextFields()
         self.setupButtons()
@@ -61,8 +62,13 @@ extension SignInVC {
     }
 
     private func setupLinearBar() {
+        navigationController?.navigationBar.addSubview(self.linearBar)
         // A revoir c'est pas bon, ne pas oublier que l'intégration de firebase avec crashlytics il faut fix
-        linearBar.layer.frame.origin.y = (navigationController?.navigationBar.frame.height ?? 0) * 2
+        if let bottomAnchor = navigationController?.navigationBar.bottomAnchor {
+            linearBar.topAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        }
+
+        //linearBar.layer.frame.origin.y = (navigationController?.navigationBar.frame.height ?? 0) * 2
     }
 
     private func setupButtons() {
