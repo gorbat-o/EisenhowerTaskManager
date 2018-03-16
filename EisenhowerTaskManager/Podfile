@@ -15,6 +15,10 @@ def pods
     # UI
     pod 'TTGSnackbar'
     pod 'Eureka'
+    pod 'LinearProgressBarMaterial'
+
+    # UX
+    pod 'Haptica'
 
     # Extensions
     pod 'SwiftDate'

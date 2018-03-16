@@ -23,7 +23,7 @@ extension MainVC {
                                             selectedImage: UIImage(named: "Matrix"))
         matrixTab.tabBarItem = matrixTabBarItem
         let settingsTab = UINavigationController(rootViewController: SettingsVC())
-        let settingsTabBarItem = UITabBarItem(title: "Settings",
+        let settingsTabBarItem = UITabBarItem(title: L10n.Generic.settings,
                                               image: UIImage(named: "Settings"),
                                               selectedImage: UIImage(named: "Settings"))
         settingsTab.tabBarItem = settingsTabBarItem

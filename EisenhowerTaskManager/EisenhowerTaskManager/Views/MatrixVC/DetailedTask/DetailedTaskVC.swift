@@ -32,34 +32,34 @@ class DetailedTaskVC: FormViewController {
 
 extension DetailedTaskVC {
     private func setupNavigationBar() {
-        title = task?.title ?? "Task"
+        title = task?.title ?? L10n.Generic.task
     }
 
     private func setupTableView() {
         self.form
             +++ Section()
             <<< TextRow("Title") { row in
-                row.title = "Title"
+                row.title = L10n.Generic.title
                 row.value = task?.title
                 }.cellUpdate { [weak self] _, row in
                     self?.changeTitle(row.value ?? "")
                 }
             <<< ActionSheetRow<String>("Category") {
-                $0.title = "Category"
-                $0.selectorTitle = "Pick the category"
+                $0.title = L10n.Generic.category
+                $0.selectorTitle = L10n.Action.chooseTheCategory
                 $0.options = TaskCategory.string
                 $0.value = TaskCategory.string[task?.category.rawValue ?? 0]
                 }.cellUpdate { [weak self] _, row in
                     self?.changeCategory(row.value ?? "")
             }
             <<< DateRow("CompletionDate") { row in
-                row.title = "Completion Date"
+                row.title = L10n.Generic.for
                 row.value = task?.completionDate
                 }.cellUpdate { [weak self] _, row in
                     self?.changeCompletionDate(row.value)
             }
             <<< SwitchRow("Completed") { row in
-                row.title = "Completed"
+                row.title = L10n.Generic.completed
                 row.value = task?.completed
                 }.onChange { [weak self] row in
                     self?.changeCompleted(row.value ?? false)
@@ -68,7 +68,7 @@ extension DetailedTaskVC {
                     self?.changeCompleted(row.value ?? false)
                 }
             <<< TextAreaRow("Description") { row in
-                row.placeholder = "Description"
+                row.placeholder = L10n.Generic.description
                 row.value = task?.description
                 row.textAreaHeight = TextAreaHeight.dynamic(initialTextViewHeight: 200)
                 }.cellUpdate { [weak self] _, row in

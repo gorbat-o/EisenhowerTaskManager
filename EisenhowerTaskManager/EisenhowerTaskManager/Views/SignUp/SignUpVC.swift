@@ -39,12 +39,12 @@ class SignUpVC: UIViewController {
 
 extension SignUpVC {
     private func setupNavigationBar() {
-        self.title = "Sign Up"
+        self.title = L10n.Generic.signUp
     }
 
     private func setupTextFields() {
-        self.usernameTextField?.placeholder = "Mail"
-        self.passwordTextField?.placeholder = "Password"
+        self.usernameTextField?.placeholder = L10n.Generic.email
+        self.passwordTextField?.placeholder = L10n.Generic.password
         self.usernameTextField.delegate = self
         self.passwordTextField.delegate = self
     }
@@ -55,7 +55,9 @@ extension SignUpVC {
                                 if let error = returnedError {
                                     SnackBarHelper.showError(withText: error.localizedDescription)
                                 } else {
-                                    SnackBarHelper.showSuccess(withText: "Welcome " + (returnedUser?.displayName ?? ""))
+                                    SnackBarHelper.showSuccess(
+                                        withText: L10n.Generic.welcome + " " + (returnedUser?.displayName ?? "")
+                                    )
                                     success()
                                 }
         }
@@ -63,11 +65,11 @@ extension SignUpVC {
 
     private func checkTextFields(success: () -> Void) {
         if self.usernameTextField?.text == nil || (self.usernameTextField?.text ?? "").isEmpty {
-            SnackBarHelper.showError(withText: "Username Texfield Empty")
+            SnackBarHelper.showError(withText: L10n.Error.emptyEmailField)
             return
         }
         if self.passwordTextField?.text == nil || (self.passwordTextField?.text ?? "").isEmpty {
-            SnackBarHelper.showError(withText: "Password Texfield Empty")
+            SnackBarHelper.showError(withText: L10n.Error.emptyPasswordField)
             return
         }
         success()

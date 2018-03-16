@@ -15,14 +15,11 @@ class SplashScreenVC: UIViewController {
         super.viewDidLoad()
 
         Performance.start(withKey: self.title)
-        let when = DispatchTime.now() + 2
-        DispatchQueue.main.asyncAfter(deadline: when) {
-            if self.firstTimeLaunchedApp() {
-                try? Auth.auth().signOut()
-                self.setupSignInVC()
-            } else {
-                self.setupMainVC()
-            }
+        if self.firstTimeLaunchedApp() {
+            try? Auth.auth().signOut()
+            self.setupSignInVC()
+        } else {
+            self.setupMainVC()
         }
         Performance.stop()
     }
