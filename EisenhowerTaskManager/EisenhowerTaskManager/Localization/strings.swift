@@ -76,6 +76,16 @@ internal enum L10n {
     /// Welcome
     internal static let welcome = L10n.tr("Localizable", "generic.welcome")
   }
+
+  internal enum Popup {
+
+    internal enum Disconnectaction {
+      /// Are you sure you want to disconnect ?
+      internal static let text = L10n.tr("Localizable", "popup.disconnectAction.text")
+      /// Log out
+      internal static let title = L10n.tr("Localizable", "popup.disconnectAction.title")
+    }
+  }
 }
 // swiftlint:enable explicit_type_interface identifier_name line_length nesting type_body_length type_name
 

@@ -28,3 +28,5 @@
 "generic.registration" = "Registration";
 "generic.authentication" = "Authentication";
 "generic.delete" = "Delete";
+"popup.disconnectAction.title" = "Log out";
+"popup.disconnectAction.text" = "Are you sure you want to disconnect ?";
