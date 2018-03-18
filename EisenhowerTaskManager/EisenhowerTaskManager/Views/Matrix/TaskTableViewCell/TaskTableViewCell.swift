@@ -38,7 +38,10 @@ extension TaskTableViewCell {
     private func setupData() {
         titleLabel?.text = task?.title
         if task?.lastEditDate.isToday ?? false {
-            lastEditDateLabel?.text = task?.lastEditDate.string(dateStyle: .none, timeStyle: .short)
+            lastEditDateLabel?.text =
+                L10n.Generic.today +
+                " " +
+                (task?.lastEditDate.string(dateStyle: .none, timeStyle: .short) ?? "")
         } else {
             lastEditDateLabel?.text = task?.lastEditDate.string(dateStyle: .short, timeStyle: .short)
         }
