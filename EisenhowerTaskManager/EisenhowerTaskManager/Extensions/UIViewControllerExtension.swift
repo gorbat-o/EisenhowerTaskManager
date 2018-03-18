@@ -15,7 +15,7 @@ extension UIViewController {
         leftButton.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
         leftButton.addTarget(self, action: action, for: .touchUpInside)
         let leftButtonItem = UIBarButtonItem(customView: leftButton)
-        self.navigationItem.setLeftBarButton(leftButtonItem, animated: true)
+        navigationItem.setLeftBarButton(leftButtonItem, animated: true)
     }
 
     func setupNavigationBar(rightButtonWithImageNamed name: String, andAction action: Selector) {
@@ -24,18 +24,18 @@ extension UIViewController {
         rightButton.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
         rightButton.addTarget(self, action: action, for: .touchUpInside)
         let rightButtonItem = UIBarButtonItem(customView: rightButton)
-        self.navigationItem.setRightBarButton(rightButtonItem, animated: true)
+        navigationItem.setRightBarButton(rightButtonItem, animated: true)
     }
 
     func setupNavigationBar(leftButtonWithTitle buttonTitle: String, andAction action: Selector) {
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: buttonTitle,
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: buttonTitle,
                                                                 style: .plain,
                                                                 target: self,
                                                                 action: action)
     }
 
     func setupNavigationBar(rightButtonWithTitle buttonTitle: String, andAction action: Selector) {
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: buttonTitle,
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: buttonTitle,
                                                                  style: .plain,
                                                                  target: self,
                                                                  action: action)
@@ -44,10 +44,10 @@ extension UIViewController {
     func setupHideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self,
                                                                  action: #selector(UIViewController.dismissKeyboard))
-        self.view.addGestureRecognizer(tap)
+        view.addGestureRecognizer(tap)
     }
 
     @objc func dismissKeyboard() {
-        self.view.endEditing(true)
+        view.endEditing(true)
     }
 }

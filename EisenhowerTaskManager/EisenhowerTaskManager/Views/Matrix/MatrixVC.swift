@@ -49,8 +49,8 @@ class MatrixVC: UIViewController {
     }
 
     deinit {
-        if let databaseHandle = self.databaseHandle {
-            Database.database().reference().child(self.tasksChild).removeObserver(withHandle: databaseHandle)
+        if let databaseHandle = databaseHandle {
+            Database.database().reference().child(tasksChild).removeObserver(withHandle: databaseHandle)
         }
     }
 
@@ -81,11 +81,8 @@ extension MatrixVC {
     }
 
     @objc private func updateData() {
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
-            // Faire le call et Parser les resultats
-            self.tableView?.reloadData()
-            self.refreshControl.endRefreshing()
-        }
+        tableView?.reloadData()
+        refreshControl.endRefreshing()
     }
 
     private func setupSegmentedControl() {
@@ -107,16 +104,15 @@ extension MatrixVC {
 
     private func setupFirebase() {
         databaseHandle = Database.database().reference().child(tasksChild)
-            .observe(DataEventType.value) { snapshot in
-                var tasks = [Task]()
+            .observe(DataEventType.value) { [weak self] snapshot in
+                self?.tasks.removeAll()
                 snapshot.children.forEach { child in
                     if let dataSnapshot = child as? DataSnapshot {
                         let task = Task(snapshot: dataSnapshot)
-                        tasks.append(task)
+                        self?.tasks.append(task)
                     }
                 }
-                self.tasks = tasks
-                self.tableView?.reloadData()
+                self?.tableView?.reloadData()
         }
     }
 

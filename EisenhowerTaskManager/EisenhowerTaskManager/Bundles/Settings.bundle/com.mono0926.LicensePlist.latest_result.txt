@@ -22,21 +22,37 @@ name: Crashlytics, nameSpecified:
 body: Fabric: Copyright 20…
 version: 3.10.1
 
-name: Eureka, nameSpecified: 
-body: The MIT License (MIT…
-version: 4.1.0
+name: DSGradientProgressView, nameSpecified: 
+body:                     …
+version: 1.0.0
+
+name: DSGradientProgressView, nameSpecified: 
+body:                     …
+version: 1.0.0
+
+name: DSGradientProgressView, nameSpecified: 
+body:                     …
+version: 1.0.0
+
+name: DSGradientProgressView, nameSpecified: 
+body:                     …
+version: 1.0.0
 
 name: Eureka, nameSpecified: 
 body: The MIT License (MIT…
-version: 4.1.0
+version: 4.1.1
 
 name: Eureka, nameSpecified: 
 body: The MIT License (MIT…
-version: 4.1.0
+version: 4.1.1
 
 name: Eureka, nameSpecified: 
 body: The MIT License (MIT…
-version: 4.1.0
+version: 4.1.1
+
+name: Eureka, nameSpecified: 
+body: The MIT License (MIT…
+version: 4.1.1
 
 name: Fabric, nameSpecified: 
 body: Fabric: Copyright 20…
@@ -259,22 +275,6 @@ body: MIT License
 
 Copyrig…
 version: 1.8.3
-
-name: LinearProgressBarMaterial, nameSpecified: 
-body: The MIT License (MIT…
-version: 1.3
-
-name: LinearProgressBarMaterial, nameSpecified: 
-body: The MIT License (MIT…
-version: 1.3
-
-name: LinearProgressBarMaterial, nameSpecified: 
-body: The MIT License (MIT…
-version: 1.3
-
-name: LinearProgressBarMaterial, nameSpecified: 
-body: The MIT License (MIT…
-version: 1.3
 
 name: nanopb, nameSpecified: 
 body: Copyright (c) 2011 P…

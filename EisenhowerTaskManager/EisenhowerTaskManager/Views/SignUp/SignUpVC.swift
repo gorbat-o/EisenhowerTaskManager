@@ -8,30 +8,54 @@
 
 import UIKit
 import FirebaseAuth
+import FirebasePerformance
+import FirebaseDatabase
+import DSGradientProgressView
+import SafariServices
 
 class SignUpVC: UIViewController {
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var progressView: DSGradientProgressView!
+    @IBOutlet weak var logoImageView: UIImageView!
+    @IBOutlet weak var termsAndConditionsButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupNavigationBar()
-        self.setupTextFields()
+
+        Performance.start(withKey: "\(L10n.Generic.registration) viewDidLoad")
+        setupNavigationBar()
+        setupButtons()
+        setupProgressView()
+        setupTextFields()
+        Performance.stop()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         SnackBarHelper.dismiss()
-        self.dismissKeyboard()
+        progressView.signal()
+        dismissKeyboard()
     }
 
     @IBAction func signUpTouchUpInside(_ sender: Any? = nil) {
-        self.dismissKeyboard()
-        self.checkTextFields {
-            self.signUp {
-                if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
-                    appDelegate.window?.rootViewController = MainVC()
-                }
+        dismissKeyboard()
+        checkTextFields {
+            progressView.wait()
+            signUp { [weak self] in
+                self?.setupMainView()
+            }
+        }
+    }
+
+    @IBAction func termsAndConditionsTouchUpInside(_ sender: Any) {
+        let databaseReference = Database.database().reference().child("public")
+        databaseReference.observeSingleEvent(of: DataEventType.value) { [weak self] snapshot in
+            if let data = snapshot.value as? [String: AnyObject],
+                let termsConditions = data["termsConditions"] as? String,
+                let url = URL(string: termsConditions) {
+                let vc = SFSafariViewController(url: url)
+                self?.present(vc, animated: true)
             }
         }
     }
@@ -39,19 +63,32 @@ class SignUpVC: UIViewController {
 
 extension SignUpVC {
     private func setupNavigationBar() {
-        self.title = L10n.Generic.signUp
+        title = L10n.Generic.registration
     }
 
     private func setupTextFields() {
-        self.usernameTextField?.placeholder = L10n.Generic.email
-        self.passwordTextField?.placeholder = L10n.Generic.password
-        self.usernameTextField.delegate = self
-        self.passwordTextField.delegate = self
+        usernameTextField?.placeholder = L10n.Generic.email
+        passwordTextField?.placeholder = L10n.Generic.password
+        usernameTextField?.delegate = self
+        passwordTextField?.delegate = self
+    }
+
+    private func setupProgressView() {
+        progressView?.barColor = UIColor.darkGray
+        progressView?.wait()
+        progressView?.signal()
+    }
+
+    private func setupButtons() {
+        signUpButton?.isHaptic = true
+        signUpButton?.hapticType = .impact(.light)
+        termsAndConditionsButton?.isHaptic = true
+        termsAndConditionsButton?.hapticType = .impact(.light)
     }
 
     private func signUp(success: @escaping () -> Void) {
-        Auth.auth().createUser(withEmail: self.usernameTextField?.text ?? "",
-                               password: self.passwordTextField?.text ?? "") { returnedUser, returnedError in
+        Auth.auth().createUser(withEmail: usernameTextField?.text ?? "",
+                               password: passwordTextField?.text ?? "") { [weak self] returnedUser, returnedError in
                                 if let error = returnedError {
                                     SnackBarHelper.showError(withText: error.localizedDescription)
                                 } else {
@@ -60,15 +97,22 @@ extension SignUpVC {
                                     )
                                     success()
                                 }
+                                self?.progressView.signal()
+        }
+    }
+
+    private func setupMainView() {
+        if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+            appDelegate.window?.rootViewController = MainVC()
         }
     }
 
     private func checkTextFields(success: () -> Void) {
-        if self.usernameTextField?.text == nil || (self.usernameTextField?.text ?? "").isEmpty {
+        if usernameTextField?.text == nil || (usernameTextField?.text ?? "").isEmpty {
             SnackBarHelper.showError(withText: L10n.Error.emptyEmailField)
             return
         }
-        if self.passwordTextField?.text == nil || (self.passwordTextField?.text ?? "").isEmpty {
+        if passwordTextField?.text == nil || (passwordTextField?.text ?? "").isEmpty {
             SnackBarHelper.showError(withText: L10n.Error.emptyPasswordField)
             return
         }
@@ -79,11 +123,11 @@ extension SignUpVC {
 extension SignUpVC: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         switch textField {
-        case self.usernameTextField:
-            self.passwordTextField?.becomeFirstResponder()
-        case self.passwordTextField:
-            self.view?.endEditing(true)
-            self.signUpTouchUpInside()
+        case usernameTextField:
+            passwordTextField?.becomeFirstResponder()
+        case passwordTextField:
+            view?.endEditing(true)
+            signUpTouchUpInside()
         default:
             break
         }

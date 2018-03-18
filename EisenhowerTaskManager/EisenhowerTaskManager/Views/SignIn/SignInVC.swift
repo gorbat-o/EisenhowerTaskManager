@@ -8,51 +8,55 @@
 
 import UIKit
 import FirebaseAuth
+import FirebasePerformance
 import Haptica
-import LinearProgressBarMaterial
+import DSGradientProgressView
 
 class SignInVC: UIViewController {
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var signUpButton: UIButton!
-    private let linearBar = LinearProgressBar()
+    @IBOutlet weak var logoImageView: UIImageView!
+    @IBOutlet weak var progressView: DSGradientProgressView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.setupNavigationBar()
-        self.setupTextFields()
-        self.setupButtons()
-        self.setupLinearBar()
-        self.setupHideKeyboardWhenTappedAround()
+        Performance.start(withKey: "\(L10n.Generic.authentication) viewDidLoad")
+        setupNavigationBar()
+        setupTextFields()
+        setupButtons()
+        setupProgressView()
+        setupHideKeyboardWhenTappedAround()
+        Performance.stop()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         SnackBarHelper.dismiss()
-        linearBar.stopAnimation()
-        self.dismissKeyboard()
+        progressView.signal()
+        dismissKeyboard()
     }
 
     @IBAction func signInTouchUpInside(_ sender: Any? = nil) {
-        self.dismissKeyboard()
-        linearBar.startAnimation()
-        self.checkTextFields {
-            self.signIn {
-                self.setupMainView()
+        dismissKeyboard()
+        checkTextFields {
+            progressView.wait()
+            signIn { [weak self] in
+                self?.setupMainView()
             }
         }
     }
 
     @IBAction func signUpTouchUpInside(_ sender: Any? = nil) {
         let signUpVC = SignUpVC()
-        self.navigationController?.pushViewController(signUpVC, animated: true)
+        navigationController?.pushViewController(signUpVC, animated: true)
     }
 }
 
 extension SignInVC {
     private func setupNavigationBar() {
-        self.title = L10n.Generic.signIn
+        title = L10n.Generic.authentication
     }
 
     private func setupMainView() {
@@ -61,45 +65,41 @@ extension SignInVC {
         }
     }
 
-    private func setupLinearBar() {
-        navigationController?.navigationBar.addSubview(self.linearBar)
-        // A revoir c'est pas bon, ne pas oublier que l'intégration de firebase avec crashlytics il faut fix
-        if let bottomAnchor = navigationController?.navigationBar.bottomAnchor {
-            linearBar.topAnchor.constraint(equalTo: bottomAnchor).isActive = true
-        }
-
-        //linearBar.layer.frame.origin.y = (navigationController?.navigationBar.frame.height ?? 0) * 2
+    private func setupProgressView() {
+        progressView?.barColor = UIColor.darkGray
+        progressView?.wait()
+        progressView?.signal()
     }
 
     private func setupButtons() {
-        signInButton.isHaptic = true
-        signInButton.hapticType = .impact(.light)
+        signInButton?.isHaptic = true
+        signInButton?.hapticType = .impact(.light)
+        signUpButton?.isHaptic = true
+        signUpButton?.hapticType = .impact(.light)
     }
 
     private func setupTextFields() {
-        self.usernameTextField?.placeholder = L10n.Generic.email
-        self.passwordTextField?.placeholder = L10n.Generic.password
-        self.usernameTextField.delegate = self
-        self.passwordTextField.delegate = self
+        usernameTextField?.placeholder = L10n.Generic.email
+        passwordTextField?.placeholder = L10n.Generic.password
+        usernameTextField?.delegate = self
+        passwordTextField?.delegate = self
     }
 
     private func checkTextFields(success: () -> Void) {
-        if self.usernameTextField?.text == nil || (self.usernameTextField?.text ?? "").isEmpty {
+        if usernameTextField?.text == nil || (usernameTextField?.text ?? "").isEmpty {
             SnackBarHelper.showError(withText: L10n.Error.emptyEmailField)
-            linearBar.stopAnimation()
             return
         }
-        if self.passwordTextField?.text == nil || (self.passwordTextField?.text ?? "").isEmpty {
+        if passwordTextField?.text == nil || (passwordTextField?.text ?? "").isEmpty {
             SnackBarHelper.showError(withText: L10n.Error.emptyPasswordField)
-            linearBar.stopAnimation()
             return
         }
         success()
     }
 
     private func signIn(success: @escaping () -> Void) {
-        Auth.auth().signIn(withEmail: self.usernameTextField?.text ?? "",
-                           password: self.passwordTextField?.text ?? "") { [weak self] returnedUser, returnedError in
+        Auth.auth().signIn(withEmail: usernameTextField?.text ?? "",
+                           password: passwordTextField?.text ?? "") { [weak self] returnedUser, returnedError in
                             if let error = returnedError {
                                 SnackBarHelper.showError(withText: error.localizedDescription)
                             } else {
@@ -108,7 +108,7 @@ extension SignInVC {
                                 )
                                 success()
                             }
-                            self?.linearBar.stopAnimation()
+                            self?.progressView.signal()
         }
     }
 }
@@ -116,11 +116,11 @@ extension SignInVC {
 extension SignInVC: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         switch textField {
-        case self.usernameTextField:
-            self.passwordTextField?.becomeFirstResponder()
-        case self.passwordTextField:
-            self.view?.endEditing(true)
-            self.signInTouchUpInside()
+        case usernameTextField:
+            passwordTextField?.becomeFirstResponder()
+        case passwordTextField:
+            view?.endEditing(true)
+            signInTouchUpInside()
         default:
             break
         }
