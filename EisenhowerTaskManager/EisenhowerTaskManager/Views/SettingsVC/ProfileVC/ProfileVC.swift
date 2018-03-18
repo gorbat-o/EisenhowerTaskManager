@@ -51,6 +51,8 @@ extension ProfileVC {
 				}
 
 			})
+		} else {
+			SnackBarHelper.showError(withText: "Passwords don't match")
 		}
 	}
 }
