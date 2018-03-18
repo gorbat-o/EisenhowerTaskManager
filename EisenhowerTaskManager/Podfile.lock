@@ -2,6 +2,7 @@ PODS:
   - Alamofire (4.7.0)
   - Crashlytics (3.10.1):
     - Fabric (~> 1.7.5)
+  - Eureka (4.1.0)
   - Fabric (1.7.5)
   - Firebase/Auth (4.10.1):
     - Firebase/Core
@@ -22,6 +23,8 @@ PODS:
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
   - FirebaseInstanceID (2.0.9):
     - FirebaseCore (~> 4.0)
+  - GenericPasswordRow (3.0.0):
+    - Eureka (~> 4.0)
   - GoogleToolboxForMac/DebugUtils (2.1.3):
     - GoogleToolboxForMac/Defines (= 2.1.3)
   - GoogleToolboxForMac/Defines (2.1.3)
@@ -46,9 +49,11 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - Crashlytics
+  - Eureka
   - Fabric
   - Firebase/Auth
   - Firebase/Core
+  - GenericPasswordRow
   - LicensePlist
   - SwiftLint
   - SwiftyJSON
@@ -57,12 +62,14 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
   Crashlytics: aee1a064cbbf99b32efa3f056a5f458d846bc8ff
+  Eureka: 5770ef95bbbbe52f8abbc0d9bea6ee8282c50209
   Fabric: ae7146a5f505ea370a1e44820b4b1dc8890e2890
   Firebase: 92c6ba593e32db0defde464a9adc981d5cb49f97
   FirebaseAnalytics: 3dfae28d4a5e06f86c4fae830efc2ad3fadb19bc
   FirebaseAuth: d040bb7a9db6dfc29d0e7ec82d48be51352b2581
   FirebaseCore: 872307b001bbefda1dfa0dbfffa50a6919023d4a
   FirebaseInstanceID: d2058a35e9bebda1b6dd42486b84917bde552a9d
+  GenericPasswordRow: 27a52c727c47b2e4d50c2295d1cc7d32c5883e70
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   GTMSessionFetcher: 390ea358e5a0d0133153806f744662dad933d06b
   LicensePlist: 3fda61ebe060afc8fc6d995df34a91401af5a244
@@ -71,6 +78,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
   TTGSnackbar: e23b4f1e9e9f271b22ce75dfd39c6384edff96c9
 
-PODFILE CHECKSUM: 20df7d36898baf7a772da9b0975e3a34b5adc597
+PODFILE CHECKSUM: 0aa6237200a046f59276c167a84d4f5a9ac95553
 
 COCOAPODS: 1.4.0

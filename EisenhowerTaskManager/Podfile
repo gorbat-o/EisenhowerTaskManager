@@ -12,7 +12,9 @@ def pods
     pod 'Firebase/Auth'
 
     # UI
-    pod "TTGSnackbar"
+    pod 'TTGSnackbar'
+    pod 'Eureka'
+    pod 'GenericPasswordRow'
 end
 
 target 'EisenhowerTaskManager-development' do
