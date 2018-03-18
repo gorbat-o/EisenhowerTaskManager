@@ -16,23 +16,36 @@ class DetailedTaskVC: FormViewController {
     var task: Task?
     private let tasksChild = "users/\(Auth.auth().currentUser?.uid ?? "")/tasks"
     private var databaseHandle: DatabaseHandle?
+    private var databaseReference: DatabaseReference?
 
     deinit {
-        if let databaseHandle = self.databaseHandle {
-            Database.database().reference().child(self.tasksChild).removeObserver(withHandle: databaseHandle)
+        if let databaseHandle = databaseHandle {
+            databaseReference?.removeObserver(withHandle: databaseHandle)
         }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupNavigationBar()
-        self.setupTableView()
+
+        setupFirebase()
+        setupNavigationBar()
+        setupTableView()
     }
 }
 
 extension DetailedTaskVC {
     private func setupNavigationBar() {
         title = task?.title ?? L10n.Generic.task
+        setupNavigationBar(rightButtonWithTitle: L10n.Generic.delete, andAction: #selector(rightButtonAction))
+    }
+
+    private func setupFirebase() {
+        databaseReference = task?.databaseReference
+    }
+
+    @objc private func rightButtonAction() {
+        databaseReference?.removeValue()
+        navigationController?.popViewController(animated: true)
     }
 
     private func setupTableView() {
@@ -77,22 +90,22 @@ extension DetailedTaskVC {
     }
 
     private func changeTitle(_ title: String) {
-        task?.databaseReference?.child("title").setValue(title)
+        databaseReference?.child("title").setValue(title)
     }
 
     private func changeDescription(_ description: String) {
-        task?.databaseReference?.child("description").setValue(description)
+        databaseReference?.child("description").setValue(description)
     }
 
     private func changeCompleted(_ completed: Bool) {
-        task?.databaseReference?.child("completed").setValue(completed.description)
+        databaseReference?.child("completed").setValue(completed.description)
     }
 
     private func changeCompletionDate(_ date: Date?) {
-        task?.databaseReference?.child("completionDate").setValue(date?.string(format: DateFormat.iso8601Auto))
+        databaseReference?.child("completionDate").setValue(date?.string(format: DateFormat.iso8601Auto))
     }
 
     private func changeCategory(_ category: String) {
-        task?.databaseReference?.child("category").setValue(category)
+        databaseReference?.child("category").setValue(category)
     }
 }

@@ -2,7 +2,8 @@ PODS:
   - Alamofire (4.7.0)
   - Crashlytics (3.10.1):
     - Fabric (~> 1.7.5)
-  - Eureka (4.1.0)
+  - DSGradientProgressView (1.0.0)
+  - Eureka (4.1.1)
   - Fabric (1.7.5)
   - Firebase/Auth (4.10.1):
     - Firebase/Core
@@ -58,7 +59,6 @@ PODS:
   - Haptica (2.0.0)
   - leveldb-library (1.20)
   - LicensePlist (1.8.3)
-  - LinearProgressBarMaterial (1.3)
   - nanopb (0.3.8):
     - nanopb/decode (= 0.3.8)
     - nanopb/encode (= 0.3.8)
@@ -66,13 +66,14 @@ PODS:
   - nanopb/encode (0.3.8)
   - Protobuf (3.5.0)
   - SwiftDate (4.5.1)
-  - SwiftGen (5.2.1)
+  - SwiftGen (5.3.0)
   - SwiftLint (0.25.0)
   - TTGSnackbar (1.7.2)
 
 DEPENDENCIES:
   - Alamofire
   - Crashlytics
+  - DSGradientProgressView
   - Eureka
   - Fabric
   - Firebase/Auth
@@ -81,7 +82,6 @@ DEPENDENCIES:
   - Firebase/Performance
   - Haptica
   - LicensePlist
-  - LinearProgressBarMaterial
   - SwiftDate
   - SwiftGen
   - SwiftLint
@@ -90,7 +90,8 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
   Crashlytics: aee1a064cbbf99b32efa3f056a5f458d846bc8ff
-  Eureka: 5770ef95bbbbe52f8abbc0d9bea6ee8282c50209
+  DSGradientProgressView: b591b4dfc6a7491fbd1f8dedee7a6ce02b23640f
+  Eureka: b88fb930e42c79f8c03c373d0fcdc28c1d6c50ed
   Fabric: ae7146a5f505ea370a1e44820b4b1dc8890e2890
   Firebase: 92c6ba593e32db0defde464a9adc981d5cb49f97
   FirebaseAnalytics: 3dfae28d4a5e06f86c4fae830efc2ad3fadb19bc
@@ -105,14 +106,13 @@ SPEC CHECKSUMS:
   Haptica: ed63c31f32f2aa17ecb479c110dd50904497bf5d
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   LicensePlist: 3fda61ebe060afc8fc6d995df34a91401af5a244
-  LinearProgressBarMaterial: 84df3135c27a0fc5e0219da10ee98304de159b06
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
   SwiftDate: 7b56d42a221f582047287deb256b23fc5ed49a60
-  SwiftGen: 444b4c467e512a4812b8a800d731643fd265139e
+  SwiftGen: 4379bd3640b0a212a0f6ea3c494adba385513d10
   SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
   TTGSnackbar: e23b4f1e9e9f271b22ce75dfd39c6384edff96c9
 
-PODFILE CHECKSUM: 49aa7c515c5e5e954ab7ef231bed466d809323f1
+PODFILE CHECKSUM: c92385d3ff8b85771a91c014b92925a9a3658321
 
 COCOAPODS: 1.4.0

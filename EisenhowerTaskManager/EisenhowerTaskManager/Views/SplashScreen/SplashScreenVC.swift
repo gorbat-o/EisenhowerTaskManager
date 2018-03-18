@@ -11,15 +11,17 @@ import FirebaseAuth
 import FirebasePerformance
 
 class SplashScreenVC: UIViewController {
+    @IBOutlet weak var logoImageView: UIImageView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        Performance.start(withKey: self.title)
-        if self.firstTimeLaunchedApp() {
+        Performance.start(withKey: "Splashscreen: viewDidLoad")
+        if firstTimeLaunchedApp() {
             try? Auth.auth().signOut()
-            self.setupSignInVC()
+            setupSignInVC()
         } else {
-            self.setupMainVC()
+            setupMainVC()
         }
         Performance.stop()
     }
@@ -33,7 +35,7 @@ extension SplashScreenVC {
 
     private func setupMainVC() {
         if Auth.auth().currentUser == nil {
-            self.setupSignInVC()
+            setupSignInVC()
         } else {
             let vc = MainVC()
             UIApplication.shared.delegate?.window??.rootViewController = vc

@@ -20,13 +20,14 @@ class AddTaskVC: FormViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupNavigationBar()
-        self.createTask()
-        self.setupTableView()
+
+        setupNavigationBar()
+        createTask()
+        setupTableView()
     }
 
     deinit {
-        if let databaseHandle = self.databaseHandle {
+        if let databaseHandle = databaseHandle {
             databaseReference?.removeObserver(withHandle: databaseHandle)
         }
     }
@@ -34,7 +35,7 @@ class AddTaskVC: FormViewController {
 
 extension AddTaskVC {
     private func createTask() {
-        databaseReference = Database.database().reference().child(self.tasksChild).childByAutoId()
+        databaseReference = Database.database().reference().child(tasksChild).childByAutoId()
         databaseReference?.observe(DataEventType.childAdded) { [weak self] snapshot in
             self?.task = Task(snapshot: snapshot)
         }
@@ -42,7 +43,7 @@ extension AddTaskVC {
     }
 
     private func setupTableView() {
-        self.form
+        form
             +++ Section()
             <<< TextRow("Title") { row in
                 row.title = L10n.Generic.title
@@ -80,12 +81,13 @@ extension AddTaskVC {
                 }.cellUpdate { [weak self] _, row in
                     self?.changeDescription(row.value ?? "")
             }
-            <<< ButtonRow("Cancel") { row in
+            +++ ButtonRow("Cancel") { row in
                 row.title = L10n.Generic.cancel
+                row.cell.tintColor = UIColor.red
                 }.onCellSelection { [weak self] _, _ in
                     self?.databaseReference?.removeValue()
                     self?.navigationController?.popViewController(animated: true)
-                }
+        }
     }
 
     private func setupNavigationBar() {

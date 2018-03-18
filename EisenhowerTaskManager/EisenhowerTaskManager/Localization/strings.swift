@@ -6,69 +6,75 @@ import Foundation
 // swiftlint:disable file_length
 
 // swiftlint:disable explicit_type_interface identifier_name line_length nesting type_body_length type_name
-enum L10n {
+internal enum L10n {
 
-  enum Action {
+  internal enum Action {
     /// Choose the category
-    static let chooseTheCategory = L10n.tr("Localizable", "action.chooseTheCategory")
+    internal static let chooseTheCategory = L10n.tr("Localizable", "action.chooseTheCategory")
     /// Put a title
-    static let putATitle = L10n.tr("Localizable", "action.putATitle")
+    internal static let putATitle = L10n.tr("Localizable", "action.putATitle")
   }
 
-  enum Error {
+  internal enum Error {
     /// Email field is empty
-    static let emptyEmailField = L10n.tr("Localizable", "error.emptyEmailField")
+    internal static let emptyEmailField = L10n.tr("Localizable", "error.emptyEmailField")
     /// Password field is empty
-    static let emptyPasswordField = L10n.tr("Localizable", "error.emptyPasswordField")
+    internal static let emptyPasswordField = L10n.tr("Localizable", "error.emptyPasswordField")
   }
 
-  enum Generic {
+  internal enum Generic {
     /// Add
-    static let add = L10n.tr("Localizable", "generic.add")
+    internal static let add = L10n.tr("Localizable", "generic.add")
     /// All
-    static let all = L10n.tr("Localizable", "generic.all")
+    internal static let all = L10n.tr("Localizable", "generic.all")
+    /// Authentication
+    internal static let authentication = L10n.tr("Localizable", "generic.authentication")
     /// Cancel
-    static let cancel = L10n.tr("Localizable", "generic.cancel")
+    internal static let cancel = L10n.tr("Localizable", "generic.cancel")
     /// Category
-    static let category = L10n.tr("Localizable", "generic.category")
+    internal static let category = L10n.tr("Localizable", "generic.category")
     /// Completed
-    static let completed = L10n.tr("Localizable", "generic.completed")
+    internal static let completed = L10n.tr("Localizable", "generic.completed")
+    /// Delete
+    internal static let delete = L10n.tr("Localizable", "generic.delete")
     /// Description
-    static let description = L10n.tr("Localizable", "generic.description")
+    internal static let description = L10n.tr("Localizable", "generic.description")
     /// Do First
-    static let doFirst = L10n.tr("Localizable", "generic.doFirst")
+    internal static let doFirst = L10n.tr("Localizable", "generic.doFirst")
     /// Done
-    static let done = L10n.tr("Localizable", "generic.done")
+    internal static let done = L10n.tr("Localizable", "generic.done")
     /// Email
-    static let email = L10n.tr("Localizable", "generic.email")
+    internal static let email = L10n.tr("Localizable", "generic.email")
     /// For
-    static let `for` = L10n.tr("Localizable", "generic.for")
+    internal static let `for` = L10n.tr("Localizable", "generic.for")
     /// Incomplete
-    static let incomplete = L10n.tr("Localizable", "generic.incomplete")
+    internal static let incomplete = L10n.tr("Localizable", "generic.incomplete")
     /// Matrix
-    static let matrix = L10n.tr("Localizable", "generic.matrix")
+    internal static let matrix = L10n.tr("Localizable", "generic.matrix")
     /// Password
-    static let password = L10n.tr("Localizable", "generic.password")
+    internal static let password = L10n.tr("Localizable", "generic.password")
+    /// Registration
+    internal static let registration = L10n.tr("Localizable", "generic.registration")
     /// Settings
-    static let settings = L10n.tr("Localizable", "generic.settings")
+    internal static let settings = L10n.tr("Localizable", "generic.settings")
     /// Sign In
-    static let signIn = L10n.tr("Localizable", "generic.signIn")
+    internal static let signIn = L10n.tr("Localizable", "generic.signIn")
     /// Sign Up
-    static let signUp = L10n.tr("Localizable", "generic.signUp")
+    internal static let signUp = L10n.tr("Localizable", "generic.signUp")
     /// Task
-    static let task = L10n.tr("Localizable", "generic.task")
+    internal static let task = L10n.tr("Localizable", "generic.task")
     /// Task creation
-    static let taskCreation = L10n.tr("Localizable", "generic.taskCreation")
+    internal static let taskCreation = L10n.tr("Localizable", "generic.taskCreation")
     /// Title
-    static let title = L10n.tr("Localizable", "generic.title")
+    internal static let title = L10n.tr("Localizable", "generic.title")
     /// To Delegate
-    static let toDelegate = L10n.tr("Localizable", "generic.toDelegate")
+    internal static let toDelegate = L10n.tr("Localizable", "generic.toDelegate")
     /// To Not Do
-    static let toNotDo = L10n.tr("Localizable", "generic.toNotDo")
+    internal static let toNotDo = L10n.tr("Localizable", "generic.toNotDo")
     /// To Schedule
-    static let toSchedule = L10n.tr("Localizable", "generic.toSchedule")
+    internal static let toSchedule = L10n.tr("Localizable", "generic.toSchedule")
     /// Welcome
-    static let welcome = L10n.tr("Localizable", "generic.welcome")
+    internal static let welcome = L10n.tr("Localizable", "generic.welcome")
   }
 }
 // swiftlint:enable explicit_type_interface identifier_name line_length nesting type_body_length type_name

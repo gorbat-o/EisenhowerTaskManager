@@ -25,3 +25,6 @@
 "generic.done" = "Done";
 "action.putATitle" = "Put a title";
 "generic.cancel" = "Cancel";
+"generic.registration" = "Registration";
+"generic.authentication" = "Authentication";
+"generic.delete" = "Delete";

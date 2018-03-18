@@ -5,14 +5,18 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpVC" customModule="EisenhowerTaskManager_adhoc" customModuleProvider="target">
             <connections>
+                <outlet property="logoImageView" destination="Fev-rr-BZt" id="lHF-ag-ydd"/>
                 <outlet property="passwordTextField" destination="rAq-2R-gMw" id="itt-ao-8JD"/>
+                <outlet property="progressView" destination="0B5-UK-2lv" id="B01-Gr-i3I"/>
                 <outlet property="signUpButton" destination="7MC-p0-1PA" id="MVF-0C-OFg"/>
+                <outlet property="termsAndConditionsButton" destination="g2I-pM-Osv" id="nyu-2Y-YNx"/>
                 <outlet property="usernameTextField" destination="u7y-BS-AZG" id="ja1-ad-vLs"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -22,39 +26,85 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0B5-UK-2lv" customClass="DSGradientProgressView" customModule="DSGradientProgressView">
+                    <rect key="frame" x="0.0" y="20" width="375" height="3"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="3" id="bTO-K1-2JG"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Fev-rr-BZt">
+                    <rect key="frame" x="125" y="40" width="125" height="125"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="125" id="nYO-B6-L9Q"/>
+                        <constraint firstAttribute="width" secondItem="Fev-rr-BZt" secondAttribute="height" multiplier="1:1" id="yXI-Jy-P1x"/>
+                    </constraints>
+                </imageView>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u7y-BS-AZG">
-                    <rect key="frame" x="40" y="120" width="295" height="30"/>
+                    <rect key="frame" x="40" y="229" width="295" height="30"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="next" textContentType="email"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rAq-2R-gMw">
-                    <rect key="frame" x="40" y="170" width="295" height="30"/>
+                    <rect key="frame" x="40" y="279" width="295" height="30"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7MC-p0-1PA">
-                    <rect key="frame" x="40" y="220" width="295" height="30"/>
+                    <rect key="frame" x="40" y="329" width="295" height="33"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <state key="normal" title="Sign Up"/>
                     <connections>
                         <action selector="signUpTouchUpInside:" destination="-1" eventType="touchUpInside" id="frb-eh-NQp"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eisenhower Task Manager" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5B-a1-nNa">
+                    <rect key="frame" x="20" y="185" width="335" height="24"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2I-pM-Osv">
+                    <rect key="frame" x="40" y="617" width="295" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="Terms &amp; Conditions">
+                        <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="termsAndConditionsTouchUpInside:" destination="-1" eventType="touchUpInside" id="KbX-CU-d4j"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="u7y-BS-AZG" firstAttribute="top" secondItem="R5B-a1-nNa" secondAttribute="bottom" constant="20" id="4NA-cn-Bh6"/>
+                <constraint firstItem="Fev-rr-BZt" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="DjH-SH-L2U"/>
                 <constraint firstItem="u7y-BS-AZG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="FYl-IV-JSw"/>
-                <constraint firstItem="u7y-BS-AZG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="Nb5-U7-olS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0B5-UK-2lv" secondAttribute="trailing" id="N1j-6n-413"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="g2I-pM-Osv" secondAttribute="trailing" constant="40" id="PL1-vO-UrF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="R5B-a1-nNa" secondAttribute="trailing" constant="20" id="XSI-wL-vKf"/>
                 <constraint firstItem="rAq-2R-gMw" firstAttribute="trailing" secondItem="u7y-BS-AZG" secondAttribute="trailing" id="Z0E-gw-6uC"/>
+                <constraint firstItem="0B5-UK-2lv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cE3-dY-Wnm"/>
                 <constraint firstItem="7MC-p0-1PA" firstAttribute="trailing" secondItem="rAq-2R-gMw" secondAttribute="trailing" id="cbG-5B-NqJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="g2I-pM-Osv" secondAttribute="bottom" constant="20" id="eN8-ZB-mMJ"/>
+                <constraint firstItem="g2I-pM-Osv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="eRQ-xP-MDk"/>
+                <constraint firstItem="Fev-rr-BZt" firstAttribute="width" secondItem="Fev-rr-BZt" secondAttribute="height" multiplier="1:1" id="evD-ho-tJM"/>
                 <constraint firstItem="rAq-2R-gMw" firstAttribute="leading" secondItem="u7y-BS-AZG" secondAttribute="leading" id="fpc-KP-hCv"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="u7y-BS-AZG" secondAttribute="trailing" constant="40" id="g8A-2A-czV"/>
                 <constraint firstItem="rAq-2R-gMw" firstAttribute="top" secondItem="u7y-BS-AZG" secondAttribute="bottom" constant="20" id="gA6-4J-5Ab"/>
+                <constraint firstItem="R5B-a1-nNa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="kLx-Ur-DhR"/>
+                <constraint firstItem="0B5-UK-2lv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="kjP-TA-Evh"/>
                 <constraint firstItem="7MC-p0-1PA" firstAttribute="top" secondItem="rAq-2R-gMw" secondAttribute="bottom" constant="20" id="lHU-zd-KQL"/>
+                <constraint firstItem="R5B-a1-nNa" firstAttribute="top" secondItem="Fev-rr-BZt" secondAttribute="bottom" constant="20" id="poj-bz-MCd"/>
                 <constraint firstItem="7MC-p0-1PA" firstAttribute="leading" secondItem="rAq-2R-gMw" secondAttribute="leading" id="qmD-am-wge"/>
+                <constraint firstItem="Fev-rr-BZt" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="yd0-h2-poU"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>
+    <resources>
+        <image name="Logo" width="525" height="525"/>
+    </resources>
 </document>
