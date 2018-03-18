@@ -21,18 +21,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        self.setupFirebase()
-        self.setupMainView()
-        self.setupFabric()
+        setupFirebase()
+        setupMainView()
+        setupFabric()
         return true
     }
 }
 
 extension AppDelegate {
     private func setupMainView() {
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.rootViewController = SplashScreenVC()
-        self.window?.makeKeyAndVisible()
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = SplashScreenVC()
+        window?.makeKeyAndVisible()
     }
 
     private func setupFirebase() {

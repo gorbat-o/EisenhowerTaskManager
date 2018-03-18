@@ -15,7 +15,7 @@ def pods
     # UI
     pod 'TTGSnackbar'
     pod 'Eureka'
-    pod 'LinearProgressBarMaterial'
+    pod 'DSGradientProgressView'
 
     # UX
     pod 'Haptica'

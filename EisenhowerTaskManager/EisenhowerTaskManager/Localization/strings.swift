@@ -27,12 +27,16 @@ enum L10n {
     static let add = L10n.tr("Localizable", "generic.add")
     /// All
     static let all = L10n.tr("Localizable", "generic.all")
+    /// Authentication
+    static let authentication = L10n.tr("Localizable", "generic.authentication")
     /// Cancel
     static let cancel = L10n.tr("Localizable", "generic.cancel")
     /// Category
     static let category = L10n.tr("Localizable", "generic.category")
     /// Completed
     static let completed = L10n.tr("Localizable", "generic.completed")
+    /// Delete
+    static let delete = L10n.tr("Localizable", "generic.delete")
     /// Description
     static let description = L10n.tr("Localizable", "generic.description")
     /// Do First
@@ -49,6 +53,8 @@ enum L10n {
     static let matrix = L10n.tr("Localizable", "generic.matrix")
     /// Password
     static let password = L10n.tr("Localizable", "generic.password")
+    /// Registration
+    static let registration = L10n.tr("Localizable", "generic.registration")
     /// Settings
     static let settings = L10n.tr("Localizable", "generic.settings")
     /// Sign In
