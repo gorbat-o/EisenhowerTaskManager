@@ -58,6 +58,15 @@ class MatrixVC: UIViewController {
         setupFirebase()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        // This is a bug in iOS 11.2 and happens because the UIBarButtonItem stays highlighted after navigation
+        // and does not return to its normal state after the other view controller pops.
+        // Check: https://stackoverflow.com/questions/47754472/ios-uinavigationbar-button-remains-faded-after-segue-back
+        setupNavigationBar(rightButtonWithTitle: L10n.Generic.add, andAction: #selector(rightButtonAction))
+    }
+
     @IBAction func indexChanged(_ sender: AnyObject) {
         tableView?.reloadData()
     }
@@ -67,7 +76,6 @@ extension MatrixVC {
     private func setupNavigationBar() {
         title = L10n.Generic.matrix
         navigationController?.navigationBar.prefersLargeTitles = true
-        setupNavigationBar(rightButtonWithTitle: L10n.Generic.add, andAction: #selector(rightButtonAction))
     }
 
     @objc private func updateData() {

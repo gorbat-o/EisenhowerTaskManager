@@ -17,6 +17,7 @@ class AddTaskVC: FormViewController {
     private var databaseHandle: DatabaseHandle?
     private let tasksChild = "users/\(Auth.auth().currentUser?.uid ?? "")/tasks"
     private var databaseReference: DatabaseReference?
+    private var isModified = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,14 @@ class AddTaskVC: FormViewController {
         setupNavigationBar()
         createTask()
         setupTableView()
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        if !isModified {
+            databaseReference?.removeValue()
+        }
     }
 
     deinit {
@@ -50,7 +59,9 @@ extension AddTaskVC {
                 row.placeholder = L10n.Action.putATitle
                 }.cellUpdate { [weak self] _, row in
                     self?.changeTitle(row.value ?? "")
-            }
+                }.onCellSelection { [weak self] _, _ in
+                    self?.isModified = true
+                }
             <<< ActionSheetRow<String>("Category") {
                 $0.title = L10n.Generic.category
                 $0.selectorTitle = L10n.Action.chooseTheCategory
@@ -58,21 +69,26 @@ extension AddTaskVC {
                 $0.value = TaskCategory.string[task?.category.rawValue ?? 0]
                 }.cellUpdate { [weak self] _, row in
                     self?.changeCategory(row.value ?? "")
+                }.onCellSelection { [weak self] _, _ in
+                    self?.isModified = true
             }
             <<< DateRow("CompletionDate") { row in
                 row.title = L10n.Generic.for
                 row.value = task?.completionDate
                 }.cellUpdate { [weak self] _, row in
                     self?.changeCompletionDate(row.value)
+                }.onCellSelection { [weak self] _, row in
+                    row.value = Date()
+                    row.updateCell()
+                    self?.isModified = true
             }
             <<< SwitchRow("Completed") { row in
                 row.title = L10n.Generic.completed
                 row.value = task?.completed ?? false
                 }.onChange { [weak self] row in
                     self?.changeCompleted(row.value ?? false)
-                }
-                .onCellSelection { [weak self] _, row in
-                    self?.changeCompleted(row.value ?? false)
+                }.onCellSelection { [weak self] _, _ in
+                    self?.isModified = true
             }
             <<< TextAreaRow("Description") { row in
                 row.placeholder = L10n.Generic.description
@@ -80,6 +96,8 @@ extension AddTaskVC {
                 row.textAreaHeight = TextAreaHeight.dynamic(initialTextViewHeight: 200)
                 }.cellUpdate { [weak self] _, row in
                     self?.changeDescription(row.value ?? "")
+                }.onCellSelection { [weak self] _, _ in
+                    self?.isModified = true
             }
             +++ ButtonRow("Cancel") { row in
                 row.title = L10n.Generic.cancel
