@@ -67,6 +67,8 @@ internal enum L10n {
     internal static let taskCreation = L10n.tr("Localizable", "generic.taskCreation")
     /// Title
     internal static let title = L10n.tr("Localizable", "generic.title")
+    /// Today
+    internal static let today = L10n.tr("Localizable", "generic.today")
     /// To Delegate
     internal static let toDelegate = L10n.tr("Localizable", "generic.toDelegate")
     /// To Not Do

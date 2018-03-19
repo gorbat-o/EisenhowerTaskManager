@@ -30,3 +30,4 @@
 "generic.delete" = "Supprimer";
 "popup.disconnectAction.title" = "Déconnexion";
 "popup.disconnectAction.text" = "Êtes-vous sûr de vouloir vous déconnecter?";
+"generic.today" = "Aujourd'hui";

@@ -134,6 +134,7 @@
 		695ED5C22044AFC600BB12DF /* EisenhowerTaskManager-adhoc.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "EisenhowerTaskManager-adhoc.plist"; path = "/Users/ogorbatchev/Work/EisenhowerTaskManager/EisenhowerTaskManager/EisenhowerTaskManager/EisenhowerTaskManager-adhoc.plist"; sourceTree = "<absolute>"; };
 		695ED5CF2044AFC800BB12DF /* EisenhowerTaskManager-appstore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EisenhowerTaskManager-appstore.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		695ED5D02044AFC800BB12DF /* EisenhowerTaskManager-appstore.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "EisenhowerTaskManager-appstore.plist"; path = "/Users/ogorbatchev/Work/EisenhowerTaskManager/EisenhowerTaskManager/EisenhowerTaskManager/EisenhowerTaskManager-appstore.plist"; sourceTree = "<absolute>"; };
+		6965E0FE205F2B76004A9E51 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		69798AF1204F2E100046132A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		69798AF6204F438D0046132A /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		69900675205AB7E9008F56BA /* PerformanceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceExtension.swift; sourceTree = "<group>"; };
@@ -532,6 +533,7 @@
 			knownRegions = (
 				en,
 				fr,
+				ru,
 			);
 			mainGroup = 69E0B95E2044AE050083ED7D;
 			productRefGroup = 69E0B9682044AE050083ED7D /* Products */;
@@ -1124,6 +1126,7 @@
 			children = (
 				69173FBD205AD9CF0094C99A /* en */,
 				69173FBF205AD9E30094C99A /* fr */,
+				6965E0FE205F2B76004A9E51 /* ru */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
