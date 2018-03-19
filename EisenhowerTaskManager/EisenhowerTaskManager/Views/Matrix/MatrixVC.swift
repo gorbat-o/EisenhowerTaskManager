@@ -12,11 +12,10 @@ import FirebaseDatabase
 import SwiftDate
 
 class MatrixVC: UIViewController {
-    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
-    private let refreshControl = UIRefreshControl()
 
+    private var isSearchBarEditing = false
     private var databaseHandle: DatabaseHandle?
     private let tasksChild = "users/\(Auth.auth().currentUser?.uid ?? "")/tasks"
     private let titleSections: [String] = TaskCategory.string
@@ -40,10 +39,6 @@ class MatrixVC: UIViewController {
     ]
     private var tasks = [Task]() {
         didSet {
-            allTasks[TaskCategory.dofirst] = tasks.filter { $0.category == TaskCategory.dofirst }
-            allTasks[TaskCategory.toSchedule] = tasks.filter { $0.category == TaskCategory.toSchedule }
-            allTasks[TaskCategory.toDelegate] = tasks.filter { $0.category == TaskCategory.toDelegate }
-            allTasks[TaskCategory.toNotDo] = tasks.filter { $0.category == TaskCategory.toNotDo }
             setupTasks()
         }
     }
@@ -60,7 +55,6 @@ class MatrixVC: UIViewController {
         setupNavigationBar()
         setupSegmentedControl()
         setupTableView()
-        setupRefreshControl()
         setupFirebase()
     }
 
@@ -72,17 +66,12 @@ class MatrixVC: UIViewController {
 extension MatrixVC {
     private func setupNavigationBar() {
         title = L10n.Generic.matrix
+        navigationController?.navigationBar.prefersLargeTitles = true
         setupNavigationBar(rightButtonWithTitle: L10n.Generic.add, andAction: #selector(rightButtonAction))
-    }
-
-    private func setupRefreshControl() {
-        refreshControl.addTarget(self, action: #selector(updateData), for: UIControlEvents.valueChanged)
-        tableView?.refreshControl = refreshControl
     }
 
     @objc private func updateData() {
         tableView?.reloadData()
-        refreshControl.endRefreshing()
     }
 
     private func setupSegmentedControl() {
@@ -100,6 +89,9 @@ extension MatrixVC {
             UINib(nibName: "TaskTableViewCell", bundle: nil),
             forCellReuseIdentifier: "TaskTableViewCell"
         )
+        if traitCollection.forceTouchCapability == .available {
+            registerForPreviewing(with: self, sourceView: tableView)
+        }
     }
 
     private func setupFirebase() {
@@ -117,6 +109,10 @@ extension MatrixVC {
     }
 
     private func setupTasks() {
+        allTasks[.dofirst] = tasks.filter { $0.category == TaskCategory.dofirst }
+        allTasks[.toSchedule] = tasks.filter { $0.category == TaskCategory.toSchedule }
+        allTasks[.toDelegate] = tasks.filter { $0.category == TaskCategory.toDelegate }
+        allTasks[.toNotDo] = tasks.filter { $0.category == TaskCategory.toNotDo }
         completedTasks[.dofirst] = allTasks[.dofirst]?.filter { $0.completed == true }
         completedTasks[.toSchedule] = allTasks[.toSchedule]?.filter { $0.completed == true }
         completedTasks[.toDelegate] = allTasks[.toDelegate]?.filter { $0.completed == true }
@@ -125,10 +121,6 @@ extension MatrixVC {
         incompleteTasks[.toSchedule] = allTasks[.toSchedule]?.filter { $0.completed == false }
         incompleteTasks[.toDelegate] = allTasks[.toDelegate]?.filter { $0.completed == false }
         incompleteTasks[.toNotDo] = allTasks[.toNotDo]?.filter { $0.completed == false }
-        allTasks[.dofirst] = tasks.filter { $0.category == TaskCategory.dofirst }
-        allTasks[.toSchedule] = tasks.filter { $0.category == TaskCategory.toSchedule }
-        allTasks[.toDelegate] = tasks.filter { $0.category == TaskCategory.toDelegate }
-        allTasks[.toNotDo] = tasks.filter { $0.category == TaskCategory.toNotDo }
     }
 
     @objc private func rightButtonAction() {
@@ -169,6 +161,7 @@ extension MatrixVC: UITableViewDataSource, UITableViewDelegate {
             let category = TaskCategory(rawValue: indexPath.section) {
             switch selectedSegmentIndex {
             case 0:
+
                 cell?.task = completedTasks[category]?[indexPath.row]
             case 1:
                 cell?.task = incompleteTasks[category]?[indexPath.row]
@@ -208,5 +201,24 @@ extension MatrixVC: UITableViewDataSource, UITableViewDelegate {
                 }
             }
         }
+    }
+}
+
+extension MatrixVC: UIViewControllerPreviewingDelegate {
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing,
+                           viewControllerForLocation location: CGPoint) -> UIViewController? {
+        guard let indexPath = tableView.indexPathForRow(at: location) else {
+            return nil
+        }
+        let detailedTaskVC = DetailedTaskVC()
+        if let category = TaskCategory(rawValue: indexPath.section) {
+            detailedTaskVC.task = allTasks[category]?[indexPath.row]
+        }
+        return detailedTaskVC
+    }
+
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing,
+                           commit viewControllerToCommit: UIViewController) {
+        show(viewControllerToCommit, sender: self)
     }
 }
