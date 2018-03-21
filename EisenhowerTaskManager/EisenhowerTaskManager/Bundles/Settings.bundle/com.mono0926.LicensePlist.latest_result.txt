@@ -56,27 +56,27 @@ version: 4.1.1
 
 name: Fabric, nameSpecified: 
 body: Fabric: Copyright 20…
-version: 1.7.5
+version: 1.7.6
 
 name: Fabric, nameSpecified: 
 body: Fabric: Copyright 20…
-version: 1.7.5
+version: 1.7.6
 
 name: Firebase, nameSpecified: 
 body: Copyright 2018 Googl…
-version: 4.10.1
+version: 4.11.0
 
 name: Firebase, nameSpecified: 
 body: Copyright 2018 Googl…
-version: 4.10.1
+version: 4.11.0
 
 name: Firebase, nameSpecified: 
 body: Copyright 2018 Googl…
-version: 4.10.1
+version: 4.11.0
 
 name: Firebase, nameSpecified: 
 body: Copyright 2018 Googl…
-version: 4.10.1
+version: 4.11.0
 
 name: FirebaseAnalytics, nameSpecified: 
 body: Copyright 2018 Googl…
@@ -96,35 +96,35 @@ version: 4.1.0
 
 name: FirebaseAuth, nameSpecified: 
 body: Copyright 2018 Googl…
-version: 4.4.4
+version: 4.5.0
 
 name: FirebaseAuth, nameSpecified: 
 body: Copyright 2018 Googl…
-version: 4.4.4
+version: 4.5.0
 
 name: FirebaseAuth, nameSpecified: 
 body: Copyright 2018 Googl…
-version: 4.4.4
+version: 4.5.0
 
 name: FirebaseAuth, nameSpecified: 
 body: Copyright 2018 Googl…
-version: 4.4.4
+version: 4.5.0
 
 name: FirebaseCore, nameSpecified: 
 body: Copyright 2018 Googl…
-version: 4.0.17
+version: 4.0.18
 
 name: FirebaseCore, nameSpecified: 
 body: Copyright 2018 Googl…
-version: 4.0.17
+version: 4.0.18
 
 name: FirebaseCore, nameSpecified: 
 body: Copyright 2018 Googl…
-version: 4.0.17
+version: 4.0.18
 
 name: FirebaseCore, nameSpecified: 
 body: Copyright 2018 Googl…
-version: 4.0.17
+version: 4.0.18
 
 name: FirebaseDatabase, nameSpecified: 
 body: Copyright 2018 Googl…
@@ -144,19 +144,19 @@ version: 4.1.5
 
 name: FirebaseInstanceID, nameSpecified: 
 body: Copyright 2018 Googl…
-version: 2.0.9
+version: 2.0.10
 
 name: FirebaseInstanceID, nameSpecified: 
 body: Copyright 2018 Googl…
-version: 2.0.9
+version: 2.0.10
 
 name: FirebaseInstanceID, nameSpecified: 
 body: Copyright 2018 Googl…
-version: 2.0.9
+version: 2.0.10
 
 name: FirebaseInstanceID, nameSpecified: 
 body: Copyright 2018 Googl…
-version: 2.0.9
+version: 2.0.10
 
 name: FirebasePerformance, nameSpecified: 
 body: Copyright 2018 Googl…
@@ -189,6 +189,22 @@ version: 1.0.0
 name: FirebaseSwizzlingUtilities, nameSpecified: 
 body: Copyright 2017 Googl…
 version: 1.0.0
+
+name: GenericPasswordRow, nameSpecified: 
+body: The MIT License (MIT…
+version: 3.0.0
+
+name: GenericPasswordRow, nameSpecified: 
+body: The MIT License (MIT…
+version: 3.0.0
+
+name: GenericPasswordRow, nameSpecified: 
+body: The MIT License (MIT…
+version: 3.0.0
+
+name: GenericPasswordRow, nameSpecified: 
+body: The MIT License (MIT…
+version: 3.0.0
 
 name: GoogleToolboxForMac, nameSpecified: 
 body: 

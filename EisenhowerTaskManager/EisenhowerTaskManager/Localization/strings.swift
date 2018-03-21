@@ -59,7 +59,7 @@ internal enum L10n {
     internal static let settings = L10n.tr("Localizable", "generic.settings")
     /// Sign In
     internal static let signIn = L10n.tr("Localizable", "generic.signIn")
-    /// Sign Up
+    /// Sign up
     internal static let signUp = L10n.tr("Localizable", "generic.signUp")
     /// Task
     internal static let task = L10n.tr("Localizable", "generic.task")

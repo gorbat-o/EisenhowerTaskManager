@@ -16,6 +16,7 @@ def pods
     pod 'TTGSnackbar'
     pod 'Eureka'
     pod 'DSGradientProgressView'
+    pod 'GenericPasswordRow'
 
     # UX
     pod 'Haptica'

@@ -90,6 +90,12 @@
 		69E0B9722044AE050083ED7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69E0B9712044AE050083ED7D /* Assets.xcassets */; };
 		83D7F33CAC6AEC638C7D175D /* Pods_EisenhowerTaskManager_development.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A381E6F46DEB45B7BE26D2C /* Pods_EisenhowerTaskManager_development.framework */; };
 		A8FC89A59F59AA3FC8477C47 /* Pods_EisenhowerTaskManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE23198DBDAFD731A7A9B812 /* Pods_EisenhowerTaskManagerTests.framework */; };
+		F2B186802059CE6C0060F729 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1867E2059CE6C0060F729 /* ProfileVC.swift */; };
+		F2B186812059CE6C0060F729 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1867E2059CE6C0060F729 /* ProfileVC.swift */; };
+		F2B186822059CE6C0060F729 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1867E2059CE6C0060F729 /* ProfileVC.swift */; };
+		F2B186832059CE6C0060F729 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2B1867F2059CE6C0060F729 /* ProfileVC.xib */; };
+		F2B186842059CE6C0060F729 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2B1867F2059CE6C0060F729 /* ProfileVC.xib */; };
+		F2B186852059CE6C0060F729 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2B1867F2059CE6C0060F729 /* ProfileVC.xib */; };
 		FDB0E288BA5DBBE132D781DC /* Pods_EisenhowerTaskManager_adhoc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE0E0C1D918FE7774E75162 /* Pods_EisenhowerTaskManager_adhoc.framework */; };
 /* End PBXBuildFile section */
 
@@ -154,6 +160,8 @@
 		A7152AAB5F98A259A7C16396 /* Pods-EisenhowerTaskManager-development.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EisenhowerTaskManager-development.release.xcconfig"; path = "Pods/Target Support Files/Pods-EisenhowerTaskManager-development/Pods-EisenhowerTaskManager-development.release.xcconfig"; sourceTree = "<group>"; };
 		B93116FBC6809EC262A2D999 /* Pods-EisenhowerTaskManager-adhoc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EisenhowerTaskManager-adhoc.release.xcconfig"; path = "Pods/Target Support Files/Pods-EisenhowerTaskManager-adhoc/Pods-EisenhowerTaskManager-adhoc.release.xcconfig"; sourceTree = "<group>"; };
 		DE23198DBDAFD731A7A9B812 /* Pods_EisenhowerTaskManagerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EisenhowerTaskManagerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2B1867E2059CE6C0060F729 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		F2B1867F2059CE6C0060F729 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -315,6 +323,7 @@
 		6950D0762055D0E00041922E /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				F2B1867D2059CE2A0060F729 /* Profile */,
 				6950D0812055D1410041922E /* SettingsVC.xib */,
 				6950D0802055D1410041922E /* SettingsVC.swift */,
 			);
@@ -404,6 +413,15 @@
 				90A16DEDA472AAEF3D93042A /* Pods-EisenhowerTaskManagerTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F2B1867D2059CE2A0060F729 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F2B1867E2059CE6C0060F729 /* ProfileVC.swift */,
+				F2B1867F2059CE6C0060F729 /* ProfileVC.xib */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -554,6 +572,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6940FF31204DF7320063101D /* SignUpVC.xib in Resources */,
+				F2B186842059CE6C0060F729 /* ProfileVC.xib in Resources */,
 				6950D0862055D1410041922E /* SettingsVC.xib in Resources */,
 				69173FBB205AD9CF0094C99A /* Localizable.strings in Resources */,
 				6940FF2F204DF7320063101D /* SignInVC.xib in Resources */,
@@ -572,6 +591,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6940FF35204DF7320063101D /* SignUpVC.xib in Resources */,
+				F2B186852059CE6C0060F729 /* ProfileVC.xib in Resources */,
 				6950D0872055D1410041922E /* SettingsVC.xib in Resources */,
 				69173FBC205AD9CF0094C99A /* Localizable.strings in Resources */,
 				6940FF33204DF7320063101D /* SignInVC.xib in Resources */,
@@ -601,6 +621,7 @@
 				6940FF1F204DE1BE0063101D /* SignInVC.xib in Resources */,
 				6950D07D2055D1330041922E /* MatrixVC.xib in Resources */,
 				6947B9FE2055FEFC00D6E0C7 /* TaskTableViewCell.xib in Resources */,
+				F2B186832059CE6C0060F729 /* ProfileVC.xib in Resources */,
 				69E0B9722044AE050083ED7D /* Assets.xcassets in Resources */,
 				690B79852044B828006A6C97 /* SplashScreenVC.xib in Resources */,
 				6947BA1020560E9900D6E0C7 /* DetailedTaskVC.xib in Resources */,
@@ -625,6 +646,7 @@
 				"${BUILT_PRODUCTS_DIR}/DSGradientProgressView/DSGradientProgressView.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GenericPasswordRow/GenericPasswordRow.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Haptica/Haptica.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
@@ -639,6 +661,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DSGradientProgressView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GenericPasswordRow.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Haptica.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
@@ -879,6 +902,7 @@
 				"${BUILT_PRODUCTS_DIR}/DSGradientProgressView/DSGradientProgressView.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GenericPasswordRow/GenericPasswordRow.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Haptica/Haptica.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
@@ -893,6 +917,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DSGradientProgressView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GenericPasswordRow.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Haptica.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
@@ -917,6 +942,7 @@
 				"${BUILT_PRODUCTS_DIR}/DSGradientProgressView/DSGradientProgressView.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GenericPasswordRow/GenericPasswordRow.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Haptica/Haptica.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
@@ -931,6 +957,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DSGradientProgressView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GenericPasswordRow.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Haptica.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
@@ -1006,6 +1033,7 @@
 				"${BUILT_PRODUCTS_DIR}/DSGradientProgressView/DSGradientProgressView.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GenericPasswordRow/GenericPasswordRow.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Haptica/Haptica.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
@@ -1020,6 +1048,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DSGradientProgressView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GenericPasswordRow.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Haptica.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
@@ -1054,6 +1083,7 @@
 				6940FF2E204DF7320063101D /* SignInVC.swift in Sources */,
 				6950D07B2055D1330041922E /* MatrixVC.swift in Sources */,
 				69173FC4205AE62A0094C99A /* strings.swift in Sources */,
+				F2B186812059CE6C0060F729 /* ProfileVC.swift in Sources */,
 				6950D0832055D1410041922E /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1076,6 +1106,7 @@
 				6940FF32204DF7320063101D /* SignInVC.swift in Sources */,
 				6950D07C2055D1330041922E /* MatrixVC.swift in Sources */,
 				69173FC5205AE62A0094C99A /* strings.swift in Sources */,
+				F2B186822059CE6C0060F729 /* ProfileVC.swift in Sources */,
 				6950D0842055D1410041922E /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1106,6 +1137,7 @@
 				6940FF1E204DE1BE0063101D /* SignInVC.swift in Sources */,
 				6950D07A2055D1330041922E /* MatrixVC.swift in Sources */,
 				69173FC3205AE62A0094C99A /* strings.swift in Sources */,
+				F2B186802059CE6C0060F729 /* ProfileVC.swift in Sources */,
 				6950D0822055D1410041922E /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

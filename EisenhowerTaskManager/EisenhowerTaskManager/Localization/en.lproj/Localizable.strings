@@ -15,7 +15,7 @@
 "error.emptyEmailField" = "Email field is empty";
 "error.emptyPasswordField" = "Password field is empty";
 "generic.welcome" = "Welcome";
-"generic.signUp" = "Sign Up";
+"generic.signUp" = "Sign up";
 "generic.title" = "Title";
 "generic.description" = "Description";
 "generic.for" = "For";
