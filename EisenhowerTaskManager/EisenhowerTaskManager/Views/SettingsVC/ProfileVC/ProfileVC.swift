@@ -17,7 +17,23 @@ class ProfileVC: FormViewController {
         super.viewDidLoad()
 		self.title = "Profile"
 
-		form +++ Section("Update password")
+		form
+			+++ Section ("Update email")
+			<<< EmailRow {
+				$0.title = "New email"
+				$0.tag = "newemail1"
+			}
+			<<< EmailRow {
+				$0.title = "Email confirmation"
+				$0.tag = "newemail2"
+			}
+			<<< ButtonRow {
+				$0.title = "Change email"
+				$0.onCellSelection { _, _ in
+					self.changeEmail()
+				}
+			}
+			+++ Section("Update password")
 			<<< GenericPasswordRow {
 				$0.tag = "newpwd1"
 			}
@@ -34,9 +50,27 @@ class ProfileVC: FormViewController {
 }
 
 extension ProfileVC {
-	private func changePassword() {
-		print("Hello there")
+	private func changeEmail() {
+		let mailRow1: EmailRow? = form.rowBy(tag: "newemail1")
+		let mail1 = mailRow1?.value
+		let mailRow2: EmailRow? = form.rowBy(tag: "newemail2")
+		let mail2 = mailRow2?.value
 
+		if mail1 == mail2 {
+			Auth.auth().currentUser?.updateEmail(to: mail1!, completion: { (error) in
+				if error != nil {
+					SnackBarHelper.showError(withText: (error?.localizedDescription)!)
+				} else {
+					SnackBarHelper.showSuccess(withText: "E-mail successfully updated")
+				}
+
+			})
+		} else {
+			SnackBarHelper.showError(withText: "E-mails don't match")
+		}
+	}
+
+	private func changePassword() {
 		let pwdRow1: GenericPasswordRow? = form.rowBy(tag: "newpwd1")
 		let pwd1 = pwdRow1?.value
 		let pwdRow2: GenericPasswordRow? = form.rowBy(tag: "newpwd2")
