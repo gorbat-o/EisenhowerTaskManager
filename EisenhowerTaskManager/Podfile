@@ -5,22 +5,31 @@ use_frameworks!
 def pods
     # Network
     pod 'Alamofire'
-    pod 'SwiftyJSON'
 
-    # SDK - Backend
+    # SDK
     pod 'Firebase/Core'
     pod 'Firebase/Auth'
+    pod 'Firebase/Database'
+    pod 'Firebase/Performance'
 
     # UI
     pod 'TTGSnackbar'
     pod 'Eureka'
+    pod 'DSGradientProgressView'
     pod 'GenericPasswordRow'
+
+    # UX
+    pod 'Haptica'
+
+    # Extensions
+    pod 'SwiftDate'
 end
 
 target 'EisenhowerTaskManager-development' do
     pods
     pod 'SwiftLint' # Linter
     pod 'LicensePlist' # Libraries Licenses
+    pod 'SwiftGen' # Swift Generator
 end
 
 target 'EisenhowerTaskManager-adhoc' do

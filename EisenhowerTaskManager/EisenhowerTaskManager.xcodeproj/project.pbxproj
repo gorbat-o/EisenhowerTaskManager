@@ -14,6 +14,12 @@
 		690B79862044B828006A6C97 /* SplashScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 690B79812044B828006A6C97 /* SplashScreenVC.xib */; };
 		690B79872044B828006A6C97 /* SplashScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 690B79812044B828006A6C97 /* SplashScreenVC.xib */; };
 		690B79882044B833006A6C97 /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690B79802044B828006A6C97 /* SplashScreenVC.swift */; };
+		69173FBA205AD9CF0094C99A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 69173FBE205AD9CF0094C99A /* Localizable.strings */; };
+		69173FBB205AD9CF0094C99A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 69173FBE205AD9CF0094C99A /* Localizable.strings */; };
+		69173FBC205AD9CF0094C99A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 69173FBE205AD9CF0094C99A /* Localizable.strings */; };
+		69173FC3205AE62A0094C99A /* strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69173FC2205AE62A0094C99A /* strings.swift */; };
+		69173FC4205AE62A0094C99A /* strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69173FC2205AE62A0094C99A /* strings.swift */; };
+		69173FC5205AE62A0094C99A /* strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69173FC2205AE62A0094C99A /* strings.swift */; };
 		692E4C8D205195BA007E1CFA /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 692E4C8C205195BA007E1CFA /* Settings.bundle */; };
 		6940FF1E204DE1BE0063101D /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6940FF1C204DE1BE0063101D /* SignInVC.swift */; };
 		6940FF1F204DE1BE0063101D /* SignInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6940FF1D204DE1BE0063101D /* SignInVC.xib */; };
@@ -33,6 +39,24 @@
 		6940FF33204DF7320063101D /* SignInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6940FF1D204DE1BE0063101D /* SignInVC.xib */; };
 		6940FF34204DF7320063101D /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6940FF23204DE83C0063101D /* SignUpVC.swift */; };
 		6940FF35204DF7320063101D /* SignUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6940FF24204DE83C0063101D /* SignUpVC.xib */; };
+		6947B9FB2055FEFC00D6E0C7 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6947B9F92055FEFC00D6E0C7 /* TaskTableViewCell.swift */; };
+		6947B9FC2055FEFC00D6E0C7 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6947B9F92055FEFC00D6E0C7 /* TaskTableViewCell.swift */; };
+		6947B9FD2055FEFC00D6E0C7 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6947B9F92055FEFC00D6E0C7 /* TaskTableViewCell.swift */; };
+		6947B9FE2055FEFC00D6E0C7 /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6947B9FA2055FEFC00D6E0C7 /* TaskTableViewCell.xib */; };
+		6947B9FF2055FEFC00D6E0C7 /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6947B9FA2055FEFC00D6E0C7 /* TaskTableViewCell.xib */; };
+		6947BA002055FEFC00D6E0C7 /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6947B9FA2055FEFC00D6E0C7 /* TaskTableViewCell.xib */; };
+		6947BA0420560D1600D6E0C7 /* AddTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6947BA0220560D1600D6E0C7 /* AddTaskVC.swift */; };
+		6947BA0520560D1600D6E0C7 /* AddTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6947BA0220560D1600D6E0C7 /* AddTaskVC.swift */; };
+		6947BA0620560D1600D6E0C7 /* AddTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6947BA0220560D1600D6E0C7 /* AddTaskVC.swift */; };
+		6947BA0720560D1600D6E0C7 /* AddTaskVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6947BA0320560D1600D6E0C7 /* AddTaskVC.xib */; };
+		6947BA0820560D1600D6E0C7 /* AddTaskVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6947BA0320560D1600D6E0C7 /* AddTaskVC.xib */; };
+		6947BA0920560D1600D6E0C7 /* AddTaskVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6947BA0320560D1600D6E0C7 /* AddTaskVC.xib */; };
+		6947BA0D20560E9900D6E0C7 /* DetailedTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6947BA0B20560E9900D6E0C7 /* DetailedTaskVC.swift */; };
+		6947BA0E20560E9900D6E0C7 /* DetailedTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6947BA0B20560E9900D6E0C7 /* DetailedTaskVC.swift */; };
+		6947BA0F20560E9900D6E0C7 /* DetailedTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6947BA0B20560E9900D6E0C7 /* DetailedTaskVC.swift */; };
+		6947BA1020560E9900D6E0C7 /* DetailedTaskVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6947BA0C20560E9900D6E0C7 /* DetailedTaskVC.xib */; };
+		6947BA1120560E9900D6E0C7 /* DetailedTaskVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6947BA0C20560E9900D6E0C7 /* DetailedTaskVC.xib */; };
+		6947BA1220560E9900D6E0C7 /* DetailedTaskVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6947BA0C20560E9900D6E0C7 /* DetailedTaskVC.xib */; };
 		6950D0732055D03C0041922E /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6950D0722055D03C0041922E /* MainVC.swift */; };
 		6950D0742055D03C0041922E /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6950D0722055D03C0041922E /* MainVC.swift */; };
 		6950D0752055D03C0041922E /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6950D0722055D03C0041922E /* MainVC.swift */; };
@@ -49,10 +73,8 @@
 		6950D0862055D1410041922E /* SettingsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6950D0812055D1410041922E /* SettingsVC.xib */; };
 		6950D0872055D1410041922E /* SettingsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6950D0812055D1410041922E /* SettingsVC.xib */; };
 		695ED5B82044AFC500BB12DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E0B96A2044AE050083ED7D /* AppDelegate.swift */; };
-		695ED5BB2044AFC500BB12DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69E0B9732044AE050083ED7D /* LaunchScreen.storyboard */; };
 		695ED5BC2044AFC500BB12DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69E0B9712044AE050083ED7D /* Assets.xcassets */; };
 		695ED5C62044AFC800BB12DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E0B96A2044AE050083ED7D /* AppDelegate.swift */; };
-		695ED5C92044AFC800BB12DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69E0B9732044AE050083ED7D /* LaunchScreen.storyboard */; };
 		695ED5CA2044AFC800BB12DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69E0B9712044AE050083ED7D /* Assets.xcassets */; };
 		69798AF2204F2E100046132A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69798AF1204F2E100046132A /* GoogleService-Info.plist */; };
 		69798AF3204F2E100046132A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69798AF1204F2E100046132A /* GoogleService-Info.plist */; };
@@ -60,10 +82,12 @@
 		69798AF7204F438D0046132A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69798AF6204F438D0046132A /* Task.swift */; };
 		69798AF8204F438D0046132A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69798AF6204F438D0046132A /* Task.swift */; };
 		69798AF9204F438D0046132A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69798AF6204F438D0046132A /* Task.swift */; };
+		69900676205AB7E9008F56BA /* PerformanceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69900675205AB7E9008F56BA /* PerformanceExtension.swift */; };
+		69900677205AB7E9008F56BA /* PerformanceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69900675205AB7E9008F56BA /* PerformanceExtension.swift */; };
+		69900678205AB7E9008F56BA /* PerformanceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69900675205AB7E9008F56BA /* PerformanceExtension.swift */; };
 		69BFBE7A2055A46A00D0B8A1 /* EisenhowerTaskManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BFBE792055A46A00D0B8A1 /* EisenhowerTaskManagerTests.swift */; };
 		69E0B96B2044AE050083ED7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E0B96A2044AE050083ED7D /* AppDelegate.swift */; };
 		69E0B9722044AE050083ED7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69E0B9712044AE050083ED7D /* Assets.xcassets */; };
-		69E0B9752044AE050083ED7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69E0B9732044AE050083ED7D /* LaunchScreen.storyboard */; };
 		83D7F33CAC6AEC638C7D175D /* Pods_EisenhowerTaskManager_development.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A381E6F46DEB45B7BE26D2C /* Pods_EisenhowerTaskManager_development.framework */; };
 		A8FC89A59F59AA3FC8477C47 /* Pods_EisenhowerTaskManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE23198DBDAFD731A7A9B812 /* Pods_EisenhowerTaskManagerTests.framework */; };
 		F2B186802059CE6C0060F729 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1867E2059CE6C0060F729 /* ProfileVC.swift */; };
@@ -91,6 +115,9 @@
 		61620DF00FF109F85F958864 /* Pods-EisenhowerTaskManager-appstore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EisenhowerTaskManager-appstore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EisenhowerTaskManager-appstore/Pods-EisenhowerTaskManager-appstore.debug.xcconfig"; sourceTree = "<group>"; };
 		690B79802044B828006A6C97 /* SplashScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
 		690B79812044B828006A6C97 /* SplashScreenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreenVC.xib; sourceTree = "<group>"; };
+		69173FBD205AD9CF0094C99A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		69173FBF205AD9E30094C99A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		69173FC2205AE62A0094C99A /* strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = strings.swift; sourceTree = "<group>"; };
 		692E4C8C205195BA007E1CFA /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		6940FF1C204DE1BE0063101D /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		6940FF1D204DE1BE0063101D /* SignInVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInVC.xib; sourceTree = "<group>"; };
@@ -98,6 +125,12 @@
 		6940FF23204DE83C0063101D /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		6940FF24204DE83C0063101D /* SignUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpVC.xib; sourceTree = "<group>"; };
 		6940FF28204DEC520063101D /* SnackBarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackBarHelper.swift; sourceTree = "<group>"; };
+		6947B9F92055FEFC00D6E0C7 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		6947B9FA2055FEFC00D6E0C7 /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
+		6947BA0220560D1600D6E0C7 /* AddTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskVC.swift; sourceTree = "<group>"; };
+		6947BA0320560D1600D6E0C7 /* AddTaskVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTaskVC.xib; sourceTree = "<group>"; };
+		6947BA0B20560E9900D6E0C7 /* DetailedTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedTaskVC.swift; sourceTree = "<group>"; };
+		6947BA0C20560E9900D6E0C7 /* DetailedTaskVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailedTaskVC.xib; sourceTree = "<group>"; };
 		6950D0722055D03C0041922E /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		6950D0782055D1330041922E /* MatrixVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixVC.swift; sourceTree = "<group>"; };
 		6950D0792055D1330041922E /* MatrixVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatrixVC.xib; sourceTree = "<group>"; };
@@ -107,15 +140,16 @@
 		695ED5C22044AFC600BB12DF /* EisenhowerTaskManager-adhoc.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "EisenhowerTaskManager-adhoc.plist"; path = "/Users/ogorbatchev/Work/EisenhowerTaskManager/EisenhowerTaskManager/EisenhowerTaskManager/EisenhowerTaskManager-adhoc.plist"; sourceTree = "<absolute>"; };
 		695ED5CF2044AFC800BB12DF /* EisenhowerTaskManager-appstore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EisenhowerTaskManager-appstore.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		695ED5D02044AFC800BB12DF /* EisenhowerTaskManager-appstore.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "EisenhowerTaskManager-appstore.plist"; path = "/Users/ogorbatchev/Work/EisenhowerTaskManager/EisenhowerTaskManager/EisenhowerTaskManager/EisenhowerTaskManager-appstore.plist"; sourceTree = "<absolute>"; };
-		69798AF1204F2E100046132A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "EisenhowerTaskManager/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		6965E0FE205F2B76004A9E51 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		69798AF1204F2E100046132A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		69798AF6204F438D0046132A /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		69900675205AB7E9008F56BA /* PerformanceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceExtension.swift; sourceTree = "<group>"; };
 		69BFBE772055A46A00D0B8A1 /* EisenhowerTaskManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EisenhowerTaskManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69BFBE792055A46A00D0B8A1 /* EisenhowerTaskManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EisenhowerTaskManagerTests.swift; sourceTree = "<group>"; };
 		69BFBE7B2055A46A00D0B8A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69E0B9672044AE050083ED7D /* EisenhowerTaskManager-development.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EisenhowerTaskManager-development.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E0B96A2044AE050083ED7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69E0B9712044AE050083ED7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		69E0B9742044AE050083ED7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69E0B9812044AE050083ED7D /* EisenhowerTaskManager-development.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EisenhowerTaskManager-development.plist"; sourceTree = "<group>"; };
 		6EE0E0C1D918FE7774E75162 /* Pods_EisenhowerTaskManager_adhoc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EisenhowerTaskManager_adhoc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78CD225CE778FE3B0697C3F3 /* Pods_EisenhowerTaskManager_appstore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EisenhowerTaskManager_appstore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				6940FF21204DE7DB0063101D /* UIViewControllerExtension.swift */,
+				69900675205AB7E9008F56BA /* PerformanceExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -193,22 +228,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		690B797D2044B7DF006A6C97 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
 		690B797E2044B7E5006A6C97 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				690B797F2044B7EF006A6C97 /* SplashScreen */,
 				6940FF1B204DE19B0063101D /* SignIn */,
 				6940FF20204DE6850063101D /* SignUp */,
-				6950D0712055D0170041922E /* MainVC */,
-				6950D0772055D1080041922E /* MatrixVC */,
-				6950D0762055D0E00041922E /* SettingsVC */,
+				6950D0712055D0170041922E /* Main */,
+				6950D0772055D1080041922E /* Matrix */,
+				6950D0762055D0E00041922E /* Settings */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -220,6 +248,15 @@
 				690B79802044B828006A6C97 /* SplashScreenVC.swift */,
 			);
 			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		69173FB5205AD98F0094C99A /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				69173FBE205AD9CF0094C99A /* Localizable.strings */,
+				69173FC2205AE62A0094C99A /* strings.swift */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 		6940FF1B204DE19B0063101D /* SignIn */ = {
@@ -248,31 +285,61 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		6950D0712055D0170041922E /* MainVC */ = {
+		6947B9F82055FEDA00D6E0C7 /* TaskTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				6947B9FA2055FEFC00D6E0C7 /* TaskTableViewCell.xib */,
+				6947B9F92055FEFC00D6E0C7 /* TaskTableViewCell.swift */,
+			);
+			path = TaskTableViewCell;
+			sourceTree = "<group>";
+		};
+		6947BA0120560CF900D6E0C7 /* AddTask */ = {
+			isa = PBXGroup;
+			children = (
+				6947BA0320560D1600D6E0C7 /* AddTaskVC.xib */,
+				6947BA0220560D1600D6E0C7 /* AddTaskVC.swift */,
+			);
+			path = AddTask;
+			sourceTree = "<group>";
+		};
+		6947BA0A20560E8100D6E0C7 /* DetailedTask */ = {
+			isa = PBXGroup;
+			children = (
+				6947BA0C20560E9900D6E0C7 /* DetailedTaskVC.xib */,
+				6947BA0B20560E9900D6E0C7 /* DetailedTaskVC.swift */,
+			);
+			path = DetailedTask;
+			sourceTree = "<group>";
+		};
+		6950D0712055D0170041922E /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				6950D0722055D03C0041922E /* MainVC.swift */,
 			);
-			path = MainVC;
+			path = Main;
 			sourceTree = "<group>";
 		};
-		6950D0762055D0E00041922E /* SettingsVC */ = {
+		6950D0762055D0E00041922E /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				F2B1867D2059CE2A0060F729 /* ProfileVC */,
+				F2B1867D2059CE2A0060F729 /* Profile */,
 				6950D0812055D1410041922E /* SettingsVC.xib */,
 				6950D0802055D1410041922E /* SettingsVC.swift */,
 			);
-			path = SettingsVC;
+			path = Settings;
 			sourceTree = "<group>";
 		};
-		6950D0772055D1080041922E /* MatrixVC */ = {
+		6950D0772055D1080041922E /* Matrix */ = {
 			isa = PBXGroup;
 			children = (
+				6947BA0A20560E8100D6E0C7 /* DetailedTask */,
+				6947BA0120560CF900D6E0C7 /* AddTask */,
+				6947B9F82055FEDA00D6E0C7 /* TaskTableViewCell */,
 				6950D0792055D1330041922E /* MatrixVC.xib */,
 				6950D0782055D1330041922E /* MatrixVC.swift */,
 			);
-			path = MatrixVC;
+			path = Matrix;
 			sourceTree = "<group>";
 		};
 		699EFAE2205192D500D69518 /* Bundles */ = {
@@ -318,14 +385,13 @@
 			isa = PBXGroup;
 			children = (
 				690B797E2044B7E5006A6C97 /* Views */,
-				690B797D2044B7DF006A6C97 /* Network */,
 				690B797C2044B7DA006A6C97 /* Models */,
 				690B797B2044B7BD006A6C97 /* Extensions */,
 				6940FF27204DEC360063101D /* Helpers */,
 				699EFAE2205192D500D69518 /* Bundles */,
+				69173FB5205AD98F0094C99A /* Localization */,
 				69E0B96A2044AE050083ED7D /* AppDelegate.swift */,
 				69E0B9712044AE050083ED7D /* Assets.xcassets */,
-				69E0B9732044AE050083ED7D /* LaunchScreen.storyboard */,
 				69E0B9812044AE050083ED7D /* EisenhowerTaskManager-development.plist */,
 				695ED5C22044AFC600BB12DF /* EisenhowerTaskManager-adhoc.plist */,
 				695ED5D02044AFC800BB12DF /* EisenhowerTaskManager-appstore.plist */,
@@ -349,13 +415,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		F2B1867D2059CE2A0060F729 /* ProfileVC */ = {
+		F2B1867D2059CE2A0060F729 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
 				F2B1867E2059CE6C0060F729 /* ProfileVC.swift */,
 				F2B1867F2059CE6C0060F729 /* ProfileVC.xib */,
 			);
-			path = ProfileVC;
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,6 +432,7 @@
 			buildConfigurationList = 695ED5BE2044AFC500BB12DF /* Build configuration list for PBXNativeTarget "EisenhowerTaskManager-adhoc" */;
 			buildPhases = (
 				5BD7BBD30A22008BCF698337 /* [CP] Check Pods Manifest.lock */,
+				69184F9A205AC34F0079FD8D /* Fetch GoogleService-Info */,
 				695ED5B62044AFC500BB12DF /* Sources */,
 				695ED5B92044AFC500BB12DF /* Frameworks */,
 				695ED5BA2044AFC500BB12DF /* Resources */,
@@ -387,6 +454,7 @@
 			buildConfigurationList = 695ED5CC2044AFC800BB12DF /* Build configuration list for PBXNativeTarget "EisenhowerTaskManager-appstore" */;
 			buildPhases = (
 				89BD321811AF84D15BB0A6F2 /* [CP] Check Pods Manifest.lock */,
+				69184F9B205AC3720079FD8D /* Fetch GoogleService-Info */,
 				695ED5C42044AFC800BB12DF /* Sources */,
 				695ED5C72044AFC800BB12DF /* Frameworks */,
 				695ED5C82044AFC800BB12DF /* Resources */,
@@ -429,6 +497,9 @@
 			buildConfigurationList = 69E0B9842044AE050083ED7D /* Build configuration list for PBXNativeTarget "EisenhowerTaskManager-development" */;
 			buildPhases = (
 				969D1E06EBD35B852FD33D42 /* [CP] Check Pods Manifest.lock */,
+				69184F99205AC2500079FD8D /* Fetch GoogleService-Info */,
+				69173FC0205ADD0B0094C99A /* Fetch Lokalize.co */,
+				69173FC1205AE49C0094C99A /* SwiftGen */,
 				6940FF16204DDE1E0063101D /* SwiftLint */,
 				699EFAE12051912F00D69518 /* LicencePlist */,
 				69E0B9632044AE050083ED7D /* Sources */,
@@ -479,7 +550,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
+				fr,
+				ru,
 			);
 			mainGroup = 69E0B95E2044AE050083ED7D;
 			productRefGroup = 69E0B9682044AE050083ED7D /* Products */;
@@ -502,12 +574,15 @@
 				6940FF31204DF7320063101D /* SignUpVC.xib in Resources */,
 				F2B186842059CE6C0060F729 /* ProfileVC.xib in Resources */,
 				6950D0862055D1410041922E /* SettingsVC.xib in Resources */,
+				69173FBB205AD9CF0094C99A /* Localizable.strings in Resources */,
 				6940FF2F204DF7320063101D /* SignInVC.xib in Resources */,
+				6947BA1120560E9900D6E0C7 /* DetailedTaskVC.xib in Resources */,
 				6950D07E2055D1330041922E /* MatrixVC.xib in Resources */,
-				695ED5BB2044AFC500BB12DF /* LaunchScreen.storyboard in Resources */,
 				695ED5BC2044AFC500BB12DF /* Assets.xcassets in Resources */,
+				6947B9FF2055FEFC00D6E0C7 /* TaskTableViewCell.xib in Resources */,
 				690B79862044B828006A6C97 /* SplashScreenVC.xib in Resources */,
 				69798AF3204F2E100046132A /* GoogleService-Info.plist in Resources */,
+				6947BA0820560D1600D6E0C7 /* AddTaskVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,12 +593,15 @@
 				6940FF35204DF7320063101D /* SignUpVC.xib in Resources */,
 				F2B186852059CE6C0060F729 /* ProfileVC.xib in Resources */,
 				6950D0872055D1410041922E /* SettingsVC.xib in Resources */,
+				69173FBC205AD9CF0094C99A /* Localizable.strings in Resources */,
 				6940FF33204DF7320063101D /* SignInVC.xib in Resources */,
+				6947BA1220560E9900D6E0C7 /* DetailedTaskVC.xib in Resources */,
 				6950D07F2055D1330041922E /* MatrixVC.xib in Resources */,
-				695ED5C92044AFC800BB12DF /* LaunchScreen.storyboard in Resources */,
 				695ED5CA2044AFC800BB12DF /* Assets.xcassets in Resources */,
+				6947BA002055FEFC00D6E0C7 /* TaskTableViewCell.xib in Resources */,
 				690B79872044B828006A6C97 /* SplashScreenVC.xib in Resources */,
 				69798AF4204F2E100046132A /* GoogleService-Info.plist in Resources */,
+				6947BA0920560D1600D6E0C7 /* AddTaskVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,14 +617,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				6940FF26204DE83C0063101D /* SignUpVC.xib in Resources */,
+				69173FBA205AD9CF0094C99A /* Localizable.strings in Resources */,
 				6940FF1F204DE1BE0063101D /* SignInVC.xib in Resources */,
-				69E0B9752044AE050083ED7D /* LaunchScreen.storyboard in Resources */,
 				6950D07D2055D1330041922E /* MatrixVC.xib in Resources */,
+				6947B9FE2055FEFC00D6E0C7 /* TaskTableViewCell.xib in Resources */,
 				F2B186832059CE6C0060F729 /* ProfileVC.xib in Resources */,
 				69E0B9722044AE050083ED7D /* Assets.xcassets in Resources */,
 				690B79852044B828006A6C97 /* SplashScreenVC.xib in Resources */,
+				6947BA1020560E9900D6E0C7 /* DetailedTaskVC.xib in Resources */,
 				6950D0852055D1410041922E /* SettingsVC.xib in Resources */,
 				69798AF2204F2E100046132A /* GoogleService-Info.plist in Resources */,
+				6947BA0720560D1600D6E0C7 /* AddTaskVC.xib in Resources */,
 				692E4C8D205195BA007E1CFA /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -562,23 +643,31 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-EisenhowerTaskManagerTests/Pods-EisenhowerTaskManagerTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DSGradientProgressView/DSGradientProgressView.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GenericPasswordRow/GenericPasswordRow.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Haptica/Haptica.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
 				"${BUILT_PRODUCTS_DIR}/TTGSnackbar/TTGSnackbar.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DSGradientProgressView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GenericPasswordRow.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Haptica.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTGSnackbar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -621,6 +710,76 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		69173FC0205ADD0B0094C99A /* Fetch Lokalize.co */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Fetch Lokalize.co";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "lokalise --token 97bc6dd48627f0d3c207b923f91baeba436b4fc9 export 661544825aaa9de2a4cf87.80023113 --type strings --unzip_to ./EisenhowerTaskManager/Localization/ --export_all 1";
+		};
+		69173FC1205AE49C0094C99A /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$PODS_ROOT/SwiftGen/bin/swiftgen strings ./EisenhowerTaskManager/Localization/en.lproj/Localizable.strings -t structured-swift4 -o ./EisenhowerTaskManager/Localization/strings.swift";
+		};
+		69184F99205AC2500079FD8D /* Fetch GoogleService-Info */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Fetch GoogleService-Info";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "git clone git@github.com:gorbat-o/EisenhowerTaskManager-Sensitive.git\ncp ./EisenhowerTaskManager-Sensitive/GoogleService-Info-development.plist ./EisenhowerTaskManager/GoogleService-Info.plist\nrm -r EisenhowerTaskManager-Sensitive";
+		};
+		69184F9A205AC34F0079FD8D /* Fetch GoogleService-Info */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Fetch GoogleService-Info";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "git clone git@github.com:gorbat-o/EisenhowerTaskManager-Sensitive.git\ncp ./EisenhowerTaskManager-Sensitive/GoogleService-Info-development.plist ./EisenhowerTaskManager/GoogleService-Info.plist\nrm -r EisenhowerTaskManager-Sensitive";
+		};
+		69184F9B205AC3720079FD8D /* Fetch GoogleService-Info */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Fetch GoogleService-Info";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "git clone git@github.com:gorbat-o/EisenhowerTaskManager-Sensitive.git\ncp ./EisenhowerTaskManager-Sensitive/GoogleService-Info.plist ./EisenhowerTaskManager/GoogleService-Info.plist\nrm -r EisenhowerTaskManager-Sensitive";
 		};
 		693D97492055B06900F4EE14 /* Crashlytics */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -740,23 +899,31 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-EisenhowerTaskManager-adhoc/Pods-EisenhowerTaskManager-adhoc-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DSGradientProgressView/DSGradientProgressView.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GenericPasswordRow/GenericPasswordRow.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Haptica/Haptica.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
 				"${BUILT_PRODUCTS_DIR}/TTGSnackbar/TTGSnackbar.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DSGradientProgressView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GenericPasswordRow.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Haptica.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTGSnackbar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -772,23 +939,31 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-EisenhowerTaskManager-appstore/Pods-EisenhowerTaskManager-appstore-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DSGradientProgressView/DSGradientProgressView.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GenericPasswordRow/GenericPasswordRow.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Haptica/Haptica.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
 				"${BUILT_PRODUCTS_DIR}/TTGSnackbar/TTGSnackbar.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DSGradientProgressView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GenericPasswordRow.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Haptica.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTGSnackbar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -855,23 +1030,31 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-EisenhowerTaskManager-development/Pods-EisenhowerTaskManager-development-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DSGradientProgressView/DSGradientProgressView.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GenericPasswordRow/GenericPasswordRow.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Haptica/Haptica.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
 				"${BUILT_PRODUCTS_DIR}/TTGSnackbar/TTGSnackbar.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DSGradientProgressView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GenericPasswordRow.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Haptica.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTGSnackbar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -886,15 +1069,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69900677205AB7E9008F56BA /* PerformanceExtension.swift in Sources */,
 				6940FF2C204DF7270063101D /* UIViewControllerExtension.swift in Sources */,
+				6947BA0E20560E9900D6E0C7 /* DetailedTaskVC.swift in Sources */,
 				695ED5B82044AFC500BB12DF /* AppDelegate.swift in Sources */,
+				6947B9FC2055FEFC00D6E0C7 /* TaskTableViewCell.swift in Sources */,
 				6940FF2A204DF7240063101D /* SnackBarHelper.swift in Sources */,
 				690B79882044B833006A6C97 /* SplashScreenVC.swift in Sources */,
 				6940FF30204DF7320063101D /* SignUpVC.swift in Sources */,
 				6950D0742055D03C0041922E /* MainVC.swift in Sources */,
+				6947BA0520560D1600D6E0C7 /* AddTaskVC.swift in Sources */,
 				69798AF8204F438D0046132A /* Task.swift in Sources */,
 				6940FF2E204DF7320063101D /* SignInVC.swift in Sources */,
 				6950D07B2055D1330041922E /* MatrixVC.swift in Sources */,
+				69173FC4205AE62A0094C99A /* strings.swift in Sources */,
 				F2B186812059CE6C0060F729 /* ProfileVC.swift in Sources */,
 				6950D0832055D1410041922E /* SettingsVC.swift in Sources */,
 			);
@@ -904,15 +1092,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69900678205AB7E9008F56BA /* PerformanceExtension.swift in Sources */,
 				6940FF2D204DF7280063101D /* UIViewControllerExtension.swift in Sources */,
+				6947BA0F20560E9900D6E0C7 /* DetailedTaskVC.swift in Sources */,
 				695ED5C62044AFC800BB12DF /* AppDelegate.swift in Sources */,
+				6947B9FD2055FEFC00D6E0C7 /* TaskTableViewCell.swift in Sources */,
 				6940FF2B204DF7250063101D /* SnackBarHelper.swift in Sources */,
 				690B79842044B828006A6C97 /* SplashScreenVC.swift in Sources */,
 				6940FF34204DF7320063101D /* SignUpVC.swift in Sources */,
 				6950D0752055D03C0041922E /* MainVC.swift in Sources */,
+				6947BA0620560D1600D6E0C7 /* AddTaskVC.swift in Sources */,
 				69798AF9204F438D0046132A /* Task.swift in Sources */,
 				6940FF32204DF7320063101D /* SignInVC.swift in Sources */,
 				6950D07C2055D1330041922E /* MatrixVC.swift in Sources */,
+				69173FC5205AE62A0094C99A /* strings.swift in Sources */,
 				F2B186822059CE6C0060F729 /* ProfileVC.swift in Sources */,
 				6950D0842055D1410041922E /* SettingsVC.swift in Sources */,
 			);
@@ -930,15 +1123,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69900676205AB7E9008F56BA /* PerformanceExtension.swift in Sources */,
 				6940FF22204DE7DB0063101D /* UIViewControllerExtension.swift in Sources */,
+				6947BA0D20560E9900D6E0C7 /* DetailedTaskVC.swift in Sources */,
 				69E0B96B2044AE050083ED7D /* AppDelegate.swift in Sources */,
+				6947B9FB2055FEFC00D6E0C7 /* TaskTableViewCell.swift in Sources */,
 				690B79822044B828006A6C97 /* SplashScreenVC.swift in Sources */,
 				6940FF25204DE83C0063101D /* SignUpVC.swift in Sources */,
 				6940FF29204DEC520063101D /* SnackBarHelper.swift in Sources */,
 				6950D0732055D03C0041922E /* MainVC.swift in Sources */,
+				6947BA0420560D1600D6E0C7 /* AddTaskVC.swift in Sources */,
 				69798AF7204F438D0046132A /* Task.swift in Sources */,
 				6940FF1E204DE1BE0063101D /* SignInVC.swift in Sources */,
 				6950D07A2055D1330041922E /* MatrixVC.swift in Sources */,
+				69173FC3205AE62A0094C99A /* strings.swift in Sources */,
 				F2B186802059CE6C0060F729 /* ProfileVC.swift in Sources */,
 				6950D0822055D1410041922E /* SettingsVC.swift in Sources */,
 			);
@@ -955,12 +1153,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		69E0B9732044AE050083ED7D /* LaunchScreen.storyboard */ = {
+		69173FBE205AD9CF0094C99A /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				69E0B9742044AE050083ED7D /* Base */,
+				69173FBD205AD9CF0094C99A /* en */,
+				69173FBF205AD9E30094C99A /* fr */,
+				6965E0FE205F2B76004A9E51 /* ru */,
 			);
-			name = LaunchScreen.storyboard;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -976,10 +1176,10 @@
 				INFOPLIST_FILE = "EisenhowerTaskManager/EisenhowerTaskManager-adhoc.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-D\" \"ADHOC\"";
-				PRODUCT_BUNDLE_IDENTIFIER = com.oleggorbatchev.EisenhowerTaskManager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oleggorbatchev.EisenhowerTaskManager.development;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5ca13519-e4fb-49c6-8bbe-ceee947fa708";
-				PROVISIONING_PROFILE_SPECIFIER = "Eisenhower Task Manager PP Development";
+				PROVISIONING_PROFILE = "2d6d45ae-e384-44d9-ad3f-2c24e37d4c0e";
+				PROVISIONING_PROFILE_SPECIFIER = "Eisenhower Task Manager PP Preprod Development";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -996,10 +1196,10 @@
 				INFOPLIST_FILE = "EisenhowerTaskManager/EisenhowerTaskManager-adhoc.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-D\" \"ADHOC\"";
-				PRODUCT_BUNDLE_IDENTIFIER = com.oleggorbatchev.EisenhowerTaskManager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oleggorbatchev.EisenhowerTaskManager.development;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0840a7e6-71cb-4d3e-80ee-fcbe80b85cd6";
-				PROVISIONING_PROFILE_SPECIFIER = "Eisenhower Task Manager PP AppStore";
+				PROVISIONING_PROFILE = "6f102cbf-f229-45b4-9fa4-ac86e9741346";
+				PROVISIONING_PROFILE_SPECIFIER = "Eisenhower Task Manager PP Preprod Adhoc";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1088,6 +1288,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1145,6 +1346,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1201,10 +1403,10 @@
 				INFOPLIST_FILE = "EisenhowerTaskManager/EisenhowerTaskManager-development.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.oleggorbatchev.EisenhowerTaskManager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oleggorbatchev.EisenhowerTaskManager.development;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "cb18a25b-c402-4148-9807-fac1bcb7c48a";
-				PROVISIONING_PROFILE_SPECIFIER = "Eisenhower Task Manager PP Development";
+				PROVISIONING_PROFILE = "2d6d45ae-e384-44d9-ad3f-2c24e37d4c0e";
+				PROVISIONING_PROFILE_SPECIFIER = "Eisenhower Task Manager PP Preprod Development";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1221,10 +1423,10 @@
 				INFOPLIST_FILE = "EisenhowerTaskManager/EisenhowerTaskManager-development.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.oleggorbatchev.EisenhowerTaskManager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oleggorbatchev.EisenhowerTaskManager.development;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0840a7e6-71cb-4d3e-80ee-fcbe80b85cd6";
-				PROVISIONING_PROFILE_SPECIFIER = "Eisenhower Task Manager PP AppStore";
+				PROVISIONING_PROFILE = "6f102cbf-f229-45b4-9fa4-ac86e9741346";
+				PROVISIONING_PROFILE_SPECIFIER = "Eisenhower Task Manager PP Preprod Adhoc";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

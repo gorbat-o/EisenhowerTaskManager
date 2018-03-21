@@ -8,26 +8,31 @@
 
 import UIKit
 import TTGSnackbar
+import Haptica
 
 class SnackBarHelper {
     static private let noActionSnackBar = TTGSnackbar(message: "", duration: TTGSnackbarDuration.middle)
+    static private let impactFeedbackStyle = UIImpactFeedbackStyle.medium
 
-    static func showError(withText text: String) {
+    class func showError(withText text: String) {
         SnackBarHelper.noActionSnackBar.message = text
+        Haptic.impact(impactFeedbackStyle).generate()
         SnackBarHelper.noActionSnackBar.show()
     }
 
-    static func showSuccess(withText text: String) {
+    class func showSuccess(withText text: String) {
         SnackBarHelper.noActionSnackBar.message = text
+        Haptic.impact(impactFeedbackStyle).generate()
         SnackBarHelper.noActionSnackBar.show()
     }
 
-    static func showInformation(withText text: String) {
+    class func showInformation(withText text: String) {
         SnackBarHelper.noActionSnackBar.message = text
+        Haptic.impact(impactFeedbackStyle).generate()
         SnackBarHelper.noActionSnackBar.show()
     }
 
-    static func dismiss() {
+    class func dismiss() {
         SnackBarHelper.noActionSnackBar.dismiss()
     }
 

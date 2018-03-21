@@ -22,6 +22,14 @@
 		</dict>
 		<dict>
 			<key>File</key>
+			<string>com.mono0926.LicensePlist/DSGradientProgressView</string>
+			<key>Title</key>
+			<string>DSGradientProgressView</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
 			<string>com.mono0926.LicensePlist/Eureka</string>
 			<key>Title</key>
 			<string>Eureka</string>
@@ -70,9 +78,33 @@
 		</dict>
 		<dict>
 			<key>File</key>
+			<string>com.mono0926.LicensePlist/FirebaseDatabase</string>
+			<key>Title</key>
+			<string>FirebaseDatabase</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
 			<string>com.mono0926.LicensePlist/FirebaseInstanceID</string>
 			<key>Title</key>
 			<string>FirebaseInstanceID</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>com.mono0926.LicensePlist/FirebasePerformance</string>
+			<key>Title</key>
+			<string>FirebasePerformance</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>com.mono0926.LicensePlist/FirebaseSwizzlingUtilities</string>
+			<key>Title</key>
+			<string>FirebaseSwizzlingUtilities</string>
 			<key>Type</key>
 			<string>PSChildPaneSpecifier</string>
 		</dict>
@@ -102,6 +134,22 @@
 		</dict>
 		<dict>
 			<key>File</key>
+			<string>com.mono0926.LicensePlist/Haptica</string>
+			<key>Title</key>
+			<string>Haptica</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>com.mono0926.LicensePlist/leveldb-library</string>
+			<key>Title</key>
+			<string>leveldb-library</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
 			<string>com.mono0926.LicensePlist/LicensePlist</string>
 			<key>Title</key>
 			<string>LicensePlist</string>
@@ -118,17 +166,33 @@
 		</dict>
 		<dict>
 			<key>File</key>
-			<string>com.mono0926.LicensePlist/SwiftLint</string>
+			<string>com.mono0926.LicensePlist/Protobuf</string>
 			<key>Title</key>
-			<string>SwiftLint</string>
+			<string>Protobuf</string>
 			<key>Type</key>
 			<string>PSChildPaneSpecifier</string>
 		</dict>
 		<dict>
 			<key>File</key>
-			<string>com.mono0926.LicensePlist/SwiftyJSON</string>
+			<string>com.mono0926.LicensePlist/SwiftDate</string>
 			<key>Title</key>
-			<string>SwiftyJSON</string>
+			<string>SwiftDate</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>com.mono0926.LicensePlist/SwiftGen</string>
+			<key>Title</key>
+			<string>SwiftGen</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>com.mono0926.LicensePlist/SwiftLint</string>
+			<key>Title</key>
+			<string>SwiftLint</string>
 			<key>Type</key>
 			<string>PSChildPaneSpecifier</string>
 		</dict>

@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseDatabase
 #if ADHOC || APPSTORE
     import Fabric
     import Crashlytics
@@ -16,28 +17,29 @@ import Firebase
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
+    var databaseReference: DatabaseReference?
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        self.setupFirebase()
-        self.setupMainView()
-        self.setupFabric()
-
+        setupFirebase()
+        setupMainView()
+        setupFabric()
         return true
     }
 }
 
 extension AppDelegate {
     private func setupMainView() {
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.rootViewController = SplashScreenVC()
-        self.window?.makeKeyAndVisible()
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = SplashScreenVC()
+        window?.makeKeyAndVisible()
     }
 
     private func setupFirebase() {
         if let filePath = Bundle.main.path(forResource: "GoogleService-Info", ofType: "plist"),
             let options = FirebaseOptions(contentsOfFile: filePath) {
             FirebaseApp.configure(options: options)
+            databaseReference = Database.database().reference()
         }
     }
 

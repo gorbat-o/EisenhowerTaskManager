@@ -18,12 +18,12 @@ class MainVC: UITabBarController {
 extension MainVC {
     private func setupTabBarController() {
         let matrixTab = UINavigationController(rootViewController: MatrixVC())
-        let matrixTabBarItem = UITabBarItem(title: "Matrix",
+        let matrixTabBarItem = UITabBarItem(title: L10n.Generic.matrix,
                                             image: UIImage(named: "Matrix"),
                                             selectedImage: UIImage(named: "Matrix"))
         matrixTab.tabBarItem = matrixTabBarItem
         let settingsTab = UINavigationController(rootViewController: SettingsVC())
-        let settingsTabBarItem = UITabBarItem(title: "Settings",
+        let settingsTabBarItem = UITabBarItem(title: L10n.Generic.settings,
                                               image: UIImage(named: "Settings"),
                                               selectedImage: UIImage(named: "Settings"))
         settingsTab.tabBarItem = settingsTabBarItem

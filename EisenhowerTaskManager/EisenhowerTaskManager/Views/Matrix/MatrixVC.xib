@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MatrixVC" customModule="EisenhowerTaskManager_adhoc" customModuleProvider="target">
+            <connections>
+                <outlet property="segmentedControl" destination="NdK-34-jgp" id="pfs-vm-FS5"/>
+                <outlet property="tableView" destination="CgT-YD-xj6" id="hMZ-zO-mya"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="NdK-34-jgp">
+                    <rect key="frame" x="20" y="30" width="335" height="29"/>
+                    <segments>
+                        <segment title="First"/>
+                        <segment title="Second"/>
+                    </segments>
+                    <connections>
+                        <action selector="indexChanged:" destination="-1" eventType="valueChanged" id="OiD-C7-nt5"/>
+                    </connections>
+                </segmentedControl>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CgT-YD-xj6">
+                    <rect key="frame" x="0.0" y="68" width="375" height="599"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="NdK-34-jgp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="0Jy-z9-Mjw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="CgT-YD-xj6" secondAttribute="bottom" id="5rX-ab-wZh"/>
+                <constraint firstItem="CgT-YD-xj6" firstAttribute="top" secondItem="NdK-34-jgp" secondAttribute="bottom" constant="10" id="7eh-di-fsZ"/>
+                <constraint firstItem="NdK-34-jgp" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="GPg-LX-1mT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CgT-YD-xj6" secondAttribute="trailing" id="W2T-Pl-TaB"/>
+                <constraint firstItem="CgT-YD-xj6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lzE-p8-G7Y"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NdK-34-jgp" secondAttribute="trailing" constant="20" id="seR-iP-r5e"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
