@@ -37,8 +37,8 @@ extension SplashScreenVC {
         if Auth.auth().currentUser == nil {
             setupSignInVC()
         } else {
-            let vc = MainVC()
-            UIApplication.shared.delegate?.window??.rootViewController = vc
+            let mainVC = MainVC()
+            UIApplication.shared.delegate?.window??.rootViewController = mainVC
         }
     }
 

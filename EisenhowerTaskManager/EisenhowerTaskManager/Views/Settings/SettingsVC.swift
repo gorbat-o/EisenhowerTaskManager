@@ -15,8 +15,17 @@ class SettingsVC: FormViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.title = "Settings"
+        setupNavigationBar()
+        setupTableView()
+    }
+}
 
+extension SettingsVC {
+    private func setupNavigationBar() {
+        title = "Settings"
+    }
+
+    private func setupTableView() {
         form +++ Section("User")
             <<< ButtonRow {
                 $0.title = "Profile"
@@ -28,16 +37,13 @@ class SettingsVC: FormViewController {
             +++ Section()
             <<< ButtonRow {
                 $0.title = "Disconnect"
-                $0.onCellSelection { _, _ in
-                    self.disconnect()
+                $0.onCellSelection { [weak self] _, _ in
+                    self?.disconnect()
                 }
         }
     }
-}
 
-extension SettingsVC {
     private func disconnect() {
-        print("Disconnect!")
         do {
             try Auth.auth().signOut()
         } catch let signOutError as NSError {

@@ -15,7 +15,17 @@ class ProfileVC: FormViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.title = "Profile"
+        setupNavigationBar()
+        setupTableView()
+    }
+}
+
+extension ProfileVC {
+    private func setupNavigationBar() {
+        title = "Profile"
+    }
+
+    private func setupTableView() {
         form
             +++ Section ("Update email")
             <<< EmailRow {
@@ -28,8 +38,8 @@ class ProfileVC: FormViewController {
             }
             <<< ButtonRow {
                 $0.title = "Change email"
-                $0.onCellSelection { _, _ in
-                    self.changeEmail()
+                $0.onCellSelection { [weak self] _, _ in
+                    self?.changeEmail()
                 }
             }
             +++ Section("Update password")
@@ -41,14 +51,12 @@ class ProfileVC: FormViewController {
             }
             <<< ButtonRow {
                 $0.title = "Change password"
-                $0.onCellSelection { _, _ in
-                    self.changePassword()
+                $0.onCellSelection { [weak self] _, _ in
+                    self?.changePassword()
                 }
         }
     }
-}
 
-extension ProfileVC {
     private func changeEmail() {
         let mailRow1: EmailRow? = form.rowBy(tag: "newemail1")
         let mail1 = mailRow1?.value

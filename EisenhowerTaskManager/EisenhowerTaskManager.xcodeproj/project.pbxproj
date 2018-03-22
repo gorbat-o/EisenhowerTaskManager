@@ -82,6 +82,12 @@
 		69798AF7204F438D0046132A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69798AF6204F438D0046132A /* Task.swift */; };
 		69798AF8204F438D0046132A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69798AF6204F438D0046132A /* Task.swift */; };
 		69798AF9204F438D0046132A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69798AF6204F438D0046132A /* Task.swift */; };
+		697D40822062FD8C00D68414 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 697D40812062FD8C00D68414 /* LaunchScreen.storyboard */; };
+		697D40832062FD8C00D68414 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 697D40812062FD8C00D68414 /* LaunchScreen.storyboard */; };
+		697D40842062FD8C00D68414 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 697D40812062FD8C00D68414 /* LaunchScreen.storyboard */; };
+		697D408A2063346400D68414 /* States.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D40892063346400D68414 /* States.swift */; };
+		697D408B2063346400D68414 /* States.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D40892063346400D68414 /* States.swift */; };
+		697D408C2063346400D68414 /* States.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D40892063346400D68414 /* States.swift */; };
 		69900676205AB7E9008F56BA /* PerformanceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69900675205AB7E9008F56BA /* PerformanceExtension.swift */; };
 		69900677205AB7E9008F56BA /* PerformanceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69900675205AB7E9008F56BA /* PerformanceExtension.swift */; };
 		69900678205AB7E9008F56BA /* PerformanceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69900675205AB7E9008F56BA /* PerformanceExtension.swift */; };
@@ -143,6 +149,8 @@
 		6965E0FE205F2B76004A9E51 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		69798AF1204F2E100046132A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		69798AF6204F438D0046132A /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		697D40812062FD8C00D68414 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		697D40892063346400D68414 /* States.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = States.swift; sourceTree = "<group>"; };
 		69900675205AB7E9008F56BA /* PerformanceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceExtension.swift; sourceTree = "<group>"; };
 		69BFBE772055A46A00D0B8A1 /* EisenhowerTaskManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EisenhowerTaskManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69BFBE792055A46A00D0B8A1 /* EisenhowerTaskManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EisenhowerTaskManagerTests.swift; sourceTree = "<group>"; };
@@ -231,6 +239,7 @@
 		690B797E2044B7E5006A6C97 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				697D40802062FD7800D68414 /* LaunchScreen */,
 				690B797F2044B7EF006A6C97 /* SplashScreen */,
 				6940FF1B204DE19B0063101D /* SignIn */,
 				6940FF20204DE6850063101D /* SignUp */,
@@ -281,6 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				6940FF28204DEC520063101D /* SnackBarHelper.swift */,
+				697D40892063346400D68414 /* States.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -340,6 +350,14 @@
 				6950D0782055D1330041922E /* MatrixVC.swift */,
 			);
 			path = Matrix;
+			sourceTree = "<group>";
+		};
+		697D40802062FD7800D68414 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				697D40812062FD8C00D68414 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
 		699EFAE2205192D500D69518 /* Bundles */ = {
@@ -418,8 +436,8 @@
 		F2B1867D2059CE2A0060F729 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				F2B1867E2059CE6C0060F729 /* ProfileVC.swift */,
 				F2B1867F2059CE6C0060F729 /* ProfileVC.xib */,
+				F2B1867E2059CE6C0060F729 /* ProfileVC.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -575,6 +593,7 @@
 				F2B186842059CE6C0060F729 /* ProfileVC.xib in Resources */,
 				6950D0862055D1410041922E /* SettingsVC.xib in Resources */,
 				69173FBB205AD9CF0094C99A /* Localizable.strings in Resources */,
+				697D40832062FD8C00D68414 /* LaunchScreen.storyboard in Resources */,
 				6940FF2F204DF7320063101D /* SignInVC.xib in Resources */,
 				6947BA1120560E9900D6E0C7 /* DetailedTaskVC.xib in Resources */,
 				6950D07E2055D1330041922E /* MatrixVC.xib in Resources */,
@@ -594,6 +613,7 @@
 				F2B186852059CE6C0060F729 /* ProfileVC.xib in Resources */,
 				6950D0872055D1410041922E /* SettingsVC.xib in Resources */,
 				69173FBC205AD9CF0094C99A /* Localizable.strings in Resources */,
+				697D40842062FD8C00D68414 /* LaunchScreen.storyboard in Resources */,
 				6940FF33204DF7320063101D /* SignInVC.xib in Resources */,
 				6947BA1220560E9900D6E0C7 /* DetailedTaskVC.xib in Resources */,
 				6950D07F2055D1330041922E /* MatrixVC.xib in Resources */,
@@ -622,6 +642,7 @@
 				6950D07D2055D1330041922E /* MatrixVC.xib in Resources */,
 				6947B9FE2055FEFC00D6E0C7 /* TaskTableViewCell.xib in Resources */,
 				F2B186832059CE6C0060F729 /* ProfileVC.xib in Resources */,
+				697D40822062FD8C00D68414 /* LaunchScreen.storyboard in Resources */,
 				69E0B9722044AE050083ED7D /* Assets.xcassets in Resources */,
 				690B79852044B828006A6C97 /* SplashScreenVC.xib in Resources */,
 				6947BA1020560E9900D6E0C7 /* DetailedTaskVC.xib in Resources */,
@@ -1076,6 +1097,7 @@
 				6947B9FC2055FEFC00D6E0C7 /* TaskTableViewCell.swift in Sources */,
 				6940FF2A204DF7240063101D /* SnackBarHelper.swift in Sources */,
 				690B79882044B833006A6C97 /* SplashScreenVC.swift in Sources */,
+				697D408B2063346400D68414 /* States.swift in Sources */,
 				6940FF30204DF7320063101D /* SignUpVC.swift in Sources */,
 				6950D0742055D03C0041922E /* MainVC.swift in Sources */,
 				6947BA0520560D1600D6E0C7 /* AddTaskVC.swift in Sources */,
@@ -1099,6 +1121,7 @@
 				6947B9FD2055FEFC00D6E0C7 /* TaskTableViewCell.swift in Sources */,
 				6940FF2B204DF7250063101D /* SnackBarHelper.swift in Sources */,
 				690B79842044B828006A6C97 /* SplashScreenVC.swift in Sources */,
+				697D408C2063346400D68414 /* States.swift in Sources */,
 				6940FF34204DF7320063101D /* SignUpVC.swift in Sources */,
 				6950D0752055D03C0041922E /* MainVC.swift in Sources */,
 				6947BA0620560D1600D6E0C7 /* AddTaskVC.swift in Sources */,
@@ -1130,6 +1153,7 @@
 				6947B9FB2055FEFC00D6E0C7 /* TaskTableViewCell.swift in Sources */,
 				690B79822044B828006A6C97 /* SplashScreenVC.swift in Sources */,
 				6940FF25204DE83C0063101D /* SignUpVC.swift in Sources */,
+				697D408A2063346400D68414 /* States.swift in Sources */,
 				6940FF29204DEC520063101D /* SnackBarHelper.swift in Sources */,
 				6950D0732055D03C0041922E /* MainVC.swift in Sources */,
 				6947BA0420560D1600D6E0C7 /* AddTaskVC.swift in Sources */,
@@ -1174,6 +1198,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = VGM45RH5LU;
 				INFOPLIST_FILE = "EisenhowerTaskManager/EisenhowerTaskManager-adhoc.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-D\" \"ADHOC\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oleggorbatchev.EisenhowerTaskManager.development;
@@ -1194,6 +1219,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = VGM45RH5LU;
 				INFOPLIST_FILE = "EisenhowerTaskManager/EisenhowerTaskManager-adhoc.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-D\" \"ADHOC\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oleggorbatchev.EisenhowerTaskManager.development;
@@ -1213,6 +1239,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = VGM45RH5LU;
 				INFOPLIST_FILE = "EisenhowerTaskManager/EisenhowerTaskManager-appstore.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-D\" \"APPSTORE\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oleggorbatchev.EisenhowerTaskManager;
@@ -1233,6 +1260,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = VGM45RH5LU;
 				INFOPLIST_FILE = "EisenhowerTaskManager/EisenhowerTaskManager-appstore.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-D\" \"APPSTORE\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oleggorbatchev.EisenhowerTaskManager;

@@ -22,14 +22,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="CMq-ib-IvA">
-                    <rect key="frame" x="62" y="218.5" width="250" height="250"/>
+                    <rect key="frame" x="62" y="168.5" width="250" height="250"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="CMq-ib-IvA" secondAttribute="height" multiplier="1:1" id="EBj-7P-guO"/>
                         <constraint firstAttribute="height" constant="250" id="llr-6q-ttX"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eisenhower Task Manager" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ok2-ta-Uao">
-                    <rect key="frame" x="62" y="488.5" width="250" height="72"/>
+                    <rect key="frame" x="62" y="438.5" width="250" height="72"/>
                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -40,7 +40,7 @@
                 <constraint firstItem="ok2-ta-Uao" firstAttribute="trailing" secondItem="CMq-ib-IvA" secondAttribute="trailing" id="2ho-Ub-8GD"/>
                 <constraint firstItem="CMq-ib-IvA" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Gpt-7U-hu9"/>
                 <constraint firstItem="ok2-ta-Uao" firstAttribute="leading" secondItem="CMq-ib-IvA" secondAttribute="leading" id="Ouk-Hc-zOX"/>
-                <constraint firstItem="CMq-ib-IvA" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="W0o-a9-wsi"/>
+                <constraint firstItem="CMq-ib-IvA" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" constant="-50" id="W0o-a9-wsi"/>
                 <constraint firstItem="CMq-ib-IvA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="XPU-pc-mcZ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CMq-ib-IvA" secondAttribute="trailing" constant="40" id="Xds-pQ-C5k"/>
                 <constraint firstItem="ok2-ta-Uao" firstAttribute="top" secondItem="CMq-ib-IvA" secondAttribute="bottom" constant="20" id="eUd-bU-ThG"/>

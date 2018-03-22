@@ -56,6 +56,7 @@ class MatrixVC: UIViewController {
         setupSegmentedControl()
         setupTableView()
         setupFirebase()
+        checkStates()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -80,6 +81,13 @@ extension MatrixVC {
 
     @objc private func updateData() {
         tableView?.reloadData()
+    }
+
+    private func checkStates() {
+        if States.isForceTouchAddTask {
+            States.isForceTouchAddTask = false
+            rightButtonAction()
+        }
     }
 
     private func setupSegmentedControl() {
