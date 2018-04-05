@@ -15,6 +15,7 @@
 * Tools
 * Libraries & SDK
 * To Do
+* Authors
 
 ---
 ## Features
@@ -96,3 +97,7 @@ Android snackbar for iOS.
 ### [MVVM](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel)
 ### Persistant Data
 * [Realm](https://realm.io/)
+
+## Authors
+* Samy Kettani (samy.kettani@epitech.eu)
+* Oleg Gorbatchev (oleg.gorbatchev@epitech.eu)
