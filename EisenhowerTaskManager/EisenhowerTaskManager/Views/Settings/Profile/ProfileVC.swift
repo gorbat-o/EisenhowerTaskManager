@@ -58,6 +58,7 @@ extension ProfileVC {
             +++ Section()
             <<< ButtonRow {
                 $0.title = L10n.Generic.signOut
+                $0.baseCell.tintColor = UIColor.red
                 $0.onCellSelection { [weak self] _, _ in
                     self?.disconnect()
                 }
