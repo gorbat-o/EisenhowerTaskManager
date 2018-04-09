@@ -22,7 +22,7 @@ class ProfileVC: FormViewController {
 
 extension ProfileVC {
     private func setupNavigationBar() {
-        title = "Profile"
+        title = L10n.Generic.profile
     }
 
     private func setupTableView() {
@@ -54,46 +54,69 @@ extension ProfileVC {
                 $0.onCellSelection { [weak self] _, _ in
                     self?.changePassword()
                 }
+            }
+            +++ Section()
+            <<< ButtonRow {
+                $0.title = L10n.Generic.signOut
+                $0.onCellSelection { [weak self] _, _ in
+                    self?.disconnect()
+                }
         }
     }
 
     private func changeEmail() {
-        let mailRow1: EmailRow? = form.rowBy(tag: "newemail1")
-        let mail1 = mailRow1?.value
-        let mailRow2: EmailRow? = form.rowBy(tag: "newemail2")
-        let mail2 = mailRow2?.value
-
+        guard let mail1: String = (form.rowBy(tag: "newemail1"))?.value else {
+            SnackBarHelper.showError(withText: "New email is empty")
+            return
+        }
+        guard let mail2: String = (form.rowBy(tag: "newemail2"))?.value else {
+            SnackBarHelper.showError(withText: "New email confirmation is empty")
+            return
+        }
         if mail1 == mail2 {
-            Auth.auth().currentUser?.updateEmail(to: mail1!, completion: { (error) in
+            Auth.auth().currentUser?.updateEmail(to: mail1) { error in
                 if error != nil {
-                    SnackBarHelper.showError(withText: (error?.localizedDescription)!)
+                    SnackBarHelper.showError(withText: error?.localizedDescription ?? "Error")
                 } else {
                     SnackBarHelper.showSuccess(withText: "E-mail successfully updated")
                 }
-
-            })
+            }
         } else {
             SnackBarHelper.showError(withText: "E-mails don't match")
         }
     }
 
     private func changePassword() {
-        let pwdRow1: GenericPasswordRow? = form.rowBy(tag: "newpwd1")
-        let pwd1 = pwdRow1?.value
-        let pwdRow2: GenericPasswordRow? = form.rowBy(tag: "newpwd2")
-        let pwd2 = pwdRow2?.value
-
+        guard let pwd1: String = (form.rowBy(tag: "newpwd1"))?.value else {
+            SnackBarHelper.showError(withText: "New password is empty")
+            return
+        }
+        guard let pwd2: String = (form.rowBy(tag: "newpwd2"))?.value else {
+            SnackBarHelper.showError(withText: "New password confirmation is empty")
+            return
+        }
         if pwd1 == pwd2 {
-            Auth.auth().currentUser?.updatePassword(to: pwd1!, completion: { (error) in
+            Auth.auth().currentUser?.updatePassword(to: pwd1) { error in
                 if error != nil {
-                    SnackBarHelper.showError(withText: (error?.localizedDescription)!)
+                    SnackBarHelper.showError(withText: error?.localizedDescription ?? "Error")
                 } else {
                     SnackBarHelper.showSuccess(withText: "Password successfully updated")
                 }
-
-            })
+            }
         } else {
             SnackBarHelper.showError(withText: "Passwords don't match")
+        }
+    }
+
+    private func disconnect() {
+        do {
+            try Auth.auth().signOut()
+        } catch let signOutError as NSError {
+            SnackBarHelper.showError(withText: signOutError.localizedDescription)
+            return
+        }
+        if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+            appDelegate.window?.rootViewController = SignInVC()
         }
     }
 }

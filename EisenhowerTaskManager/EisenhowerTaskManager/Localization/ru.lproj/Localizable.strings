@@ -31,3 +31,8 @@
 "popup.disconnectAction.title" = "Отключить";
 "popup.disconnectAction.text" = "Вы действительно хотите отключиться?";
 "generic.today" = "Сегодня";
+"generic.yes" = "Да";
+"generic.no" = "Нет";
+"generic.profile" = "Профиль";
+"generic.signOut" = "Выход";
+"settings.profileRow.title" = "Ваш профиль";

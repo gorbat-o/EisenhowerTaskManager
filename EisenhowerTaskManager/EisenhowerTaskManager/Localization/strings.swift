@@ -51,14 +51,20 @@ internal enum L10n {
     internal static let incomplete = L10n.tr("Localizable", "generic.incomplete")
     /// Matrix
     internal static let matrix = L10n.tr("Localizable", "generic.matrix")
+    /// No
+    internal static let no = L10n.tr("Localizable", "generic.no")
     /// Password
     internal static let password = L10n.tr("Localizable", "generic.password")
+    /// Profile
+    internal static let profile = L10n.tr("Localizable", "generic.profile")
     /// Registration
     internal static let registration = L10n.tr("Localizable", "generic.registration")
     /// Settings
     internal static let settings = L10n.tr("Localizable", "generic.settings")
     /// Sign In
     internal static let signIn = L10n.tr("Localizable", "generic.signIn")
+    /// Sign out
+    internal static let signOut = L10n.tr("Localizable", "generic.signOut")
     /// Sign up
     internal static let signUp = L10n.tr("Localizable", "generic.signUp")
     /// Task
@@ -77,6 +83,8 @@ internal enum L10n {
     internal static let toSchedule = L10n.tr("Localizable", "generic.toSchedule")
     /// Welcome
     internal static let welcome = L10n.tr("Localizable", "generic.welcome")
+    /// Yes
+    internal static let yes = L10n.tr("Localizable", "generic.yes")
   }
 
   internal enum Popup {
@@ -84,8 +92,16 @@ internal enum L10n {
     internal enum Disconnectaction {
       /// Are you sure you want to disconnect ?
       internal static let text = L10n.tr("Localizable", "popup.disconnectAction.text")
-      /// Log out
+      /// Disconnection
       internal static let title = L10n.tr("Localizable", "popup.disconnectAction.title")
+    }
+  }
+
+  internal enum Settings {
+
+    internal enum Profilerow {
+      /// Your profile
+      internal static let title = L10n.tr("Localizable", "settings.profileRow.title")
     }
   }
 }

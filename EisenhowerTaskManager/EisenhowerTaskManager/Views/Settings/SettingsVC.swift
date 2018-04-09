@@ -8,9 +8,9 @@
 
 import UIKit
 import Eureka
-import FirebaseAuth
 
 class SettingsVC: FormViewController {
+    private let profileView = ProfileVC()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,36 +22,17 @@ class SettingsVC: FormViewController {
 
 extension SettingsVC {
     private func setupNavigationBar() {
-        title = "Settings"
+        title = L10n.Generic.settings
     }
 
     private func setupTableView() {
-        form +++ Section("User")
+        form +++ Section()
             <<< ButtonRow {
-                $0.title = "Profile"
-                $0.presentationMode = .show(controllerProvider: .callback(builder: {
-                    let profileView = ProfileVC()
-                    return profileView
-                }), onDismiss: nil)
+                $0.title = L10n.Settings.Profilerow.title
+                $0.baseCell.imageView?.image = UIImage(named: "Profile") ?? UIImage()
+                $0.presentationMode = .show(controllerProvider: .callback { [weak self] in
+                    return self?.profileView ?? ProfileVC()
+                    }, onDismiss: nil)
             }
-            +++ Section()
-            <<< ButtonRow {
-                $0.title = "Disconnect"
-                $0.onCellSelection { [weak self] _, _ in
-                    self?.disconnect()
-                }
-        }
-    }
-
-    private func disconnect() {
-        do {
-            try Auth.auth().signOut()
-        } catch let signOutError as NSError {
-            SnackBarHelper.showError(withText: signOutError.localizedDescription)
-            return
-        }
-        if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
-            appDelegate.window?.rootViewController = SignInVC()
-        }
     }
 }

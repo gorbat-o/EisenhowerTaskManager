@@ -455,7 +455,6 @@
 				695ED5B92044AFC500BB12DF /* Frameworks */,
 				695ED5BA2044AFC500BB12DF /* Resources */,
 				9B79554B316F26EE3FFD85F7 /* [CP] Embed Pods Frameworks */,
-				A4D3ADE4C28A0FF0EBE371D7 /* [CP] Copy Pods Resources */,
 				693D97492055B06900F4EE14 /* Crashlytics */,
 			);
 			buildRules = (
@@ -477,7 +476,6 @@
 				695ED5C72044AFC800BB12DF /* Frameworks */,
 				695ED5C82044AFC800BB12DF /* Resources */,
 				A1440D166117BEF9A791F8C8 /* [CP] Embed Pods Frameworks */,
-				D84EE1D2445D4FEC29CFBC8B /* [CP] Copy Pods Resources */,
 				693D974A2055B07D00F4EE14 /* Crashlytics */,
 			);
 			buildRules = (
@@ -498,7 +496,6 @@
 				69BFBE742055A46A00D0B8A1 /* Frameworks */,
 				69BFBE752055A46A00D0B8A1 /* Resources */,
 				1881600768F76AD00BC232C9 /* [CP] Embed Pods Frameworks */,
-				A35ECC999251F7C3C41BE837 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -524,7 +521,6 @@
 				69E0B9642044AE050083ED7D /* Frameworks */,
 				69E0B9652044AE050083ED7D /* Resources */,
 				F15541C99F9E27980B686188 /* [CP] Embed Pods Frameworks */,
-				4A6ECB1EBF765435319CFF5D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -694,24 +690,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EisenhowerTaskManagerTests/Pods-EisenhowerTaskManagerTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4A6ECB1EBF765435319CFF5D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-EisenhowerTaskManager-development/Pods-EisenhowerTaskManager-development-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/EasyAbout/Settings.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Settings.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EisenhowerTaskManager-development/Pods-EisenhowerTaskManager-development-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5BD7BBD30A22008BCF698337 /* [CP] Check Pods Manifest.lock */ = {
@@ -990,57 +968,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EisenhowerTaskManager-appstore/Pods-EisenhowerTaskManager-appstore-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A35ECC999251F7C3C41BE837 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EisenhowerTaskManagerTests/Pods-EisenhowerTaskManagerTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A4D3ADE4C28A0FF0EBE371D7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-EisenhowerTaskManager-adhoc/Pods-EisenhowerTaskManager-adhoc-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/EasyAbout/Settings.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Settings.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EisenhowerTaskManager-adhoc/Pods-EisenhowerTaskManager-adhoc-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D84EE1D2445D4FEC29CFBC8B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-EisenhowerTaskManager-appstore/Pods-EisenhowerTaskManager-appstore-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/EasyAbout/Settings.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Settings.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EisenhowerTaskManager-appstore/Pods-EisenhowerTaskManager-appstore-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F15541C99F9E27980B686188 /* [CP] Embed Pods Frameworks */ = {
