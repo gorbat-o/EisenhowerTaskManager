@@ -1,4 +1,4 @@
-# Heisenhower Task Manager 
+# Eisenhower Task Manager 
 
 ![Version](https://img.shields.io/badge/Version-1.0.0-lightgrey.svg)
 ![Issues](https://img.shields.io/github/issues/gorbat-o/EisenhowerTaskManager.svg)
@@ -8,14 +8,17 @@
 ![Production](https://img.shields.io/badge/Master---%3E-lightgrey.svg)
 ![ProductionStatus](https://img.shields.io/bitrise/a62c49cdfa8e59ce/master.svg?token=uSVQSkRQFj1sl-R-4EK2Aw)
 
+Eisenhower Task Manager is a personal organizer based on the Eisenhower Matrix. The principle is to prioritize tasks by urgency and importance results in 4 quadrants with different work strategies. For the story:
+> Dwight D. Eisenhower was the 34th President of the United States from 1953 until 1961. Before becoming President, he served as a general in the United States Army and as the Allied Forces Supreme Commander during World War II. He also later became NATO’s first supreme commander. Dwight had to make tough decisions continuously about which of the many tasks he should focus on each day. This finally led him to invent the world-famous Eisenhower principle, which today helps us prioritize by urgency and importance.
+
 ---
 ## Summary
-* Features
-* Quality
-* Tools
-* Libraries & SDK
-* To Do
-* Authors
+* [Features](#features)
+* [Quality](#quality)
+* [Tools](#tools)
+* [Libraries & SDK](#libraries--sdk)
+* [To Do](#to-do)
+* [Authors](#authors)
 
 ---
 ## Features
