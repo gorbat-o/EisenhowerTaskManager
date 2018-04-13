@@ -28,6 +28,11 @@
 "generic.registration" = "Registration";
 "generic.authentication" = "Authentication";
 "generic.delete" = "Delete";
-"popup.disconnectAction.title" = "Log out";
+"popup.disconnectAction.title" = "Disconnection";
 "popup.disconnectAction.text" = "Are you sure you want to disconnect ?";
 "generic.today" = "Today";
+"generic.yes" = "Yes";
+"generic.no" = "No";
+"generic.profile" = "Profile";
+"generic.signOut" = "Sign out";
+"settings.profileRow.title" = "Your profile";

@@ -1,18 +1,18 @@
 name: Alamofire, nameSpecified: 
 body: Copyright (c) 2014-2…
-version: 4.7.0
+version: 4.7.1
 
 name: Alamofire, nameSpecified: 
 body: Copyright (c) 2014-2…
-version: 4.7.0
+version: 4.7.1
 
 name: Alamofire, nameSpecified: 
 body: Copyright (c) 2014-2…
-version: 4.7.0
+version: 4.7.1
 
 name: Alamofire, nameSpecified: 
 body: Copyright (c) 2014-2…
-version: 4.7.0
+version: 4.7.1
 
 name: Crashlytics, nameSpecified: 
 body: Fabric: Copyright 20…
@@ -229,46 +229,46 @@ version: 2.1.3
 name: GTMSessionFetcher, nameSpecified: 
 body: 
                    …
-version: 1.1.14
+version: 1.1.15
 
 name: GTMSessionFetcher, nameSpecified: 
 body: 
                    …
-version: 1.1.14
+version: 1.1.15
 
 name: GTMSessionFetcher, nameSpecified: 
 body: 
                    …
-version: 1.1.14
+version: 1.1.15
 
 name: GTMSessionFetcher, nameSpecified: 
 body: 
                    …
-version: 1.1.14
+version: 1.1.15
 
 name: Haptica, nameSpecified: 
 body: MIT License
 
 Copyrig…
-version: 2.0.0
+version: 2.0.1
 
 name: Haptica, nameSpecified: 
 body: MIT License
 
 Copyrig…
-version: 2.0.0
+version: 2.0.1
 
 name: Haptica, nameSpecified: 
 body: MIT License
 
 Copyrig…
-version: 2.0.0
+version: 2.0.1
 
 name: Haptica, nameSpecified: 
 body: MIT License
 
 Copyrig…
-version: 2.0.0
+version: 2.0.1
 
 name: leveldb-library, nameSpecified: 
 body: Copyright (c) 2011 T…
@@ -348,7 +348,7 @@ version: 5.3.0
 
 name: SwiftLint, nameSpecified: 
 body: The MIT License (MIT…
-version: 0.25.0
+version: 0.25.1
 
 name: TTGSnackbar, nameSpecified: 
 body: The MIT License (MIT…
