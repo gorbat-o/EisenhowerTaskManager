@@ -93,7 +93,7 @@ extension SignUpVC {
                                     SnackBarHelper.showError(withText: error.localizedDescription)
                                 } else {
                                     SnackBarHelper.showSuccess(
-                                        withText: L10n.Generic.welcome + " " + (returnedUser?.displayName ?? "")
+                                        withText: L10n.Generic.welcome + " " + (returnedUser?.user.displayName ?? "")
                                     )
                                     success()
                                 }

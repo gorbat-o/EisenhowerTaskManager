@@ -45,10 +45,11 @@ struct Task: Equatable {
             description = (data["description"] as? String) ?? ""
             category = TaskCategory(rawValue: ((data["category"] as? Int) ?? 0)) ?? TaskCategory.dofirst
             creationDate = (data["creationDate"] as? String)?
-                .date(format: DateFormat.iso8601Auto)?.absoluteDate ?? Date()
+                .toDate(style: StringToDateStyles.standard)?.date ?? Date()
             lastEditDate = (data["lastEditDate"] as? String)?
-                .date(format: DateFormat.iso8601Auto)?.absoluteDate ?? Date()
-            completionDate = (data["completionDate"] as? String)?.date(format: DateFormat.iso8601Auto)?.absoluteDate
+                .toDate(style: StringToDateStyles.standard)?.date ?? Date()
+            completionDate = (data["completionDate"] as? String)?
+                .toDate(style: StringToDateStyles.standard)?.date ?? Date()
             completed = Bool((data["completed"] as? String) ?? "") ?? false
         }
     }
@@ -79,9 +80,9 @@ struct Task: Equatable {
         task["title"] = title as NSString
         task["description"] = description as NSString
         task["category"] =  category.rawValue as AnyObject
-        task["creationDate"] = creationDate.string(format: DateFormat.iso8601Auto) as NSString
-        task["lastEditDate"] = lastEditDate.string(format: DateFormat.iso8601Auto) as NSString
-        task["completionDate"] = completionDate?.string(format: DateFormat.iso8601Auto) as NSString?
+        task["creationDate"] = creationDate.toString(DateToStringStyles.standard) as NSString
+        task["lastEditDate"] = lastEditDate.toString(DateToStringStyles.standard) as NSString
+        task["completionDate"] = completionDate?.toString(DateToStringStyles.standard) as NSString?
         task["completed"] = completed.description as NSString
         return task
     }

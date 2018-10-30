@@ -1,3 +1,4 @@
+// swiftlint:disable all
 // Generated using SwiftGen, by O.Halligon — https://github.com/SwiftGen/SwiftGen
 
 import Foundation
@@ -5,7 +6,10 @@ import Foundation
 // swiftlint:disable superfluous_disable_command
 // swiftlint:disable file_length
 
-// swiftlint:disable explicit_type_interface identifier_name line_length nesting type_body_length type_name
+// MARK: - Strings
+
+// swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
+// swiftlint:disable nesting type_body_length type_name
 internal enum L10n {
 
   internal enum Action {
@@ -88,8 +92,7 @@ internal enum L10n {
   }
 
   internal enum Popup {
-
-    internal enum Disconnectaction {
+    internal enum DisconnectAction {
       /// Are you sure you want to disconnect ?
       internal static let text = L10n.tr("Localizable", "popup.disconnectAction.text")
       /// Disconnection
@@ -98,14 +101,16 @@ internal enum L10n {
   }
 
   internal enum Settings {
-
-    internal enum Profilerow {
+    internal enum ProfileRow {
       /// Your profile
       internal static let title = L10n.tr("Localizable", "settings.profileRow.title")
     }
   }
 }
-// swiftlint:enable explicit_type_interface identifier_name line_length nesting type_body_length type_name
+// swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
+// swiftlint:enable nesting type_body_length type_name
+
+// MARK: - Implementation Details
 
 extension L10n {
   private static func tr(_ table: String, _ key: String, _ args: CVarArg...) -> String {

@@ -12,7 +12,7 @@ import Haptica
 
 class SnackBarHelper {
     static private let noActionSnackBar = TTGSnackbar(message: "", duration: TTGSnackbarDuration.middle)
-    static private let impactFeedbackStyle = UIImpactFeedbackStyle.medium
+    static private let impactFeedbackStyle = UIImpactFeedbackGenerator.FeedbackStyle.medium
 
     class func showError(withText text: String) {
         SnackBarHelper.noActionSnackBar.message = text

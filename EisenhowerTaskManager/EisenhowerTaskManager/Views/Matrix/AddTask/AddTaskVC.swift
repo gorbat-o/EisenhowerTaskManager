@@ -130,7 +130,7 @@ extension AddTaskVC {
     }
 
     private func changeCompletionDate(_ date: Date?) {
-        databaseReference?.child("completionDate").setValue(date?.string(format: DateFormat.iso8601Auto))
+        databaseReference?.child("completionDate").setValue(date?.toString(DateToStringStyles.standard))
     }
 
     private func changeCategory(_ category: String) {

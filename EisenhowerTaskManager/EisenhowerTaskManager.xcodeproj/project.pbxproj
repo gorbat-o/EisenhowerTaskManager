@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1654FC4D6659199C58B9C093 /* Pods_EisenhowerTaskManager_appstore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78CD225CE778FE3B0697C3F3 /* Pods_EisenhowerTaskManager_appstore.framework */; };
+		021C3567F9092EB0E7C40A86 /* Pods_EisenhowerTaskManager_appstore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4280F584E9D79730709D2C /* Pods_EisenhowerTaskManager_appstore.framework */; };
+		242B2EC27CB19C69EF476B85 /* Pods_EisenhowerTaskManager_adhoc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2F82E1828FC368585EF39A8 /* Pods_EisenhowerTaskManager_adhoc.framework */; };
+		458A97D78A98D9DE4D35865A /* Pods_EisenhowerTaskManager_development.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B02D5C1C2EBC0FCFB590A8 /* Pods_EisenhowerTaskManager_development.framework */; };
 		690B79822044B828006A6C97 /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690B79802044B828006A6C97 /* SplashScreenVC.swift */; };
 		690B79842044B828006A6C97 /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690B79802044B828006A6C97 /* SplashScreenVC.swift */; };
 		690B79852044B828006A6C97 /* SplashScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 690B79812044B828006A6C97 /* SplashScreenVC.xib */; };
@@ -94,15 +96,13 @@
 		69BFBE7A2055A46A00D0B8A1 /* EisenhowerTaskManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BFBE792055A46A00D0B8A1 /* EisenhowerTaskManagerTests.swift */; };
 		69E0B96B2044AE050083ED7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E0B96A2044AE050083ED7D /* AppDelegate.swift */; };
 		69E0B9722044AE050083ED7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69E0B9712044AE050083ED7D /* Assets.xcassets */; };
-		83D7F33CAC6AEC638C7D175D /* Pods_EisenhowerTaskManager_development.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A381E6F46DEB45B7BE26D2C /* Pods_EisenhowerTaskManager_development.framework */; };
-		A8FC89A59F59AA3FC8477C47 /* Pods_EisenhowerTaskManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE23198DBDAFD731A7A9B812 /* Pods_EisenhowerTaskManagerTests.framework */; };
+		BCD3F60DABF43DB7238DB5DD /* Pods_EisenhowerTaskManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6034F4D55912D86CD49580 /* Pods_EisenhowerTaskManagerTests.framework */; };
 		F2B186802059CE6C0060F729 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1867E2059CE6C0060F729 /* ProfileVC.swift */; };
 		F2B186812059CE6C0060F729 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1867E2059CE6C0060F729 /* ProfileVC.swift */; };
 		F2B186822059CE6C0060F729 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1867E2059CE6C0060F729 /* ProfileVC.swift */; };
 		F2B186832059CE6C0060F729 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2B1867F2059CE6C0060F729 /* ProfileVC.xib */; };
 		F2B186842059CE6C0060F729 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2B1867F2059CE6C0060F729 /* ProfileVC.xib */; };
 		F2B186852059CE6C0060F729 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2B1867F2059CE6C0060F729 /* ProfileVC.xib */; };
-		FDB0E288BA5DBBE132D781DC /* Pods_EisenhowerTaskManager_adhoc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE0E0C1D918FE7774E75162 /* Pods_EisenhowerTaskManager_adhoc.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,9 +116,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		10515C5B9B1F8B972E9B152A /* Pods-EisenhowerTaskManager-appstore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EisenhowerTaskManager-appstore.release.xcconfig"; path = "Pods/Target Support Files/Pods-EisenhowerTaskManager-appstore/Pods-EisenhowerTaskManager-appstore.release.xcconfig"; sourceTree = "<group>"; };
-		2ADCA38AE12AB4AD221AB2F1 /* Pods-EisenhowerTaskManager-development.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EisenhowerTaskManager-development.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EisenhowerTaskManager-development/Pods-EisenhowerTaskManager-development.debug.xcconfig"; sourceTree = "<group>"; };
-		61620DF00FF109F85F958864 /* Pods-EisenhowerTaskManager-appstore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EisenhowerTaskManager-appstore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EisenhowerTaskManager-appstore/Pods-EisenhowerTaskManager-appstore.debug.xcconfig"; sourceTree = "<group>"; };
+		0E6034F4D55912D86CD49580 /* Pods_EisenhowerTaskManagerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EisenhowerTaskManagerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		171499DBE7F5F25D141AB852 /* Pods-EisenhowerTaskManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EisenhowerTaskManagerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EisenhowerTaskManagerTests/Pods-EisenhowerTaskManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2C3C0063704FDA316D8DF745 /* Pods-EisenhowerTaskManager-development.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EisenhowerTaskManager-development.release.xcconfig"; path = "Pods/Target Support Files/Pods-EisenhowerTaskManager-development/Pods-EisenhowerTaskManager-development.release.xcconfig"; sourceTree = "<group>"; };
+		46C1D82BE972CF20F0A13D1A /* Pods-EisenhowerTaskManager-adhoc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EisenhowerTaskManager-adhoc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EisenhowerTaskManager-adhoc/Pods-EisenhowerTaskManager-adhoc.debug.xcconfig"; sourceTree = "<group>"; };
+		4B71A5779DF624317D9040EE /* Pods-EisenhowerTaskManager-appstore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EisenhowerTaskManager-appstore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EisenhowerTaskManager-appstore/Pods-EisenhowerTaskManager-appstore.debug.xcconfig"; sourceTree = "<group>"; };
 		690B79802044B828006A6C97 /* SplashScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
 		690B79812044B828006A6C97 /* SplashScreenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreenVC.xib; sourceTree = "<group>"; };
 		69173FBD205AD9CF0094C99A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -159,17 +161,15 @@
 		69E0B96A2044AE050083ED7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69E0B9712044AE050083ED7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69E0B9812044AE050083ED7D /* EisenhowerTaskManager-development.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EisenhowerTaskManager-development.plist"; sourceTree = "<group>"; };
-		6EE0E0C1D918FE7774E75162 /* Pods_EisenhowerTaskManager_adhoc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EisenhowerTaskManager_adhoc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		78CD225CE778FE3B0697C3F3 /* Pods_EisenhowerTaskManager_appstore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EisenhowerTaskManager_appstore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F73488A7E24D48E91A52536 /* Pods-EisenhowerTaskManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EisenhowerTaskManagerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EisenhowerTaskManagerTests/Pods-EisenhowerTaskManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
-		90A16DEDA472AAEF3D93042A /* Pods-EisenhowerTaskManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EisenhowerTaskManagerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EisenhowerTaskManagerTests/Pods-EisenhowerTaskManagerTests.release.xcconfig"; sourceTree = "<group>"; };
-		9A381E6F46DEB45B7BE26D2C /* Pods_EisenhowerTaskManager_development.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EisenhowerTaskManager_development.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A483664BECE9159E89479CD4 /* Pods-EisenhowerTaskManager-adhoc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EisenhowerTaskManager-adhoc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EisenhowerTaskManager-adhoc/Pods-EisenhowerTaskManager-adhoc.debug.xcconfig"; sourceTree = "<group>"; };
-		A7152AAB5F98A259A7C16396 /* Pods-EisenhowerTaskManager-development.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EisenhowerTaskManager-development.release.xcconfig"; path = "Pods/Target Support Files/Pods-EisenhowerTaskManager-development/Pods-EisenhowerTaskManager-development.release.xcconfig"; sourceTree = "<group>"; };
-		B93116FBC6809EC262A2D999 /* Pods-EisenhowerTaskManager-adhoc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EisenhowerTaskManager-adhoc.release.xcconfig"; path = "Pods/Target Support Files/Pods-EisenhowerTaskManager-adhoc/Pods-EisenhowerTaskManager-adhoc.release.xcconfig"; sourceTree = "<group>"; };
-		DE23198DBDAFD731A7A9B812 /* Pods_EisenhowerTaskManagerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EisenhowerTaskManagerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88CA2DC53A0911A0D514C1AA /* Pods-EisenhowerTaskManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EisenhowerTaskManagerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EisenhowerTaskManagerTests/Pods-EisenhowerTaskManagerTests.release.xcconfig"; sourceTree = "<group>"; };
+		9D9DF465E2E079D12D4B9AE4 /* Pods-EisenhowerTaskManager-appstore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EisenhowerTaskManager-appstore.release.xcconfig"; path = "Pods/Target Support Files/Pods-EisenhowerTaskManager-appstore/Pods-EisenhowerTaskManager-appstore.release.xcconfig"; sourceTree = "<group>"; };
+		A2F82E1828FC368585EF39A8 /* Pods_EisenhowerTaskManager_adhoc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EisenhowerTaskManager_adhoc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B87148DD52D73B47C640D16C /* Pods-EisenhowerTaskManager-adhoc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EisenhowerTaskManager-adhoc.release.xcconfig"; path = "Pods/Target Support Files/Pods-EisenhowerTaskManager-adhoc/Pods-EisenhowerTaskManager-adhoc.release.xcconfig"; sourceTree = "<group>"; };
+		BE93B09D6C87B3114AABB3C3 /* Pods-EisenhowerTaskManager-development.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EisenhowerTaskManager-development.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EisenhowerTaskManager-development/Pods-EisenhowerTaskManager-development.debug.xcconfig"; sourceTree = "<group>"; };
+		D6B02D5C1C2EBC0FCFB590A8 /* Pods_EisenhowerTaskManager_development.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EisenhowerTaskManager_development.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B1867E2059CE6C0060F729 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		F2B1867F2059CE6C0060F729 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
+		FB4280F584E9D79730709D2C /* Pods_EisenhowerTaskManager_appstore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EisenhowerTaskManager_appstore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +177,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDB0E288BA5DBBE132D781DC /* Pods_EisenhowerTaskManager_adhoc.framework in Frameworks */,
+				242B2EC27CB19C69EF476B85 /* Pods_EisenhowerTaskManager_adhoc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,7 +185,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1654FC4D6659199C58B9C093 /* Pods_EisenhowerTaskManager_appstore.framework in Frameworks */,
+				021C3567F9092EB0E7C40A86 /* Pods_EisenhowerTaskManager_appstore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,7 +193,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8FC89A59F59AA3FC8477C47 /* Pods_EisenhowerTaskManagerTests.framework in Frameworks */,
+				BCD3F60DABF43DB7238DB5DD /* Pods_EisenhowerTaskManagerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,22 +201,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83D7F33CAC6AEC638C7D175D /* Pods_EisenhowerTaskManager_development.framework in Frameworks */,
+				458A97D78A98D9DE4D35865A /* Pods_EisenhowerTaskManager_development.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		302619BD597A5CD5D28F1A2F /* Frameworks */ = {
+		2C549AAF34B30A5EE6C62439 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6EE0E0C1D918FE7774E75162 /* Pods_EisenhowerTaskManager_adhoc.framework */,
-				78CD225CE778FE3B0697C3F3 /* Pods_EisenhowerTaskManager_appstore.framework */,
-				9A381E6F46DEB45B7BE26D2C /* Pods_EisenhowerTaskManager_development.framework */,
-				DE23198DBDAFD731A7A9B812 /* Pods_EisenhowerTaskManagerTests.framework */,
+				46C1D82BE972CF20F0A13D1A /* Pods-EisenhowerTaskManager-adhoc.debug.xcconfig */,
+				B87148DD52D73B47C640D16C /* Pods-EisenhowerTaskManager-adhoc.release.xcconfig */,
+				4B71A5779DF624317D9040EE /* Pods-EisenhowerTaskManager-appstore.debug.xcconfig */,
+				9D9DF465E2E079D12D4B9AE4 /* Pods-EisenhowerTaskManager-appstore.release.xcconfig */,
+				BE93B09D6C87B3114AABB3C3 /* Pods-EisenhowerTaskManager-development.debug.xcconfig */,
+				2C3C0063704FDA316D8DF745 /* Pods-EisenhowerTaskManager-development.release.xcconfig */,
+				171499DBE7F5F25D141AB852 /* Pods-EisenhowerTaskManagerTests.debug.xcconfig */,
+				88CA2DC53A0911A0D514C1AA /* Pods-EisenhowerTaskManagerTests.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		690B797B2044B7BD006A6C97 /* Extensions */ = {
@@ -383,8 +387,8 @@
 				69E0B9692044AE050083ED7D /* EisenhowerTaskManager */,
 				69BFBE782055A46A00D0B8A1 /* EisenhowerTaskManagerTests */,
 				69E0B9682044AE050083ED7D /* Products */,
-				C0F357C6C905D42B3FE70A7B /* Pods */,
-				302619BD597A5CD5D28F1A2F /* Frameworks */,
+				2C549AAF34B30A5EE6C62439 /* Pods */,
+				A76E0DC1964DFB47CC3AA864 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -418,19 +422,15 @@
 			path = EisenhowerTaskManager;
 			sourceTree = "<group>";
 		};
-		C0F357C6C905D42B3FE70A7B /* Pods */ = {
+		A76E0DC1964DFB47CC3AA864 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A483664BECE9159E89479CD4 /* Pods-EisenhowerTaskManager-adhoc.debug.xcconfig */,
-				B93116FBC6809EC262A2D999 /* Pods-EisenhowerTaskManager-adhoc.release.xcconfig */,
-				61620DF00FF109F85F958864 /* Pods-EisenhowerTaskManager-appstore.debug.xcconfig */,
-				10515C5B9B1F8B972E9B152A /* Pods-EisenhowerTaskManager-appstore.release.xcconfig */,
-				2ADCA38AE12AB4AD221AB2F1 /* Pods-EisenhowerTaskManager-development.debug.xcconfig */,
-				A7152AAB5F98A259A7C16396 /* Pods-EisenhowerTaskManager-development.release.xcconfig */,
-				8F73488A7E24D48E91A52536 /* Pods-EisenhowerTaskManagerTests.debug.xcconfig */,
-				90A16DEDA472AAEF3D93042A /* Pods-EisenhowerTaskManagerTests.release.xcconfig */,
+				A2F82E1828FC368585EF39A8 /* Pods_EisenhowerTaskManager_adhoc.framework */,
+				FB4280F584E9D79730709D2C /* Pods_EisenhowerTaskManager_appstore.framework */,
+				D6B02D5C1C2EBC0FCFB590A8 /* Pods_EisenhowerTaskManager_development.framework */,
+				0E6034F4D55912D86CD49580 /* Pods_EisenhowerTaskManagerTests.framework */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		F2B1867D2059CE2A0060F729 /* Profile */ = {
@@ -449,13 +449,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 695ED5BE2044AFC500BB12DF /* Build configuration list for PBXNativeTarget "EisenhowerTaskManager-adhoc" */;
 			buildPhases = (
-				5BD7BBD30A22008BCF698337 /* [CP] Check Pods Manifest.lock */,
+				2E005803C46A516686E07D31 /* [CP] Check Pods Manifest.lock */,
 				69184F9A205AC34F0079FD8D /* Fetch GoogleService-Info */,
 				695ED5B62044AFC500BB12DF /* Sources */,
 				695ED5B92044AFC500BB12DF /* Frameworks */,
 				695ED5BA2044AFC500BB12DF /* Resources */,
-				9B79554B316F26EE3FFD85F7 /* [CP] Embed Pods Frameworks */,
 				693D97492055B06900F4EE14 /* Crashlytics */,
+				474368F4BE8E045AC57C0249 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -470,13 +470,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 695ED5CC2044AFC800BB12DF /* Build configuration list for PBXNativeTarget "EisenhowerTaskManager-appstore" */;
 			buildPhases = (
-				89BD321811AF84D15BB0A6F2 /* [CP] Check Pods Manifest.lock */,
+				D5B3ED5C01DF3B2C16C3DD7E /* [CP] Check Pods Manifest.lock */,
 				69184F9B205AC3720079FD8D /* Fetch GoogleService-Info */,
 				695ED5C42044AFC800BB12DF /* Sources */,
 				695ED5C72044AFC800BB12DF /* Frameworks */,
 				695ED5C82044AFC800BB12DF /* Resources */,
-				A1440D166117BEF9A791F8C8 /* [CP] Embed Pods Frameworks */,
 				693D974A2055B07D00F4EE14 /* Crashlytics */,
+				DA4E846CE9796431297BC13A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -491,11 +491,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 69BFBE7E2055A46A00D0B8A1 /* Build configuration list for PBXNativeTarget "EisenhowerTaskManagerTests" */;
 			buildPhases = (
-				84DCE8D4C4DC98670AD801AD /* [CP] Check Pods Manifest.lock */,
+				033F60FD11F7441E127BAB23 /* [CP] Check Pods Manifest.lock */,
 				69BFBE732055A46A00D0B8A1 /* Sources */,
 				69BFBE742055A46A00D0B8A1 /* Frameworks */,
 				69BFBE752055A46A00D0B8A1 /* Resources */,
-				1881600768F76AD00BC232C9 /* [CP] Embed Pods Frameworks */,
+				7FC6962ACA8AFB787BB61EB2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -511,16 +511,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 69E0B9842044AE050083ED7D /* Build configuration list for PBXNativeTarget "EisenhowerTaskManager-development" */;
 			buildPhases = (
-				969D1E06EBD35B852FD33D42 /* [CP] Check Pods Manifest.lock */,
+				6329A12B624CF50146FF5F3B /* [CP] Check Pods Manifest.lock */,
 				69184F99205AC2500079FD8D /* Fetch GoogleService-Info */,
-				69173FC0205ADD0B0094C99A /* Fetch Lokalize.co */,
 				69173FC1205AE49C0094C99A /* SwiftGen */,
 				6940FF16204DDE1E0063101D /* SwiftLint */,
 				699EFAE12051912F00D69518 /* LicencePlist */,
 				69E0B9632044AE050083ED7D /* Sources */,
 				69E0B9642044AE050083ED7D /* Frameworks */,
 				69E0B9652044AE050083ED7D /* Resources */,
-				F15541C99F9E27980B686188 /* [CP] Embed Pods Frameworks */,
+				B454EB25482626EBA780717B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -538,7 +537,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Oleg Gorbatchev";
 				TargetAttributes = {
 					695ED5B52044AFC500BB12DF = {
@@ -652,19 +651,65 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1881600768F76AD00BC232C9 /* [CP] Embed Pods Frameworks */ = {
+		033F60FD11F7441E127BAB23 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-EisenhowerTaskManagerTests/Pods-EisenhowerTaskManagerTests-frameworks.sh",
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EisenhowerTaskManagerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E005803C46A516686E07D31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EisenhowerTaskManager-adhoc-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		474368F4BE8E045AC57C0249 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EisenhowerTaskManager-adhoc/Pods-EisenhowerTaskManager-adhoc-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/DSGradientProgressView/DSGradientProgressView.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GenericPasswordRow/GenericPasswordRow.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Haptica/Haptica.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
@@ -673,13 +718,15 @@
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DSGradientProgressView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GenericPasswordRow.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Haptica.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
@@ -689,40 +736,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EisenhowerTaskManagerTests/Pods-EisenhowerTaskManagerTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EisenhowerTaskManager-adhoc/Pods-EisenhowerTaskManager-adhoc-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5BD7BBD30A22008BCF698337 /* [CP] Check Pods Manifest.lock */ = {
+		6329A12B624CF50146FF5F3B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-EisenhowerTaskManager-adhoc-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-EisenhowerTaskManager-development-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
-		};
-		69173FC0205ADD0B0094C99A /* Fetch Lokalize.co */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Fetch Lokalize.co";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "lokalise --token 97bc6dd48627f0d3c207b923f91baeba436b4fc9 export 661544825aaa9de2a4cf87.80023113 --type strings --unzip_to ./EisenhowerTaskManager/Localization/ --export_all 1";
 		};
 		69173FC1205AE49C0094C99A /* SwiftGen */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -764,7 +801,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "git clone git@github.com:gorbat-o/EisenhowerTaskManager-Sensitive.git\ncp ./EisenhowerTaskManager-Sensitive/GoogleService-Info-development.plist ./EisenhowerTaskManager/GoogleService-Info.plist\nrm -r EisenhowerTaskManager-Sensitive";
+			shellScript = "git clone git@github.com:gorbat-o/EisenhowerTaskManager-Sensitive.git\ncp ./EisenhowerTaskManager-Sensitive/GoogleService-Info-development.plist ./EisenhowerTaskManager/GoogleService-Info.plist\nrm -r EisenhowerTaskManager-Sensitive\n";
 		};
 		69184F9B205AC3720079FD8D /* Fetch GoogleService-Info */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -778,7 +815,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "git clone git@github.com:gorbat-o/EisenhowerTaskManager-Sensitive.git\ncp ./EisenhowerTaskManager-Sensitive/GoogleService-Info.plist ./EisenhowerTaskManager/GoogleService-Info.plist\nrm -r EisenhowerTaskManager-Sensitive";
+			shellScript = "git clone git@github.com:gorbat-o/EisenhowerTaskManager-Sensitive.git\ncp ./EisenhowerTaskManager-Sensitive/GoogleService-Info.plist ./EisenhowerTaskManager/GoogleService-Info.plist\nrm -r EisenhowerTaskManager-Sensitive\n";
 		};
 		693D97492055B06900F4EE14 /* Crashlytics */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -806,7 +843,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\" 00536d96ece7d34be4956bf5d2996ff9c2baafeb 9ad7fc258954eb07425424905647c992ae1e75c69312a6be87038ca6488298b9";
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 00536d96ece7d34be4956bf5d2996ff9c2baafeb 9ad7fc258954eb07425424905647c992ae1e75c69312a6be87038ca6488298b9\n";
 		};
 		6940FF16204DDE1E0063101D /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -836,73 +873,21 @@
 			shellPath = /bin/sh;
 			shellScript = "if [ $CONFIGURATION = \"Debug\" ]; then\n${PODS_ROOT}/LicensePlist/license-plist --output-path ${SRCROOT}/EisenhowerTaskManager/Bundles/Settings.bundle --github-token 361e68d2b2e54e1bd81742c6a18e55d72251c830 --suppress-opening-directory\nfi";
 		};
-		84DCE8D4C4DC98670AD801AD /* [CP] Check Pods Manifest.lock */ = {
+		7FC6962ACA8AFB787BB61EB2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-EisenhowerTaskManagerTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		89BD321811AF84D15BB0A6F2 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-EisenhowerTaskManager-appstore-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		969D1E06EBD35B852FD33D42 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-EisenhowerTaskManager-development-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9B79554B316F26EE3FFD85F7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-EisenhowerTaskManager-adhoc/Pods-EisenhowerTaskManager-adhoc-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-EisenhowerTaskManagerTests/Pods-EisenhowerTaskManagerTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/DSGradientProgressView/DSGradientProgressView.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GenericPasswordRow/GenericPasswordRow.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Haptica/Haptica.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
@@ -911,13 +896,15 @@
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DSGradientProgressView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GenericPasswordRow.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Haptica.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
@@ -927,53 +914,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EisenhowerTaskManager-adhoc/Pods-EisenhowerTaskManager-adhoc-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EisenhowerTaskManagerTests/Pods-EisenhowerTaskManagerTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A1440D166117BEF9A791F8C8 /* [CP] Embed Pods Frameworks */ = {
+		B454EB25482626EBA780717B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-EisenhowerTaskManager-appstore/Pods-EisenhowerTaskManager-appstore-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/DSGradientProgressView/DSGradientProgressView.framework",
-				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GenericPasswordRow/GenericPasswordRow.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/Haptica/Haptica.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
-				"${BUILT_PRODUCTS_DIR}/TTGSnackbar/TTGSnackbar.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DSGradientProgressView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GenericPasswordRow.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Haptica.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTGSnackbar.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EisenhowerTaskManager-appstore/Pods-EisenhowerTaskManager-appstore-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F15541C99F9E27980B686188 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-EisenhowerTaskManager-development/Pods-EisenhowerTaskManager-development-frameworks.sh",
@@ -981,8 +930,8 @@
 				"${BUILT_PRODUCTS_DIR}/DSGradientProgressView/DSGradientProgressView.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GenericPasswordRow/GenericPasswordRow.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Haptica/Haptica.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
@@ -991,13 +940,15 @@
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DSGradientProgressView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GenericPasswordRow.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Haptica.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
@@ -1008,6 +959,72 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EisenhowerTaskManager-development/Pods-EisenhowerTaskManager-development-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5B3ED5C01DF3B2C16C3DD7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EisenhowerTaskManager-appstore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA4E846CE9796431297BC13A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EisenhowerTaskManager-appstore/Pods-EisenhowerTaskManager-appstore-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DSGradientProgressView/DSGradientProgressView.framework",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Haptica/Haptica.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
+				"${BUILT_PRODUCTS_DIR}/TTGSnackbar/TTGSnackbar.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DSGradientProgressView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Haptica.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTGSnackbar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EisenhowerTaskManager-appstore/Pods-EisenhowerTaskManager-appstore-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1119,7 +1136,7 @@
 /* Begin XCBuildConfiguration section */
 		695ED5BF2044AFC500BB12DF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A483664BECE9159E89479CD4 /* Pods-EisenhowerTaskManager-adhoc.debug.xcconfig */;
+			baseConfigurationReference = 46C1D82BE972CF20F0A13D1A /* Pods-EisenhowerTaskManager-adhoc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -1132,14 +1149,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "2d6d45ae-e384-44d9-ad3f-2c24e37d4c0e";
 				PROVISIONING_PROFILE_SPECIFIER = "Eisenhower Task Manager PP Preprod Development";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		695ED5C02044AFC500BB12DF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B93116FBC6809EC262A2D999 /* Pods-EisenhowerTaskManager-adhoc.release.xcconfig */;
+			baseConfigurationReference = B87148DD52D73B47C640D16C /* Pods-EisenhowerTaskManager-adhoc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
@@ -1153,14 +1170,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "6f102cbf-f229-45b4-9fa4-ac86e9741346";
 				PROVISIONING_PROFILE_SPECIFIER = "Eisenhower Task Manager PP Preprod Adhoc";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		695ED5CD2044AFC800BB12DF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61620DF00FF109F85F958864 /* Pods-EisenhowerTaskManager-appstore.debug.xcconfig */;
+			baseConfigurationReference = 4B71A5779DF624317D9040EE /* Pods-EisenhowerTaskManager-appstore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -1173,14 +1190,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "5ca13519-e4fb-49c6-8bbe-ceee947fa708";
 				PROVISIONING_PROFILE_SPECIFIER = "Eisenhower Task Manager PP Development";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		695ED5CE2044AFC800BB12DF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10515C5B9B1F8B972E9B152A /* Pods-EisenhowerTaskManager-appstore.release.xcconfig */;
+			baseConfigurationReference = 9D9DF465E2E079D12D4B9AE4 /* Pods-EisenhowerTaskManager-appstore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
@@ -1194,14 +1211,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "0840a7e6-71cb-4d3e-80ee-fcbe80b85cd6";
 				PROVISIONING_PROFILE_SPECIFIER = "Eisenhower Task Manager PP AppStore";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		69BFBE7F2055A46A00D0B8A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F73488A7E24D48E91A52536 /* Pods-EisenhowerTaskManagerTests.debug.xcconfig */;
+			baseConfigurationReference = 171499DBE7F5F25D141AB852 /* Pods-EisenhowerTaskManagerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1213,7 +1230,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = oleg.gorbatchev.EisenhowerTaskManagerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EisenhowerTaskManager-development.app/EisenhowerTaskManager-development";
 			};
@@ -1221,7 +1238,7 @@
 		};
 		69BFBE802055A46A00D0B8A1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90A16DEDA472AAEF3D93042A /* Pods-EisenhowerTaskManagerTests.release.xcconfig */;
+			baseConfigurationReference = 88CA2DC53A0911A0D514C1AA /* Pods-EisenhowerTaskManagerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1233,7 +1250,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = oleg.gorbatchev.EisenhowerTaskManagerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EisenhowerTaskManager-development.app/EisenhowerTaskManager-development";
 			};
@@ -1254,6 +1271,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -1261,6 +1279,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -1294,6 +1313,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -1312,6 +1332,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -1319,6 +1340,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -1344,13 +1366,14 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		69E0B9852044AE050083ED7D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2ADCA38AE12AB4AD221AB2F1 /* Pods-EisenhowerTaskManager-development.debug.xcconfig */;
+			baseConfigurationReference = BE93B09D6C87B3114AABB3C3 /* Pods-EisenhowerTaskManager-development.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -1362,14 +1385,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "2d6d45ae-e384-44d9-ad3f-2c24e37d4c0e";
 				PROVISIONING_PROFILE_SPECIFIER = "Eisenhower Task Manager PP Preprod Development";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		69E0B9862044AE050083ED7D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7152AAB5F98A259A7C16396 /* Pods-EisenhowerTaskManager-development.release.xcconfig */;
+			baseConfigurationReference = 2C3C0063704FDA316D8DF745 /* Pods-EisenhowerTaskManager-development.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
@@ -1382,7 +1405,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "6f102cbf-f229-45b4-9fa4-ac86e9741346";
 				PROVISIONING_PROFILE_SPECIFIER = "Eisenhower Task Manager PP Preprod Adhoc";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
