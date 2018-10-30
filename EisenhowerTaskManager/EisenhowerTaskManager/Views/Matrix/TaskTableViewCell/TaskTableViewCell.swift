@@ -43,7 +43,8 @@ extension TaskTableViewCell {
                 " " +
                 (task?.lastEditDate.toString(DateToStringStyles.time(DateFormatter.Style.short)) ?? "")
         } else {
-            lastEditDateLabel?.text = task?.lastEditDate.toString(DateToStringStyles.dateTime(DateFormatter.Style.short))
+            lastEditDateLabel?.text =
+                task?.lastEditDate.toString(DateToStringStyles.dateTime(DateFormatter.Style.short))
         }
     }
 }
