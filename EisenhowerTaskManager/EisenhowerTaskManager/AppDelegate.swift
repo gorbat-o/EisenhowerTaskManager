@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var databaseReference: DatabaseReference?
 
     func application(_ application: UIApplication,
-                     didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         setupFirebase()
         setupMainView()
         setupFabric()
@@ -60,7 +60,7 @@ extension AppDelegate {
                 type: "AddTask",
                 localizedTitle: "Create a task",
                 localizedSubtitle: nil,
-                icon: UIApplicationShortcutIcon(type: UIApplicationShortcutIconType.add),
+                icon: UIApplicationShortcutIcon(type: UIApplicationShortcutIcon.IconType.add),
                 userInfo: nil
             )
             // Waiting the iTunes link to be available :)

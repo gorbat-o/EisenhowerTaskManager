@@ -28,7 +28,7 @@ extension SettingsVC {
     private func setupTableView() {
         form +++ Section()
             <<< ButtonRow {
-                $0.title = L10n.Settings.Profilerow.title
+                $0.title = L10n.Settings.ProfileRow.title
                 $0.baseCell.imageView?.image = UIImage(named: "Profile") ?? UIImage()
                 $0.presentationMode = .show(controllerProvider: .callback { [weak self] in
                     return self?.profileView ?? ProfileVC()

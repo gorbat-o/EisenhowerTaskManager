@@ -8,7 +8,6 @@
 
 import UIKit
 import Eureka
-import GenericPasswordRow
 import FirebaseAuth
 
 class ProfileVC: FormViewController {
@@ -43,12 +42,12 @@ extension ProfileVC {
                 }
             }
             +++ Section("Update password")
-            <<< GenericPasswordRow {
-                $0.tag = "newpwd1"
-            }
-            <<< GenericPasswordRow {
-                $0.tag = "newpwd2"
-            }
+//            <<< GenericPasswordRow {
+//                $0.tag = "newpwd1"
+//            }
+//            <<< GenericPasswordRow {
+//                $0.tag = "newpwd2"
+//            }
             <<< ButtonRow {
                 $0.title = "Change password"
                 $0.onCellSelection { [weak self] _, _ in

@@ -1,3 +1,4 @@
+# coding: utf-8
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '11.0'
 use_frameworks!
@@ -15,8 +16,7 @@ def pods
     # UI
     pod 'TTGSnackbar'
     pod 'Eureka'
-    pod 'DSGradientProgressView'
-    pod 'GenericPasswordRow'
+    pod 'DSGradientProgressView', :git => 'git@github.com:DholStudio/DSGradientProgressView.git', :branch => 'master'
 
     # UX
     pod 'Haptica'
